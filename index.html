@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <title>M.C.R. -大阪公立大学パソコンサークル-</title>
-    <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="大阪公立大学マイコン研究会（通称ＭＣＲ）の公式ホームページです。"
-    />
-    <meta
-      name="keywords"
-      content="大阪公立大学マイコン研究会,マイコン,MCR,ocumcr,コンピューター,コンピュータ"
-    />
-    <link rel="shortcut icon" href="image/favicon.ico" />
-    <link rel="stylesheet" href="style.css" type="text/css" />
-  </head>
+    <head>
+        <title>M.C.R. -大阪公立大学パソコンサークル-</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="大阪公立大学マイコン研究会（通称ＭＣＲ）の公式ホームページです。" />
+        <meta name="keywords" content="大阪公立大学 マイコン研究会 マイコン MCR omumcr コンピューター コンピュータ" />
+        <link rel="shortcut icon" href="image/favicon.ico" />
+        <link rel="stylesheet" href="style.css" />
 
-  <body>
-    <!--
+        <link rel="stylesheet" href="slideshow.css" />
+        <link rel="stylesheet" href="index.css" />
+        <script src="slideshow.js"></script>
+        <script>
+            setTimeout(() => {
+                showSlides(2)
+            }, 1000)
+        </script>
+    </head>
+
+    <body>
+        <!--
 
      -BBBB       BBBB            +zBBB<.     =zsBBDz<'
      -DDDD'     (DDDD         ~BDDhDDDD(     DDDDDDDBBB'
@@ -33,84 +36,92 @@
     =DD    hhhh-   =hD-     .=hhDBBBBBB      hhh    'hhh'
     Dhh    ~((-    ~hD(         '+=hs='      hhh   . ~hhh.
 
-      -->
+        -->
 
-    <div id="container">
-      <div id="contentsLeft">
-        <a href="index.html" id="title">
-          <img src="image/titlelogo.png" alt="大阪市立大学マイコン研究会" />
-        </a>
-        <!--メニューここから（外部javascriptで記述）-->
-        <script src="menu.js"></script>
-        <!--メニューここまで（外部javascriptで記述）-->
-      </div>
-      <div id="contentsRight">
-        <h2>Top</h2>
-        <div id="slider">
-          <ul class="slides">
-            <li><img src="image/top-1.jpg" alt="" /></li>
-            <li><img src="image/top-2.png" alt="" /></li>
-            <li><img src="image/top-3.png" alt="" /></li>
-          </ul>
-        </div>
-        <div id="topics">
-          <div class="box">
-            <h3>About</h3>
-            <p>
-              ＭＣＲ(Micro Computer Research)は、<br />
-              大阪市立大学に所属するコンピューターサークルです。
-            </p>
-          </div>
-          <div class="box">
-            <h3>Topics</h3>
-            <p>
-              私達ＭＣＲは新会員を募集しています。<br />
-              ＭＣＲのことをもっと詳しく知りたい方は、<br />
-              <a href="https://ocumcr.hatenablog.com/">ＭＣＲ公式ブログ</a>
-              をチェックしてみてください。
-            </p>
-            <p>
-              当サークルについて質問等がある場合は、<br />
-              メールにて気軽にお尋ねください。
-            </p>
-          </div>
-        </div>
-        <div id="twitterBox">
-          <a
-            class="twitter-timeline"
-            href="https://x.com/ocu_mcr"
-            data-widget-id="368941856010141696"
-          >
-            @ocu_mcrからのツイート
-          </a>
-          <script>
-            !(function (d, s, id) {
-              let js,
-                fjs = d.getElementsByTagName(s)[0],
-                p = /^http:/.test(d.location) ? "http" : "https";
-              if (!d.getElementById(id)) {
-                js = d.createElement(s);
-                js.id = id;
-                js.src = p + "://platform.twitter.com/widgets.js";
-                fjs.parentNode.insertBefore(js, fjs);
-              }
-            })(document, "script", "twitter-wjs");
-          </script>
-        </div>
-      </div>
-      <div id="footer">
-        <address>Copyright &copy; 2019 MCR. All rights reserved.</address>
-        <div class="update">
-          <script>
-            const t = new Date(document.lastModified);
-            const y = t.getFullYear(); // 年
-            const m = t.getMonth() + 1; // 月
-            const d = t.getDate(); // 日
+        <div id="container">
+            <div id="contentsLeft">
+                <a href="index.html" id="title">
+                    <div id="mcr">MCR</div>
+                    <br />
+                    大阪公立大学<br />
+                    マイコン研究会
+                </a>
+                <!--メニューここから（外部javascriptで記述）-->
+                <script src="menu.js"></script>
+                <!--メニューここまで（外部javascriptで記述）-->
+            </div>
 
-            document.write("Last Update : " + y + "/" + m + "/" + d);
-          </script>
+            <div id="contentsRight">
+                <section>
+                    <h2><i class="icon-top"></i>Top</h2>
+
+                    <div class="slideshow-container">
+                        <div class="slide fade"><img src="image/top-1.jpg" alt="Slide 1" /></div>
+
+                        <div class="slide fade"><img src="image/top-2.png" alt="Slide 2" /></div>
+
+                        <div class="slide fade"><img src="image/top-3.png" alt="Slide 3" /></div>
+
+                        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                    </div>
+
+                    <div class="dots">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </section>
+
+                <div>
+                    <div id="topics">
+                        <section class="box">
+                            <h3>About</h3>
+                            <p>
+                                ＭＣＲ(Micro Computer Research)は、<br />
+                                大阪公立大学に所属するコンピューターサークルです。
+                            </p>
+                        </section>
+                        <section class="box">
+                            <h3>Topics</h3>
+                            <p>
+                                私達ＭＣＲは新会員を募集しています。<br />
+                                ＭＣＲのことをもっと詳しく知りたい方は、<br />
+                                <a href="https://ocumcr.hatenablog.com/">ＭＣＲ公式ブログ</a>
+                                をチェックしてみてください。
+                            </p>
+                            <p>
+                                当サークルについて質問等がある場合は、<br />
+                                メールにて気軽にお尋ねください。
+                            </p>
+                        </section>
+                    </div>
+                </div>
+
+                <div id="twitterBox">
+                    <a
+                        class="twitter-timeline"
+                        href="https://twitter.com/ocu_mcr?ref_src=twsrc%5Etfw"
+                        data-height="400px"
+                    >
+                        Tweets by MCR
+                    </a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+            <div id="footer">
+                <address>Copyright &copy; 2019 MCR. All rights reserved.</address>
+                <div class="update">
+                    <script>
+                        const t = new Date(document.lastModified)
+                        const y = t.getFullYear() // 年
+                        const m = t.getMonth() + 1 // 月
+                        const d = t.getDate() // 日
+
+                        document.write("Last Update : " + y + "/" + m + "/" + d)
+                    </script>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>
