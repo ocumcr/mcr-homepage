@@ -115,6 +115,11 @@ h3 {
     line-height: 150%;
 }
 
+::selection {
+    background: #6bc8a9;
+    color: #fff;
+}
+
 /*---------------------------
 -------基本のレイアウト------
 ----------------------------*/
@@ -173,29 +178,32 @@ h3 {
     font-size: 3em;
     padding-top: 10px;
     text-align-last: center;
+
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 /*メニュー*/
 #globalnavi {
     margin-bottom: 2em;
     text-align: left;
-}
 
-#globalnavi ul {
-    font-family: "Raleway", sans-serif;
-    padding-left: 0;
-    list-style-type: none;
-    margin-left: 0px;
-    font-size: 130%;
-}
+    ul {
+        font-family: "Raleway", sans-serif;
+        padding-left: 0;
+        list-style-type: none;
+        margin-left: 0px;
+        font-size: 130%;
+    }
 
-#globalnavi li {
-    list-style-type: none;
-    margin-bottom: 20px;
+    li {
+        list-style-type: none;
+        margin-bottom: 20px;
+    }
 }
 
 #globalnavi a,
 #globalnabi a:visited {
+    cursor: pointer;
     text-decoration: none;
     display: block;
     width: 140px;

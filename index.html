@@ -7,15 +7,15 @@
         <meta name="keywords" content="大阪公立大学 マイコン研究会 マイコン MCR omumcr コンピューター コンピュータ" />
         <link rel="shortcut icon" href="image/favicon.ico" />
         <link rel="stylesheet" href="style.css" />
+        <script src="js/loadContent.js"></script>
 
-        <link rel="stylesheet" href="slideshow.css" />
-        <link rel="stylesheet" href="index.css" />
-        <script src="slideshow.js"></script>
-        <script>
-            setTimeout(() => {
-                showSlides(2)
-            }, 1000)
-        </script>
+        <script src="js/slideshow.js"></script>
+
+        <!-- google fontのRaleway -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
     </head>
 
     <body>
@@ -39,6 +39,7 @@
         -->
 
         <div id="container">
+            <!-- 左側ここから -->
             <div id="contentsLeft">
                 <a href="index.html" id="title">
                     <div id="mcr">MCR</div>
@@ -46,71 +47,55 @@
                     大阪公立大学<br />
                     マイコン研究会
                 </a>
-                <!--メニューここから（外部javascriptで記述）-->
-                <script src="menu.js"></script>
-                <!--メニューここまで（外部javascriptで記述）-->
-            </div>
+                <!--メニューここから-->
+                <div id="globalnavi">
+                    <ul id="mainMenu">
+                        <li>
+                            <a class="icon-info" onclick="loadContent('pages/info.html')">Info</a>
+                        </li>
+                        <li>
+                            <a class="icon-work" onclick="loadContent('pages/work.html')">Works</a>
+                        </li>
+                        <li>
+                            <a class="icon-member" onclick="loadContent('pages/member.html')">Members</a>
+                        </li>
+                        <li>
+                            <a class="icon-computer" onclick="loadContent('pages/computer.html')">Computers</a>
+                        </li>
+                        <li>
+                            <a class="icon-link" onclick="loadContent('pages/link.html')">Links</a>
+                        </li>
+                    </ul>
 
+                    <ul id="subMenu">
+                        <li>
+                            <a href="https://ocumcr.hatenablog.com/" target=""><i class="icon-blog"></i>Blog</a>
+                        </li>
+                        <li>
+                            <a href="https://x.com/ocu_mcr" target="_balank"><i class="icon-twitter"></i>X</a>
+                        </li>
+                        <li>
+                            <a href="mailto:ocumcr2014@gmail.com"><i class="icon-mail"></i>Mail</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--メニューここまで-->
+            </div>
+            <!-- 左側ここまで -->
+
+            <!-- 右側ここから -->
             <div id="contentsRight">
-                <section>
-                    <h2><i class="icon-top"></i>Top</h2>
-
-                    <div class="slideshow-container">
-                        <div class="slide fade"><img src="image/top-1.jpg" alt="Slide 1" /></div>
-
-                        <div class="slide fade"><img src="image/top-2.png" alt="Slide 2" /></div>
-
-                        <div class="slide fade"><img src="image/top-3.png" alt="Slide 3" /></div>
-
-                        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-                        <button class="next" onclick="changeSlide(1)">&#10095;</button>
-                    </div>
-
-                    <div class="dots">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                    </div>
-                </section>
-
-                <div>
-                    <div id="topics">
-                        <section class="box">
-                            <h3>About</h3>
-                            <p>
-                                ＭＣＲ(Micro Computer Research)は、<br />
-                                大阪公立大学に所属するコンピューターサークルです。
-                            </p>
-                        </section>
-                        <section class="box">
-                            <h3>Topics</h3>
-                            <p>
-                                私達ＭＣＲは新会員を募集しています。<br />
-                                ＭＣＲのことをもっと詳しく知りたい方は、<br />
-                                <a href="https://ocumcr.hatenablog.com/">ＭＣＲ公式ブログ</a>
-                                をチェックしてみてください。
-                            </p>
-                            <p>
-                                当サークルについて質問等がある場合は、<br />
-                                メールにて気軽にお尋ねください。
-                            </p>
-                        </section>
-                    </div>
-                </div>
-
-                <div id="twitterBox">
-                    <a
-                        class="twitter-timeline"
-                        href="https://twitter.com/ocu_mcr?ref_src=twsrc%5Etfw"
-                        data-height="400px"
-                    >
-                        Tweets by MCR
-                    </a>
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
+                <!-- ここに要素を入れる -->
+                <script>
+                    loadContent("pages/top.html")
+                </script>
             </div>
+            <!-- 右側ここまで -->
+
+            <!-- 下側ここから -->
             <div id="footer">
-                <address>Copyright &copy; 2019 MCR. All rights reserved.</address>
+                <address>Copyright &copy; 2024 MCR. All rights reserved.</address>
                 <div class="update">
                     <script>
                         const t = new Date(document.lastModified)
@@ -122,6 +107,7 @@
                     </script>
                 </div>
             </div>
+            <!-- 下側ここまで -->
         </div>
     </body>
 </html>

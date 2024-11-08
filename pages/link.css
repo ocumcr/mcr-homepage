@@ -1,0 +1,35 @@
+.linkTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+
+.linkTable caption {
+    border-bottom: solid #000 1px;
+    text-align: left;
+}
+
+.linkTable td,
+.linkTable th {
+    padding: 5px;
+    border-bottom: 1px solid #000;
+}
+
+.linkTable th {
+    width: 10em;
+    font-weight: normal;
+    text-align: left;
+}
+
+#links {
+    transition: all 1s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+#touchMe {
+    cursor: pointer;
+}

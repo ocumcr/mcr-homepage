@@ -1,0 +1,56 @@
+table.infoTable {
+    border: none;
+    border-collapse: collapse;
+}
+
+.infoTable th,
+.infoTable td {
+    border-bottom: #000 solid 1px;
+}
+
+.infoTable th {
+    text-align: center;
+    padding: 16px 10px;
+}
+
+.infoTable td {
+    text-align: left;
+    padding: 0 0 10px 0;
+}
+
+.annualTable {
+    border: none;
+    border-collapse: collapse;
+}
+
+.annualTable th,
+.annualTable td {
+    border-bottom: #000 solid 1px;
+}
+
+.annualTable th {
+    text-align: center;
+    padding: 16px 10px;
+
+    width: 150px;
+}
+
+.annualTable td {
+    text-align: left;
+    padding: 0 0 10px 0;
+}
+
+.annualTable td.month {
+    width: 150px;
+}
+
+/*月*/
+.annualTable td:nth-child(even) {
+    text-align: center;
+}
+
+.annual_title {
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+}
