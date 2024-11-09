@@ -1,3 +1,8 @@
+table {
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
 table.infoTable {
     border: none;
     border-collapse: collapse;
@@ -11,11 +16,13 @@ table.infoTable {
 .infoTable th {
     text-align: center;
     padding: 16px 10px;
+
+    width: 35%;
 }
 
 .infoTable td {
     text-align: left;
-    padding: 0 0 10px 0;
+    /* padding: 0 0 20px 0; */
 }
 
 .annualTable {
@@ -37,7 +44,7 @@ table.infoTable {
 
 .annualTable td {
     text-align: left;
-    padding: 0 0 10px 0;
+    /* padding: 0 0 10px 0; */
 }
 
 .annualTable td.month {
@@ -49,7 +56,7 @@ table.infoTable {
     text-align: center;
 }
 
-.annual_title {
+.title {
     padding: 10px;
     font-size: 25px;
     text-align: center;

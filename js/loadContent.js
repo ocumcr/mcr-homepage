@@ -2,6 +2,8 @@
 // ページに応じて 'content1.html' や 'content2.html' に変更
 
 const loadContent = (page) => {
+    if (page == null) return
+
     fetch(page)
         .then((response) => response.text())
         .then((data) => {

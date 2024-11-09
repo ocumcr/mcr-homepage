@@ -1,3 +1,11 @@
+/* アイコン用のフォント */
+@font-face {
+    font-family: "fontello";
+    src: url("fontello.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
     font-family: "fontello";
@@ -31,37 +39,37 @@
 }
 
 .icon-top:before {
-    content: "\e804";
+    content: "\e808";
 }
 
 /* '' */
 .icon-work:before {
-    content: "\e808";
+    content: "\e802";
 }
 
 /* '' */
 .icon-computer:before {
-    content: "\e806";
+    content: "\e803";
 }
 
 /* '' */
 .icon-blog:before {
-    content: "\e802";
+    content: "\e805";
 }
 
 /* '' */
 .icon-info:before {
-    content: "\e805";
+    content: "\e801";
 }
 
 /* '' */
 .icon-mail:before {
-    content: "\e803";
+    content: "\e807";
 }
 
 /* '' */
 .icon-twitter:before {
-    content: "\e800";
+    content: "\e806";
 }
 
 /* '' */
@@ -71,7 +79,7 @@
 
 /* '' */
 .icon-member:before {
-    content: "\e801";
+    content: "\e800";
 }
 
 /* '' */
@@ -81,12 +89,24 @@
 
 /* '' */
 .icon-link:before {
-    content: "\e809";
+    content: "\e804";
 }
 
 /* '' */
 
 /*--一般--*/
+#loading {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 body {
     background-image: url("image/bg13.png");
     background-repeat: repeat;

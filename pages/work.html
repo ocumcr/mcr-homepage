@@ -1,3 +1,32 @@
-<link rel="stylesheet" href="work.css" />
+<link rel="stylesheet" href="pages/work.css" />
 
-てすと
+<h2><i class="icon-work"></i>Work</h2>
+<p>
+    私たちが制作したゲームやその他の作品です。<br />
+    <small>（製作者のニックネームは開発当時のものであり、現在と異なる可能性があります） </small>
+    <br />
+    <br />
+    ゲームのダウンロード方法は
+    <a onclick="loadContent('pages/help.html')"> こちら </a>。
+</p>
+<h3>Game</h3>
+
+<div id="games">
+    <!-- ここにゲームが入る -->
+</div>
+
+<script>
+    safeLoadCsvAsObjects("gamedata.csv").then((obj) => {
+        console.log(obj)
+
+        obj.forEach((gamedata, i) => {
+            document.getElementById("games").innerHTML += `
+            <a class="modalLink" href="#work/#modal${i}">
+              <div class="imageFrame">
+                <img src="${gamedata.imagePath}" alt="${gamedata.title}">
+              </div>
+            </a>
+          `
+        })
+    })
+</script>

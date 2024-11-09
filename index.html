@@ -5,10 +5,13 @@
         <meta charset="utf-8" />
         <meta name="description" content="大阪公立大学マイコン研究会（通称ＭＣＲ）の公式ホームページです。" />
         <meta name="keywords" content="大阪公立大学 マイコン研究会 マイコン MCR omumcr コンピューター コンピュータ" />
+        <meta http-equiv="Cache-Control" content="no-store" />
         <link rel="shortcut icon" href="image/favicon.ico" />
+
         <link rel="stylesheet" href="style.css" />
         <script src="js/loadContent.js"></script>
-
+        <script src="js/readCSV.js"></script>
+        <script src="js/writememberData.js"></script>
         <script src="js/slideshow.js"></script>
 
         <!-- google fontのRaleway -->
@@ -41,7 +44,7 @@
         <div id="container">
             <!-- 左側ここから -->
             <div id="contentsLeft">
-                <a href="index.html" id="title">
+                <a class="navi-link" id="title" href="#top">
                     <div id="mcr">MCR</div>
                     <br />
                     大阪公立大学<br />
@@ -51,19 +54,19 @@
                 <div id="globalnavi">
                     <ul id="mainMenu">
                         <li>
-                            <a class="icon-info" onclick="loadContent('pages/info.html')">Info</a>
+                            <a class="icon-info navi-link" href="#info">Info</a>
                         </li>
                         <li>
-                            <a class="icon-work" onclick="loadContent('pages/work.html')">Works</a>
+                            <a class="icon-work navi-link" href="#work">Works</a>
                         </li>
                         <li>
-                            <a class="icon-member" onclick="loadContent('pages/member.html')">Members</a>
+                            <a class="icon-member navi-link" href="#member">Members</a>
                         </li>
                         <li>
-                            <a class="icon-computer" onclick="loadContent('pages/computer.html')">Computers</a>
+                            <a class="icon-computer navi-link" href="#computer"> Computers </a>
                         </li>
                         <li>
-                            <a class="icon-link" onclick="loadContent('pages/link.html')">Links</a>
+                            <a class="icon-link navi-link" href="#link">Links</a>
                         </li>
                     </ul>
 
@@ -79,17 +82,14 @@
                         </li>
                     </ul>
                 </div>
-
                 <!--メニューここまで-->
             </div>
             <!-- 左側ここまで -->
 
             <!-- 右側ここから -->
             <div id="contentsRight">
-                <!-- ここに要素を入れる -->
-                <script>
-                    loadContent("pages/top.html")
-                </script>
+                <!-- ここに要素が入る -->
+                にゃーん
             </div>
             <!-- 右側ここまで -->
 
@@ -103,11 +103,14 @@
                         const m = t.getMonth() + 1 // 月
                         const d = t.getDate() // 日
 
-                        document.write("Last Update : " + y + "/" + m + "/" + d)
+                        document.getElementById("footer").innerHTML += "Last Update : " + y + "/" + m + "/" + d
                     </script>
                 </div>
             </div>
             <!-- 下側ここまで -->
         </div>
+
+        <!-- メニューのリンクを設定 -->
+        <script src="js/linkSetting.js"></script>
     </body>
 </html>

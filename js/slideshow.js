@@ -13,6 +13,8 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
+    if (location.hash !== "#top") return
+
     const slides = document.getElementsByClassName("slide")
     const dots = document.getElementsByClassName("dot")
 
@@ -31,3 +33,7 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block"
     dots[slideIndex - 1].className += " active"
 }
+
+let id = setInterval(() => {
+    changeSlide(1)
+}, 6000)
