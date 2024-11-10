@@ -8,10 +8,6 @@ table {
     border-collapse: collapse;
 }
 
-tr {
-    margin: auto;
-}
-
 th,
 td {
     border-bottom: #000 solid 1px;

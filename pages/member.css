@@ -1,18 +1,18 @@
-.introTable {
+.intro-table {
     width: 100%;
     margin-bottom: 30px;
     border: none;
 }
 
-.introTable caption {
+.intro-table caption {
     text-align: left;
     line-height: 120%;
     border-bottom: 1px solid #000;
     margin-bottom: 10px;
 }
 
-.introTable th,
-.introTable td {
+.intro-table th,
+.intro-table td {
     border: none;
     text-align: left;
     padding: 5px;

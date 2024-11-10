@@ -1,7 +1,7 @@
 // 各学年のデータを書き込む
 const writeMemberData = async (grade) => {
     document.getElementById("members").innerHTML += `
-      <table summary="サークルのメンバーの紹介" class="introTable">
+      <table summary="サークルのメンバーの紹介" class="intro-table">
           <caption>
           ${grade}回生
           </caption>

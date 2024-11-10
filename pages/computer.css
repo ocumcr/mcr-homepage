@@ -1,19 +1,19 @@
-.specTable {
+.spec-table {
     width: 100%;
     border-collapse: collapse;
 }
 
-.specTable caption {
+.spec-table caption {
     border-bottom: solid #000 1px;
     text-align: left;
 }
 
-.specTable td,
-.specTable th {
+.spec-table td,
+.spec-table th {
     padding: 5px;
     border-bottom: 1px solid #000;
 }
 
-.specTable th {
+.spec-table th {
     width: 10em;
 }
