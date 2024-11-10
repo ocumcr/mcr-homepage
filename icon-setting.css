@@ -1,81 +1,54 @@
-/* アイコン用のフォント */
-@font-face {
-    font-family: "fontello";
-    src: url("fontello.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-[class^="icon-"]:before {
-    font-family: "fontello";
-    font-style: normal;
-    font-weight: normal;
-
+[class^="icon-"]::before {
+    content: ""; /* アイコンを挿入するためのコンテンツ */
     display: inline-block;
-    text-decoration: inherit;
-    width: 1em;
-    margin-right: 0.2em;
-    text-align: center;
-
-    line-height: 1em;
-
-    margin-left: 0.2em;
-
-    margin-right: 0.4em;
+    width: 1em; /* アイコンの幅 */
+    height: 1em; /* アイコンの高さ */
+    margin-right: 0.5em; /* テキストとのスペース */
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle; /* アイコンをテキスト中央に揃える */
 }
 
-.icon-top:before {
-    content: "\e808";
+.icon-top::before {
+    background-image: url("image/icon/スタンダードな家アイコン.svg");
 }
 
-/* '' */
-.icon-work:before {
-    content: "\e802";
+.icon-work::before {
+    background-image: url("image/icon/ゲームの無料アイコン.svg");
 }
 
-/* '' */
-.icon-computer:before {
-    content: "\e803";
+.icon-computer::before {
+    background-image: url("image/icon/ディスプレイのアイコン素材\ 3.svg");
 }
 
-/* '' */
-.icon-blog:before {
-    content: "\e805";
+.icon-blog::before {
+    background-image: url("image/icon/鉛筆の無料アイコン7.svg");
 }
 
-/* '' */
-.icon-info:before {
-    content: "\e801";
+.icon-info::before {
+    background-image: url("image/icon/インフォメーションアイコン4.svg");
 }
 
-/* '' */
-.icon-mail:before {
-    content: "\e807";
+.icon-mail::before {
+    background-image: url("image/icon/メールの無料アイコン.svg");
 }
 
-/* '' */
-.icon-twitter:before {
-    content: "\e806";
+.icon-twitter::before {
+    background-image: url("image/icon/twitterのアイコン素材\ その2.svg");
 }
 
-/* '' */
-.icon-picture:before {
-    content: "\e807";
+.icon-picture::before {
+    background-image: url("image/icon/辞書アイコン1.svg");
 }
 
-/* '' */
-.icon-member:before {
-    content: "\e800";
+.icon-member::before {
+    background-image: url("image/icon/人物アイコン\　チーム.svg");
 }
 
-/* '' */
-.icon-member-only:before {
-    content: "\e80a";
+.icon-link::before {
+    background-image: url("image/icon/リンクのフリーアイコン5.svg");
 }
 
-/* '' */
-.icon-link:before {
-    content: "\e804";
+.icon-diary::before {
+    background-image: url("image/icon/辞書アイコン1.svg");
 }
-
-/* '' */

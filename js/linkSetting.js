@@ -4,6 +4,7 @@ const loadPage = (pageId) => {
         "pages/" +
             {
                 "#top": "top.html",
+                "#diary": "diary.html",
                 "#info": "info.html",
                 "#work": "work.html",
                 "#member": "member.html",

@@ -25,3 +25,19 @@
 .detail {
     width: 60%;
 }
+
+@media screen and (max-width: 768px) {
+    .name {
+        width: auto;
+    }
+
+    .detail {
+        width: auto;
+        border-bottom: #000 1px solid;
+    }
+
+    .intro-table th,
+    .intro-table td {
+        text-align: left;
+    }
+}
