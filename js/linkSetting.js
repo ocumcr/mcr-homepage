@@ -13,6 +13,7 @@ const loadPage = (pageId) => {
             }[pageId],
     )
 
+    // スマホ用のメニューを閉じる(無理やり)
     document.getElementById("menu-btn").checked = false
 }
 
