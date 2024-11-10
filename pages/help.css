@@ -1,5 +1,5 @@
-@media screen and (max-width: 480px) {
-    .box img {
+@media screen and (max-width: 768px) {
+    .help img {
         width: 100%;
         height: auto;
     }

@@ -5,7 +5,8 @@ const writeMemberData = async (grade) => {
           <caption>
           ${grade}回生
           </caption>
-          <tbody id="student-${grade}"></tbody>
+          <tbody id="student-${grade}">
+          </tbody>
       </table>
     `
 

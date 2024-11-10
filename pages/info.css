@@ -55,8 +55,13 @@ th {
     padding-left: 20px;
 }
 
+.google-map {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
 /*スマホ版*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     th,
     td {
         padding: 5px;
@@ -76,10 +81,5 @@ th {
     /* 内容だけ */
     .annual-table td:nth-child(odd) {
         padding-left: auto;
-    }
-
-    iframe {
-        width: 100%;
-        height: auto;
     }
 }

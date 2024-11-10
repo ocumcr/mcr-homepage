@@ -77,7 +77,7 @@
         "year": "2015",
         "imagePath": "image/games/sudoku.png",
         "gamePath": "https://drive.google.com/open?id=0B3bkMiN1is2VcDBuNEFiN0hMNTA&authuser=0",
-        "description": "<p>たて・よこ・９つの四角にそれぞれ１～９をひとつずつ入れるパズルです。</p><p>自信があればいきなり上を狙ってもいいかも…？<br />ブログ記事は<a href=\"http://ocumcr.blog66.fc2.com/blog-entry-147.html\" target=\"_blank\">こちら</a>。</p>"
+        "description": "<p>たて・よこ・９つの四角にそれぞれ１～９をひとつずつ入れるパズルです。</p><p>自信があればいきなり上を狙ってもいいかも…?<br />ブログ記事は<a href=\"http://ocumcr.blog66.fc2.com/blog-entry-147.html\" target=\"_blank\">こちら</a>。</p>"
     },
     {
         "title": "元素クリッカー",
@@ -85,7 +85,7 @@
         "year": "2015",
         "imagePath": "image/games/genso.png",
         "gamePath": "https://drive.google.com/open?id=0B3bkMiN1is2VcDBuNEFiN0hMNTA&authuser=0",
-        "description": "<p>10秒間でクリックした回数に対応した原子番号の元素を表示します。</p><p>118回以上で新記録を出すと・・・？</p>"
+        "description": "<p>10秒間でクリックした回数に対応した原子番号の元素を表示します。</p><p>118回以上で新記録を出すと・・・?</p>"
     },
     {
         "title": "Simplified",
