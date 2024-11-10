@@ -26,10 +26,6 @@
     transition: all 1s ease;
 }
 
-.hidden {
-    display: none;
-}
-
-#touchMe {
+summary {
     cursor: pointer;
 }

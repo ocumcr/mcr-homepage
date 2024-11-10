@@ -1,0 +1,170 @@
+[
+    {
+        "title": "Avoid",
+        "author": "しゅーと",
+        "year": "2017",
+        "imagePath": "image/games/avoid.png",
+        "gamePath": "https://drive.google.com/open?id=0B3bkMiN1is2VT1NJUjk0WDRPTTg",
+        "description": "横もちろん俺らは抵抗するで...かわして！<br>障害物を避けるだけのゲームです<br>ハイスコアを目指しましょう！！<br>ブログ記事は<a href=\"http://ocumcr.blog66.fc2.com/blog-entry-158.html\" target=\"_blank\">こちら</a>。"
+    },
+    {
+        "title": "I wanna be the TMT",
+        "author": "zank",
+        "year": "2017",
+        "imagePath": "image/games/TMT.png",
+        "gamePath": "https://drive.google.com/open?id=0B3bkMiN1is2VZDR0ZjBnU1YxazA",
+        "description": "このゲームは死にゲーと呼ばれるゲームです。<br>一応チュートリアルは用意してますが全体的に難しいです。<br>ブログ記事は<a href=\"http://ocumcr.blog66.fc2.com/blog-entry-157.html\" target=\"_blank\">こちら</a>。"
+    },
+    {
+        "title": "北海道はでっかいどう",
+        "author": "こにし",
+        "year": "2017",
+        "imagePath": "image/games/hokkaido.png",
+        "gamePath": "https://drive.google.com/open?id=0B3bkMiN1is2VVkZmcUVDWDNzTWM",
+        "description": "北海道の上に都道府県を高く積み上げよう！</p><p>記録が400kmを超えると裏モードが…<br>ブログ記事は<a href=\"http://ocumcr.blog66.fc2.com/blog-entry-159.html\" target=\"_blank\">こちら</a>。"
+    },
+    {
+        "title": "ブロック崩し",
+        "author": "unKnown",
+        "year": "2017",
+        "imagePath": "image/games/blockkuzusi.png",
+        "gamePath": "https://drive.google.com/open?id=0B3bkMiN1is2VYXRmZGd5cXRXaTg",
+        "description": "ブロック崩しゲームです。<br>ボールがある回数跳ね返るごとにブロックが迫ってきます。<br>ブロックを崩すとボールのライフが回復します。<br>ブログ記事は<a href=\"http://ocumcr.blog66.fc2.com/blog-entry-160.html\" target=\"_blank\">こちら</a>。"
+    },
+    {
+        "title": "ボンバークラッシュ！！",
+        "author": "つりがね",
+        "year": "2017",
+        "imagePath": "image/games/bonber.jpg",
+        "gamePath": "https://drive.google.com/open?id=0B3bkMiN1is2VYzhBX29ZZGdOeVE",
+        "description": "<p>落ち物パズルです。</p><p>同じ色を４つ並べると消えます。</p><p>爆弾は消えるときに周囲を巻き込みます。</p>"
+    },
+    {
+        "title": "the breaker",
+        "author": "つりがね",
+        "year": "2016",
+        "imagePath": "image/games/breaker.bmp",
+        "gamePath": "https://drive.google.com/open?id=0B3bkMiN1is2VVlZnbTNKY2hoenc",
+        "description": "<p>横スクロールアクションです。</p><p>敵やブロックを破壊しながら、ゴールを目指そう！<br>ブログ記事は<a href=\"http://ocumcr.blog66.fc2.com/blog-entry-153.html\" target=\"_blank\">こちら</a>。</p>"
+    },
+    {
+        "title": "音ゲー",
+        "author": "zank",
+        "year": "2016",
+        "imagePath": "image/games/otoge-.png",
+        "gamePath": "https://drive.google.com/open?id=0B3bkMiN1is2VbXQyMWJ6Y01sSzA",
+        "description": "<p>曲に合わせて降ってくるものを消していくリズムゲームです。</p><p>曲の数は少ないです。<br>ブログ記事は<a href=\"http://ocumcr.blog66.fc2.com/blog-entry-153.html#more\" target=\"_blank\">こちら</a>。</p>"
+    },
+    {
+        "title": "リバーシ",
+        "author": "Hs",
+        "year": "2016",
+        "imagePath": "image/games/reversi.png",
+        "gamePath": "http://ocumcr.html.xdomain.jp/work/reversi/index.html",
+        "description": "<p>よくあるリバーシです。</p><p>ひとりでも遊べますしふたりでの対戦では、普通のマス目の数（8×8）に加えて四倍のマス目(16×16)でもプレイできます。</p>"
+    },
+    {
+        "title": "数〇しませんか",
+        "author": "箱根",
+        "year": "2015",
+        "imagePath": "image/games/sudoku.png",
+        "gamePath": "https://drive.google.com/open?id=0B3bkMiN1is2VcDBuNEFiN0hMNTA&authuser=0",
+        "description": "<p>たて・よこ・９つの四角にそれぞれ１～９をひとつずつ入れるパズルです。</p><p>自信があればいきなり上を狙ってもいいかも…？<br />ブログ記事は<a href=\"http://ocumcr.blog66.fc2.com/blog-entry-147.html\" target=\"_blank\">こちら</a>。</p>"
+    },
+    {
+        "title": "元素クリッカー",
+        "author": "MUR",
+        "year": "2015",
+        "imagePath": "image/games/genso.png",
+        "gamePath": "https://drive.google.com/open?id=0B3bkMiN1is2VcDBuNEFiN0hMNTA&authuser=0",
+        "description": "<p>10秒間でクリックした回数に対応した原子番号の元素を表示します。</p><p>118回以上で新記録を出すと・・・？</p>"
+    },
+    {
+        "title": "Simplified",
+        "author": "murphilion",
+        "year": "2015",
+        "imagePath": "image/games/simplified.jpg",
+        "gamePath": "https://drive.google.com/open?id=0B3bkMiN1is2VcDBuNEFiN0hMNTA&authuser=0",
+        "description": "<p>ブロック崩しのゲームを作ってみました。</p><p>全6面のシンプルな構成でブロックを崩すだけ。<br />ブログ記事は<a href=\"http://ocumcr.blog66.fc2.com/blog-entry-146.html\" target=\"_blank\">こちら</a>。</p>"
+    },
+    {
+        "title": "spacefitghters",
+        "author": "つりがね",
+        "year": "2015",
+        "imagePath": "image/games/spacefighters.png",
+        "gamePath": "https://drive.google.com/open?id=0B3bkMiN1is2VcDBuNEFiN0hMNTA&authuser=0",
+        "description": "<p>シューティングゲームです。３種類の攻撃で敵を破壊してください。</p><p>ボスを倒せばステージクリア。全３ステージです。</p><p>ハイスコアを出すと名前が記録されます<br />ブログ記事は<a href=\"http://ocumcr.blog66.fc2.com/blog-entry-145.html\" target=\"_blank\">こちら</a>。</p>"
+    },
+    {
+        "title": "もこたたき",
+        "author": "銅銭 　　　　姉帯さんのお婿",
+        "year": "2014",
+        "imagePath": "image/games/mokotataki.png",
+        "gamePath": "https://drive.google.com/open?id=0B3bkMiN1is2VcDBuNEFiN0hMNTA&authuser=0",
+        "description": "<p>もぐらたたき風タイピングゲームです。</p><p>次々と出てくるアルファベットを正確に早くタイピングしましょう。</p><p>「もこた」というMCRのマスコットキャラがボイスありで登場します。「もこた」は瞬間移動します。</p>"
+    },
+    {
+        "title": "マインスイーパー",
+        "author": "白雪",
+        "year": "2014",
+        "imagePath": "image/games/minesweeper.png",
+        "gamePath": "https://drive.google.com/open?id=0B3bkMiN1is2VcDBuNEFiN0hMNTA&authuser=0",
+        "description": "<p>よくあるマインスイーパーです。</p><p>爆弾以外のボタンをすべてクリックで消しましょう。ctrlキーを押しながらクリックで旗を立てれます。</p>"
+    },
+    {
+        "title": "はじっこまで行け",
+        "author": "N.T.",
+        "year": "2014",
+        "imagePath": "image/games/hazikko.png",
+        "gamePath": "https://drive.google.com/open?id=0B3bkMiN1is2VcDBuNEFiN0hMNTA&authuser=0",
+        "description": "<p>通称「hazikko」は横スクロールアクションゲームです。主人公を操作して「hazikko」まで移動させたらクリアです。</p><p>主人公は精神的に弱いところがあるので、敵の攻撃を受けると家まで帰ってしまいます。</p><p>皆さんの力で彼を外に出しましょう。</p>"
+    },
+    {
+        "title": "Lycoris Flight",
+        "author": "sakana",
+        "year": "2015",
+        "imagePath": "image/games/typing2.png",
+        "gamePath": "http://ocumcr.html.xdomain.jp/work/typing/typing.html",
+        "description": "<p>ちょっと変わったタイピングゲーム。画面に表示される単語をタイプすると、ほうきに乗った魔女が空を飛びます。落ちないように素早く打ちましょう。</p><p>Win98時代にNECのPCに入っていたタイピングソフト「Magic Flight」を意識して制作しました。</p>"
+    },
+    {
+        "title": "STEP TO THE SKY",
+        "author": "T.S.",
+        "year": "2013",
+        "imagePath": "image/games/steptothesky2.png",
+        "gamePath": "https://drive.google.com/open?id=0B7KNLNONNUmtcVB3ZXVLblU1bHM",
+        "description": "<p>誘導パズルゲーム。落ちてくるブロックで足場をつくり、星形のキャラをゴールへ導いてください。</p><p>10のステージがあり、後のステージほど柔軟な思考力が必要になります。キャラの動きやブロックの特性をうまく利用しましょう。</p><small>一部の環境においてゲームの動作が重くなる現象が確認されています。原因が分からないため修正できておりません。あらかじめご了承ください。</small>"
+    },
+    {
+        "title": "ブロック崩し",
+        "author": "T.O.",
+        "year": "2013",
+        "imagePath": "image/games/blockbreak2.png",
+        "gamePath": "https://drive.google.com/open?id=0B3bkMiN1is2VcDBuNEFiN0hMNTA&authuser=0",
+        "description": "<p>下にあるバーを左右に動かして球を打ち返し、ブロックを壊していくゲームです。全てのブロックが壊れたらステージクリア。</p><p>ブロックを壊すと時々アイテムが落ちてきたり、バーのちょうど真ん中に球が当たると球の威力が強くなったります。</p>"
+    },
+    {
+        "title": "イライラ棒",
+        "author": "T.N.",
+        "year": "2013",
+        "imagePath": "image/games/iraira2.png",
+        "gamePath": "https://drive.google.com/open?id=0B3bkMiN1is2VcDBuNEFiN0hMNTA&authuser=0",
+        "description": "<p>マウスカーソルを壁に当たらないように気を付けながらゴールまで運ぶゲームです。</p><p>はじめにステージを選べます。stage1が一番簡単ですが、それでも最後の細い道は難関。stage2と3では動く壁にイライラ…。</p>"
+    },
+    {
+        "title": "シューティング",
+        "author": "R.K.",
+        "year": "2015",
+        "imagePath": "image/games/shooting2.png",
+        "gamePath": "https://drive.google.com/open?id=0B3bkMiN1is2VcDBuNEFiN0hMNTA&authuser=0",
+        "description": "<p>弾丸を飛ばして敵機を撃ち落とすゲーム。敵の攻撃を受けるとＨＰが減り、ＨＰが全てなくなるとゲームオーバーです。</p><p>2015年銀杏祭に合わせてバージョンアップ、新たな敵も登場。<br />ブログ記事は<a href=\"http://ocumcr.blog66.fc2.com/blog-entry-125.html\" target=\"_blank\">こちら</a>。</p>"
+    },
+    {
+        "title": "テトリス",
+        "author": "K.K. & M.S.",
+        "year": "2013",
+        "imagePath": "image/games/tetris2.png",
+        "gamePath": "https://drive.google.com/open?id=0B3bkMiN1is2VcDBuNEFiN0hMNTA&authuser=0",
+        "description": "<p>上から落ちてくるブロックをうまく積んで、一列揃えて消すゲーム。ブロックの回転はスペースキー、ホールドはシフトキー、ポーズはエスケープキーで行えます。</p>"
+    }
+]

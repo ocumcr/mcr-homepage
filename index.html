@@ -9,6 +9,7 @@
         <link rel="shortcut icon" href="image/favicon.ico" />
 
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="pages/fadein.css" />
         <script src="js/loadContent.js"></script>
         <script src="js/readCSV.js"></script>
         <script src="js/writememberData.js"></script>
@@ -24,22 +25,41 @@
     <body>
         <!--
 
-     -BBBB       BBBB            +zBBB<.     =zsBBDz<'
-     -DDDD'     (DDDD         ~BDDhDDDD(     DDDDDDDBBB'
-     (hhhhD     Dhhhh~      DDDhh'    '      hDh    zhhD
-     (h=hhD     hh<hh-      DDhh<            hhh    -Dhh'
-     =h=~hh'   <h<-hh<     hDhh              hhh    'hhD.
-     hD= zh=  .Bh.-Dh(     DhhD              hhh    DDhh
-     hh( 'hD< zhh -hh=     DhhD              hhhBBBDhh(
-    -Dh(  hD= DDh -hh=     hhhh              hhhhDhDhz-
-    -Dh(  hhD'Dh(  Dhh     DhhD              hhh  -shDD.
-    ~DD-  hhD~Dh.  DhD     hhhD              hhh    hhD+
-    (hD-  'hhDDh   zhD'    .hhhD=            hhh    zhhD
-    =Dh    hhhh<   =hh-     +hhhDBh<<+h      hhh    (hhD
-    =DD    hhhh-   =hD-     .=hhDBBBBBB      hhh    'hhh'
-    Dhh    ~((-    ~hD(         '+=hs='      hhh   . ~hhh.
+             -BBBB       BBBB            +zBBB<.     =zsBBDz<'
+             -DDDD'     (DDDD         ~BDDhDDDD(     DDDDDDDBBB'
+             (hhhhD     Dhhhh~      DDDhh'    '      hDh    zhhD
+             (h=hhD     hh<hh-      DDhh<            hhh    -Dhh'
+             =h=~hh'   <h<-hh<     hDhh              hhh    'hhD.
+             hD= zh=  .Bh.-Dh(     DhhD              hhh    DDhh
+             hh( 'hD< zhh -hh=     DhhD              hhhBBBDhh(
+            -Dh(  hD= DDh -hh=     hhhh              hhhhDhDhz-
+            -Dh(  hhD'Dh(  Dhh     DhhD              hhh  -shDD.
+            ~DD-  hhD~Dh.  DhD     hhhD              hhh    hhD+
+            (hD-  'hhDDh   zhD'    .hhhD=            hhh    zhhD
+            =Dh    hhhh<   =hh-     +hhhDBh<<+h      hhh    (hhD
+            =DD    hhhh-   =hD-     .=hhDBBBBBB      hhh    'hhh'
+            Dhh    ~((-    ~hD(         '+=hs='      hhh   . ~hhh.
 
         -->
+
+        <!-- 最初のアニメーション用の -->
+        <div id="animation-overlay">
+            <div class="line"></div>
+        </div>
+
+        <script>
+            // アニメーション終了後に白色が広がり、コンテンツを表示する
+            document.addEventListener("DOMContentLoaded", () => {
+                const overlay = document.getElementById("animation-overlay")
+                const content = document.getElementById("container")
+
+                // 白色が広がりきったらコンテンツを表示してオーバーレイを非表示
+                overlay.addEventListener("animationend", () => {
+                    content.style.display = "block"
+                    overlay.style.animation = "fadeOut 1s forwards"
+                })
+            })
+        </script>
 
         <div id="container">
             <!-- 左側ここから -->
@@ -89,7 +109,7 @@
             <!-- 右側ここから -->
             <div id="contentsRight">
                 <!-- ここに要素が入る -->
-                にゃーん
+                にゃーん(えらー)
             </div>
             <!-- 右側ここまで -->
 

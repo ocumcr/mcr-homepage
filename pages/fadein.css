@@ -1,0 +1,52 @@
+/* アニメーションオーバーレイ */
+#animation-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #94c286; /* 緑の背景色 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    animation: lineMove 2s forwards;
+}
+
+/* 横線が横切るアニメーション */
+@keyframes lineMove {
+    0% {
+        height: 2px;
+        transform: translate(-100%);
+    }
+    50% {
+        height: 2px;
+        transform: translate(0);
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+/* overlayをフェードアウトさせる */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+/* メインコンテンツの初期状態を隠す */
+#container {
+    display: none;
+}

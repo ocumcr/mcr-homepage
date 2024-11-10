@@ -1,12 +1,5 @@
 // urlの変更が発生した時に、#topとかを見て正しいページを表示させる
-const loadPage = (event) => {
-    event.preventDefault()
-
-    // #なんとか
-    const pageId = location.hash
-
-    if (pageId.includes("/")) return
-
+const loadPage = (pageId) => {
     loadContent(
         "pages/" +
             {
@@ -16,9 +9,25 @@ const loadPage = (event) => {
                 "#member": "member.html",
                 "#computer": "computer.html",
                 "#link": "link.html",
+                "#help": "help.html",
             }[pageId],
     )
 }
 
-window.addEventListener("popstate", loadPage)
-window.addEventListener("load", loadPage)
+window.addEventListener("popstate", (event) => {
+    event.preventDefault()
+
+    // #なんとか
+    const pageId = location.hash
+
+    if (pageId.includes("/")) return
+    loadPage(pageId)
+})
+
+window.addEventListener("load", (event) => {
+    event.preventDefault()
+
+    loadPage(location.hash.split("/")[0])
+})
+
+if (location.hash == "") location.href += "#top"

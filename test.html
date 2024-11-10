@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>モーダルウィンドウの例</title>
+        <style>
+            /* 初期スタイル */
+            body {
+                font-family: Arial, sans-serif;
+            }
+
+            /* モーダルウィンドウの背景（非表示時はdisplay: noneで隠す） */
+            .modal {
+                display: none; /* 初期状態は非表示 */
+                position: fixed;
+                z-index: 1000;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5); /* 背景を半透明に */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            /* モーダルコンテンツのスタイル */
+            .modal-content {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                width: 80%;
+                max-width: 500px;
+                position: relative;
+            }
+
+            /* 閉じるボタン */
+            .close {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                font-size: 24px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- モーダルを開くボタン -->
+        <button id="open-modal-btn">モーダルを開く</button>
+
+        <!-- モーダルウィンドウ -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>モーダルウィンドウ</h2>
+                <p>これはモーダルウィンドウの内容です。</p>
+            </div>
+        </div>
+
+        <script>
+            // 要素の取得
+            const modal = document.getElementById("modal")
+            const openModalBtn = document.getElementById("open-modal-btn")
+            const closeModalBtn = document.querySelector(".close")
+
+            // モーダルを開く
+            openModalBtn.addEventListener("click", () => {
+                modal.style.display = "flex" // モーダルを表示
+            })
+
+            // モーダルを閉じる
+            closeModalBtn.addEventListener("click", () => {
+                modal.style.display = "none" // モーダルを非表示
+            })
+
+            // モーダルの外側をクリックしても閉じる
+            window.addEventListener("click", (event) => {
+                if (event.target === modal) {
+                    modal.style.display = "none"
+                }
+            })
+        </script>
+    </body>
+</html>
