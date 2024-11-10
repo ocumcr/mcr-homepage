@@ -5,27 +5,36 @@ const writeMemberData = async (grade) => {
           <caption>
           ${grade}回生
           </caption>
-          <colgroup class="name"></colgroup>
-          <colgroup class="course"></colgroup>
-          <colgroup class="detail"></colgroup>
           <tbody id="student-${grade}"></tbody>
       </table>
     `
 
     const student = document.getElementById(`student-${grade}`)
 
-    const members = await safeLoadCsvAsObjects(`memberdata/student-${grade}.csv`)
+    // 現在の1年生が何期生か?
+    const currentGrade1 = getFiscalYear() - 2021
+
+    const members = await safeLoadCsvAsObjects(`memberdata/student-${currentGrade1 - grade + 1}.csv`)
 
     members.forEach((member) => {
         student.innerHTML += `
-              <tr>
-                  <th>${member.name}</th>
-                  <td>${member.course}</td>
-                  <td>
-                      趣味: ${member.hobby}<br>
-                      一言: ${member.comment}
-                  </td>
-              </tr>
-            `
+            <tr>
+                <th class="name">${member.name}</th>
+                <td class="course">${member.course}</td>
+                <td class="detail">
+                    趣味: ${member.hobby}<br>
+                    一言: ${member.comment}
+                </td>
+            </tr>
+        `
     })
+}
+
+const getFiscalYear = () => {
+    const today = new Date()
+    const year = today.getFullYear()
+    const month = today.getMonth() + 1 // getMonth() は 0 から 11 の範囲なので +1
+
+    // 日本の年度（4月〜翌年3月）
+    return month >= 4 ? year : year - 1
 }

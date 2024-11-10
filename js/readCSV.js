@@ -1,6 +1,9 @@
 // urlを受け取ってcsvファイルをobjectにする
 const loadCsvAsObjects = async (url) => {
-    const response = await fetch(url)
+    const response = await fetch(url, {
+        cache: "no-store",
+    })
+
     const csvText = await response.text()
 
     const lines = csvText.split("\n")

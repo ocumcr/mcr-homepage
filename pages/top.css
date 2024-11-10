@@ -18,3 +18,23 @@
     width: 330px;
     float: left;
 }
+
+@media screen and (max-width: 480px) {
+    #topics {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #twitterBox {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        float: none;
+        clear: both;
+    }
+
+    .slideshow-container {
+        width: 80vw;
+        height: auto;
+    }
+}

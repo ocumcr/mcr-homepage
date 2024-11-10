@@ -1,8 +1,7 @@
-table.introTable {
+.introTable {
     width: 100%;
     margin-bottom: 30px;
     border: none;
-    word-break: break-all;
 }
 
 .introTable caption {
@@ -20,9 +19,9 @@ table.introTable {
 }
 
 .name {
-    width: 8em;
+    width: 20%;
 }
 
-.course {
-    width: 10em;
+.detail {
+    width: 60%;
 }

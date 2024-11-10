@@ -19,8 +19,12 @@
     <!-- その他は今のところ手動追加 -->
     <h3>Other</h3>
     <div id="other">
-        <button class="imageFrame" onclick="openWebPageModal()">
+        <button class="imageFrame" onclick="openSpecialModal('work-webpage')">
             <img src="image/games/mcrwebpage.png" alt="webpage" />
+        </button>
+
+        <button class="imageFrame" onclick="openSpecialModal('work-launcher')">
+            <img src="image/games/launcher.png" alt="launcher" />
         </button>
     </div>
 </div>
@@ -31,103 +35,45 @@
 </div>
 
 <script>
-    // ゲーム専用
-    function openGameModal(i) {
-        const gamedata = games[i]
-
-        openModal(
-            `
-            <h3>${gamedata.title}</h3>
-            <div class="game-description">
-                <div class="imageFrame2">
-                    <img src="${gamedata.imagePath}" alt="${gamedata.title}">
-                </div>
-                <div class="game-text">
-                    制作者: ${gamedata.author}<br />
-                    制作年: ${gamedata.year}<br />
-                    <br />
-                    <a href="${gamedata.gamePath}" target="_blank" class="download-button">
-                    あそぶ!
-                    </a><br /><br />
-                    ${gamedata.description}
-                </div>
-            </div>
-            `,
-        )
-    }
-
-    // モーダルウィンドウを開く
-    function openModal(html) {
-        const modal = document.getElementById("modal")
-        const modalContent = document.getElementById("modal-content")
-
-        modalContent.innerHTML =
-            `
-                <span class="close">&times;</span>
-            ` + html
-
-        modal.style.display = "flex" // モーダルを表示
-
-        const closeModalBtn = document.querySelector(".close")
-        // モーダルを閉じる
-        closeModalBtn.addEventListener("click", () => {
-            modal.style.display = "none" // モーダルを非表示
-        })
-    }
-
-    // まじでvarを使う時が来るとは思わなかったにゃ...
-    // ページが読み込まれるたびに再宣言されるせい
-    // 何とかしないとにゃー
-    var games
-
-    // ゲームを自動追加
-    async function setModal(params) {
-        const response = await fetch("gamedata.json")
-        games = await response.json()
-
-        games.forEach((gamedata, i) => {
-            document.getElementById("games").innerHTML += `
-                <button class="imageFrame" onclick="openGameModal(${i})">
-                    <img src="${gamedata.imagePath}" alt="${gamedata.title}">
-                </button>
-            `
-        })
-
-        const modal = document.getElementById("modal")
-        modal.style.display = "none"
-
-        // モーダルの外側をクリックしても閉じる
-        window.addEventListener("click", (event) => {
-            if (event.target === modal) {
-                modal.style.display = "none"
-            }
-        })
-    }
-
+    // indexの方で読んでるはず
     setModal()
-
-    // otherのmodal専用の関数
-    // 流石に何とか抽象化しないとだにゃー
-    function openWebPageModal() {
-        openModal(`
-            <h3>MCR Home Page</h3>
-            <div class="game-description">
-                <div class="imageFrame2">
-                    <img src="image/games/mcrwebpage.png" alt="webpage">
-                </div>
-                <div class="game-text">
-                    制作者: sakana<br />
-                    制作年: 2013<br />
-                    <br />
-                    <p>多分5年ぶりの更新</p>
-                    <p>疲れたにゃー</p>
-                    <p>
-                        度々増築したり、イベントに合わせて特別バージョンになったりしてたみたいだにゃー<br />
-                        頑張ってみるかにゃー<br />
-                        いぽた
-                    </p>
-                </div>
-            </div>
-        `)
-    }
 </script>
+
+<!-- 手動追加の文をここに置いておく -->
+<!-- 割とごり押しなので何とかした方が良いかも -->
+<div id="work-webpage" style="display: none">
+    <h3>MCR Home Page</h3>
+    <div class="game-description">
+        <div class="imageFrame2">
+            <img src="image/games/mcrwebpage.png" alt="webpage" />
+        </div>
+        <div class="game-text">
+            制作者: sakana<br />
+            制作年: 2013<br />
+            <br />
+            <p>多分5年ぶりの更新</p>
+            <p>疲れたにゃー</p>
+            <p>
+                度々増築したり、イベントに合わせて特別バージョンになったりしてたみたいだにゃー<br />
+                頑張ってみるかにゃー<br />
+                いぽた
+            </p>
+        </div>
+    </div>
+</div>
+
+<div id="work-launcher" style="display: none">
+    <h3>MCR Game Launcher</h3>
+    <div class="game-description">
+        <div class="imageFrame2">
+            <img src="image/games/launcher.png" alt="launcher" />
+        </div>
+        <div class="game-text">
+            制作者: いぽた<br />
+            制作年: 2024<br />
+            <br />
+            <p>学祭で使っているゲームランチャー</p>
+            <p>いろいろ便利機能があったり</p>
+        </div>
+    </div>
+</div>

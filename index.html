@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
+        <!-- 編集用にキャッシュを無効 -->
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+
         <title>M.C.R. -大阪公立大学パソコンサークル-</title>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+
         <meta name="description" content="大阪公立大学マイコン研究会（通称ＭＣＲ）の公式ホームページです。" />
         <meta name="keywords" content="大阪公立大学 マイコン研究会 マイコン MCR omumcr コンピューター コンピュータ" />
-        <meta http-equiv="Cache-Control" content="no-store" />
-        <link rel="shortcut icon" href="image/favicon.ico" />
+
+        <!-- アイコン -->
+        <link rel="shortcut icon" href="image/favicon.png" />
 
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="pages/fadein.css" />
         <script src="js/loadContent.js"></script>
         <script src="js/readCSV.js"></script>
-        <script src="js/writememberData.js"></script>
+        <script src="js/writeMemberData.js"></script>
         <script src="js/slideshow.js"></script>
+        <script src="js/setWorkPage.js"></script>
 
         <!-- google fontのRaleway -->
         <link
@@ -62,46 +70,55 @@
         </script>
 
         <div id="container">
+            <!-- スマホ用メニュー -->
+            <header class="header">
+                <div class="navtext-container">
+                    <div class="navtext"></div>
+                </div>
+                <input type="checkbox" class="menu-btn" id="menu-btn" />
+                <label for="menu-btn" class="menu-icon"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a class="icon-top" href="#top">Top</a></li>
+                    <li><a class="icon-info" href="#info">Info</a></li>
+                    <li><a class="icon-work" href="#work">Works</a></li>
+                    <li><a class="icon-member" href="#member">Members</a></li>
+                    <li><a class="icon-computer" href="#computer"> Computers </a></li>
+                    <li><a class="icon-link" href="#link">Links</a></li>
+                </ul>
+            </header>
+
             <!-- 左側ここから -->
             <div id="contentsLeft">
-                <a class="navi-link" id="title" href="#top">
+                <a class="" id="title" href="#top">
                     <div id="mcr">MCR</div>
                     <br />
                     大阪公立大学<br />
                     マイコン研究会
                 </a>
                 <!--メニューここから-->
+                <!-- PC用メニュー -->
                 <div id="globalnavi">
                     <ul id="mainMenu">
-                        <li>
-                            <a class="icon-info navi-link" href="#info">Info</a>
-                        </li>
-                        <li>
-                            <a class="icon-work navi-link" href="#work">Works</a>
-                        </li>
-                        <li>
-                            <a class="icon-member navi-link" href="#member">Members</a>
-                        </li>
-                        <li>
-                            <a class="icon-computer navi-link" href="#computer"> Computers </a>
-                        </li>
-                        <li>
-                            <a class="icon-link navi-link" href="#link">Links</a>
-                        </li>
+                        <li><a class="icon-info" href="#info">Info</a></li>
+                        <li><a class="icon-work" href="#work">Works</a></li>
+                        <li><a class="icon-member" href="#member">Members</a></li>
+                        <li><a class="icon-computer" href="#computer"> Computers </a></li>
+                        <li><a class="icon-link" href="#link">Links</a></li>
                     </ul>
 
                     <ul id="subMenu">
                         <li>
-                            <a href="https://ocumcr.hatenablog.com/" target=""><i class="icon-blog"></i>Blog</a>
+                            <a href="https://ocumcr.hatenablog.com/" target="_blank"><i class="icon-blog"></i>Blog</a>
                         </li>
                         <li>
-                            <a href="https://x.com/ocu_mcr" target="_balank"><i class="icon-twitter"></i>X</a>
+                            <a href="https://x.com/ocu_mcr" target="_blank"><i class="icon-twitter"></i>X</a>
                         </li>
                         <li>
                             <a href="mailto:ocumcr2014@gmail.com"><i class="icon-mail"></i>Mail</a>
                         </li>
                     </ul>
                 </div>
+
                 <!--メニューここまで-->
             </div>
             <!-- 左側ここまで -->

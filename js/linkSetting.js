@@ -12,6 +12,8 @@ const loadPage = (pageId) => {
                 "#help": "help.html",
             }[pageId],
     )
+
+    document.getElementById("menu-btn").checked = false
 }
 
 window.addEventListener("popstate", (event) => {

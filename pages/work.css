@@ -55,7 +55,8 @@ button.imageFrame {
     line-height: 1.5em;
 }
 
-#games {
+#games,
+#other {
     text-align: center;
 }
 
@@ -105,4 +106,14 @@ button.imageFrame {
 
 .download-button:hover {
     background-color: #43862f;
+}
+
+@media screen and (max-width: 480px) {
+    .imageFrame2 {
+        display: none;
+    }
+
+    .imageFrame {
+        width: 48%;
+    }
 }

@@ -4,7 +4,7 @@
 const loadContent = (page) => {
     if (page == null) return
 
-    fetch(page)
+    fetch(page, { cache: "no-store" })
         .then((response) => response.text())
         .then((data) => {
             insertHTML(data)
