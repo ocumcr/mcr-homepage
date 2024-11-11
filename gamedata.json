@@ -1,5 +1,13 @@
 [
     {
+        "title": "Pentamond",
+        "author": "うめぼし",
+        "year": "2024",
+        "imagePath": "image/games/pentamond.png",
+        "gamePath": "https://kishunankoubai.github.io/pentamond/",
+        "description": "<p>ブロックが三角形の落ち物ゲームです。<br>難しめですがパズルが好きな人はハマれると思います。</p>"
+    },
+    {
         "title": "20歳になる前に",
         "author": "いぽた",
         "year": "2024",
