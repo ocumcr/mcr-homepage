@@ -45,7 +45,16 @@
     <a class="twitter-timeline" href="https://twitter.com/ocu_mcr?ref_src=twsrc%5Etfw" data-height="400px">
         Tweets by MCR
     </a>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script>
+        // ページ読み込み後、2秒遅らせてTwitterウィジェットスクリプトを読み込む
+        setTimeout(function () {
+            const script = document.createElement("script")
+            script.src = "https://platform.twitter.com/widgets.js"
+            script.async = true
+            script.charset = "utf-8"
+            document.getElementById("twitter-box").appendChild(script)
+        }, 600) // 2000ミリ秒（2秒）遅延
+    </script>
 </div>
 
 <script>
