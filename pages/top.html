@@ -46,14 +46,14 @@
         Tweets by MCR
     </a>
     <script>
-        // ページ読み込み後、2秒遅らせてTwitterウィジェットスクリプトを読み込む
-        setTimeout(function () {
+        // ページ読み込み後、遅らせてTwitterウィジェットスクリプトを読み込む
+        setTimeout(() => {
             const script = document.createElement("script")
             script.src = "https://platform.twitter.com/widgets.js"
             script.async = true
             script.charset = "utf-8"
             document.getElementById("twitter-box").appendChild(script)
-        }, 600) // 2000ミリ秒（2秒）遅延
+        }, 600)
     </script>
 </div>
 
