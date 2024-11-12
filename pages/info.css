@@ -50,11 +50,6 @@ th {
     width: 120px;
 }
 
-/* 内容だけ */
-.annual-table td:nth-child(odd) {
-    padding-left: 20px;
-}
-
 .google-map {
     width: 100%;
     aspect-ratio: 1;
@@ -76,10 +71,5 @@ th {
     /* 月だけ */
     .annual-table td:nth-child(even) {
         border: none;
-    }
-
-    /* 内容だけ */
-    .annual-table td:nth-child(odd) {
-        padding-left: auto;
     }
 }

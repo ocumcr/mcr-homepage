@@ -5,10 +5,10 @@
         <meta http-equiv="Pragma" content="no-cache" />
         <meta http-equiv="Cache-Control" content="no-cache" />
 
-        <title>M.C.R. -大阪公立大学パソコンサークル-</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
 
+        <title>M.C.R. -大阪公立大学パソコンサークル-</title>
         <meta name="description" content="大阪公立大学マイコン研究会（通称ＭＣＲ）の公式ホームページです。" />
         <meta name="keywords" content="大阪公立大学 マイコン研究会 マイコン MCR omumcr コンピューター コンピュータ" />
 
@@ -63,7 +63,7 @@
 
         <!-- 最初のアニメーション用の -->
         <div id="animation-overlay">
-            <div class="line"></div>
+            <span class="line"></span>
         </div>
 
         <script>
@@ -84,11 +84,14 @@
             <!-- スマホ用メニュー -->
             <header class="header">
                 <div class="navtext-container">
-                    <div class="navtext"></div>
+                    <div class="navtext">
+                        <!-- タイトル入れようかと思ったけどやめた -->
+                    </div>
                 </div>
+                <!-- checkbox::checkedで強引に -->
                 <input type="checkbox" class="menu-btn" id="menu-btn" />
                 <label for="menu-btn" class="menu-icon"><span class="navicon"></span></label>
-                <ul class="menu">
+                <menu class="menu">
                     <li><a class="icon-top" href="#top">Top</a></li>
                     <li><a class="icon-info" href="#info">Info</a></li>
                     <li><a class="icon-work" href="#work">Works</a></li>
@@ -96,7 +99,18 @@
                     <li><a class="icon-computer" href="#computer"> Computers </a></li>
                     <li><a class="icon-link" href="#link">Links</a></li>
                     <li><a class="icon-diary" href="#diary">Diary</a></li>
-                </ul>
+                    <br />
+                    <br />
+                    <li>
+                        <a href="https://ocumcr.hatenablog.com/" target="_blank" class="icon-blog">Blog</a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/ocu_mcr" target="_blank" class="icon-twitter">X</a>
+                    </li>
+                    <li>
+                        <a href="mailto:ocumcr2014@gmail.com" class="icon-mail">Mail</a>
+                    </li>
+                </menu>
             </header>
 
             <!-- 左側ここから -->
@@ -110,26 +124,26 @@
                 <!--メニューここから-->
                 <!-- PC用メニュー -->
                 <div id="globalnavi">
-                    <ul id="mainMenu">
+                    <menu id="mainMenu">
                         <li><a class="icon-info" href="#info">Info</a></li>
                         <li><a class="icon-work" href="#work">Works</a></li>
                         <li><a class="icon-member" href="#member">Members</a></li>
                         <li><a class="icon-computer" href="#computer"> Computers </a></li>
                         <li><a class="icon-link" href="#link">Links</a></li>
                         <li><a class="icon-diary" href="#diary">Diary</a></li>
-                    </ul>
+                    </menu>
 
-                    <ul id="subMenu">
+                    <menu id="subMenu">
                         <li>
-                            <a href="https://ocumcr.hatenablog.com/" target="_blank"><i class="icon-blog"></i>Blog</a>
+                            <a href="https://ocumcr.hatenablog.com/" target="_blank" class="icon-blog">Blog</a>
                         </li>
                         <li>
-                            <a href="https://x.com/ocu_mcr" target="_blank"><i class="icon-twitter"></i>X</a>
+                            <a href="https://x.com/ocu_mcr" target="_blank" class="icon-twitter">X</a>
                         </li>
                         <li>
-                            <a href="mailto:ocumcr2014@gmail.com"><i class="icon-mail"></i>Mail</a>
+                            <a href="mailto:ocumcr2014@gmail.com" class="icon-mail">Mail</a>
                         </li>
-                    </ul>
+                    </menu>
                 </div>
 
                 <!--メニューここまで-->

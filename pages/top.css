@@ -25,16 +25,11 @@
         margin: 0;
         padding: 0;
     }
-    #twitterBox {
+    #twitter-box {
         width: 100%;
         padding: 0;
-        margin: 0;
+        margin: auto;
         float: none;
         clear: both;
-    }
-
-    .slideshow-container {
-        width: 80vw;
-        height: auto;
     }
 }
