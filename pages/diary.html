@@ -3,60 +3,67 @@
 <section>
     <h3>2024/11/11</h3>
     <p>ホームページ移植完了<br />割ときつかったにゃー</p>
+</section>
 
+<section>
     <h3>2024/11/15</h3>
     <p>数式を表示できるようにしたにゃ! てすと↓</p>
-    <p>
-        <la-tex>(X,\mathscr{O}):位相空間</la-tex><br />
-        <la-tex>S \subset X</la-tex><br />
-        (1)包含写像<la-tex>i:S \rightarrow X</la-tex>が開写像<br />
-        (2)<la-tex>S</la-tex>が<la-tex>X</la-tex>の開集合
-    </p>
-    <div>
-        [Claim:(1)<la-tex>\Leftrightarrow</la-tex>(2)]
+
+    <div class="note">
+        <br /><br />
+        <tex>(X,\mathscr{O}):</tex>位相空間<br />
+        <tex>S \subset X</tex><br />
+        <tex>(S,\mathscr{O}_S):</tex>部分位相空間<br />
+        (1)包含写像<tex>i:S \rightarrow X</tex>が開写像<br />
+        (2)<tex>S</tex>が<tex>X</tex>の開集合<br />
+
+        [Claim:(1)<tex>\Leftrightarrow</tex>(2)]
         <div class="indent">
-            [<la-tex> \Rightarrow </la-tex>]
+            [<tex> \Rightarrow </tex>]
             <div class="indent">
                 (1)とする <br />
                 <br />
-                [(2):<la-tex>S \in \mathscr{O}</la-tex>]
+                [(2):<tex>S \in \mathscr{O}</tex>]
                 <div class="indent">
-                    <la-tex>S \in \mathscr{O}_S</la-tex><br />
-                    <la-tex>i</la-tex>は開写像だから<br />
-                    <la-tex>i(S) \in \mathscr{O}</la-tex><br />
+                    <tex>S \in \mathscr{O}_S</tex><br />
+                    <tex>i</tex>は開写像だから<br />
+                    <tex>i(S) \in \mathscr{O}</tex><br />
                     したがって<br />
-                    <la-tex>S \in \mathscr{O}</la-tex><br />
+                    <tex>S \in \mathscr{O}</tex><br />
                 </div>
             </div>
 
-            [<la-tex> \Leftarrow </la-tex>]
+            [<tex> \Leftarrow </tex>]
             <div class="indent">
                 (2)とする <br />
                 <br />
-                [(1):<la-tex>\forall U \in \mathscr{O}_S, i(U) \in \mathscr{O}</la-tex>]
+                [(1):<tex>\forall U \in \mathscr{O}_S, i(U) \in \mathscr{O}</tex>]
                 <div class="indent">
-                    <la-tex>U \in \mathscr{O}_S</la-tex>をとる<br />
+                    <tex>U \in \mathscr{O}_S</tex>をとる<br />
                     <br />
-                    [(1):<la-tex>i(U) \in \mathscr{O}</la-tex>]
+                    [(1):<tex>i(U) \in \mathscr{O}</tex>]
                     <div class="indent">
-                        <la-tex> U \in \mathscr{O}_S </la-tex>だから<br />
-                        <la-tex> \exists V \in \mathscr{O};U = V \cap S</la-tex><br />
-                        そのように<la-tex>V</la-tex>をとる<br />
-                        <la-tex> i(U) = i(V \cap S) = V \cap S</la-tex><br />
-                        <la-tex> V,S \in \mathscr{O}</la-tex>だから<br />
-                        <la-tex> V \cap S \in \mathscr{O}</la-tex><br />
+                        <tex> U \in \mathscr{O}_S </tex>だから<br />
+                        <tex> \exists V \in \mathscr{O};U = V \cap S</tex><br />
+                        そのように<tex>V</tex>をとる<br />
+                        <tex> i(U) = i(V \cap S) = V \cap S</tex><br />
+                        <tex> V,S \in \mathscr{O}</tex>だから<br />
+                        <tex> V \cap S \in \mathscr{O}</tex><br />
                         よって<br />
-                        <la-tex>i(U) \in \mathscr{O}</la-tex>
+                        <tex>i(U) \in \mathscr{O}</tex><br />
                     </div>
                 </div>
             </div>
         </div>
+        <br /><br />
+
+        <tex> </tex>
     </div>
 </section>
 
 <script>
     // 数式を表示するやつ
-    ;[...document.getElementsByTagName("la-tex")].forEach((element) => {
+    ;[...document.getElementsByTagName("tex")].forEach((element) => {
         const tex = element.innerHTML
 
         const mathml = TeXZilla.toMathMLString(tex)
