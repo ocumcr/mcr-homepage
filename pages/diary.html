@@ -7,8 +7,10 @@
     <h3>2024/11/15</h3>
     <p>数式を表示できるようにしたにゃ! てすと↓</p>
     <p>
+        <la-tex>(X,\mathscr{O}):位相空間</la-tex><br />
+        <la-tex>S \subset X</la-tex><br />
         (1)包含写像<la-tex>i:S \rightarrow X</la-tex>が開写像<br />
-        (2)Sが開集合
+        (2)<la-tex>S</la-tex>が<la-tex>X</la-tex>の開集合
     </p>
     <div>
         [Claim:(1)<la-tex>\Leftrightarrow</la-tex>(2)]
@@ -31,15 +33,20 @@
             <div class="indent">
                 (2)とする <br />
                 <br />
-                [(1):<la-tex>\forall U \in \mathscr{O}_S, i(S) \in \mathscr{O}</la-tex>]
+                [(1):<la-tex>\forall U \in \mathscr{O}_S, i(U) \in \mathscr{O}</la-tex>]
                 <div class="indent">
                     <la-tex>U \in \mathscr{O}_S</la-tex>をとる<br />
                     <br />
-                    [(1):<la-tex>i(S) \in \mathscr{O}</la-tex>]
+                    [(1):<la-tex>i(U) \in \mathscr{O}</la-tex>]
                     <div class="indent">
-                        <la-tex> i(S) = S \in \mathscr{O} </la-tex><br />
+                        <la-tex> U \in \mathscr{O}_S </la-tex>だから<br />
+                        <la-tex> \exists V \in \mathscr{O};U = V \cap S</la-tex><br />
+                        そのように<la-tex>V</la-tex>をとる<br />
+                        <la-tex> i(U) = i(V \cap S) = V \cap S</la-tex><br />
+                        <la-tex> V,S \in \mathscr{O}</la-tex>だから<br />
+                        <la-tex> V \cap S \in \mathscr{O}</la-tex><br />
                         よって<br />
-                        <la-tex> i(S) \in \mathscr{O} </la-tex><br />
+                        <la-tex>i(U) \in \mathscr{O}</la-tex>
                     </div>
                 </div>
             </div>
