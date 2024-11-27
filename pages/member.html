@@ -10,12 +10,5 @@
 </div>
 
 <script>
-    // 非同期処理をするために無理やりこうしてます
-    async function write() {
-        for (let i = 0; i < 4; i++) {
-            await writeMemberData(i + 1)
-        }
-    }
-
-    write()
+    writeAllMemberData()
 </script>
