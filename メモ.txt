@@ -1,2 +1,5 @@
 閲覧履歴を削除しないとcsvとかの変更が更新されないっぽいにゃー
 fetch("...",{ cache: "no-store" })で回避できるっぽいにゃー
+
+アイコン
+https://icooon-mono.com/

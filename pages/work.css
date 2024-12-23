@@ -1,18 +1,12 @@
 .imageFrame {
     width: 31%;
-    aspect-ratio: 16 / 9;
-
+    aspect-ratio: 16/9;
     overflow: hidden;
     position: relative;
-
     background-color: #eee;
-
     padding: 5px;
-
     display: inline-block;
-
     border-radius: 5px;
-
     cursor: pointer;
 }
 
@@ -80,6 +74,7 @@ button.imageFrame {
     padding: 20px;
     border-radius: 8px;
     width: 80%;
+    height: 500px;
     max-width: 1200px;
     min-height: 400px;
     position: relative;
@@ -105,6 +100,19 @@ button.imageFrame {
 
 .download-button:hover {
     background-color: #43862f;
+}
+
+.square-img {
+    aspect-ratio: 1;
+}
+
+.square-img2 {
+    height: 420px;
+    width: 420px;
+}
+
+.square-img2 img {
+    height: 100%;
 }
 
 @media screen and (max-width: 768px) {

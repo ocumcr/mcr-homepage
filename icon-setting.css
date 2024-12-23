@@ -52,3 +52,7 @@
 .icon-diary::before {
     background-image: url("image/icon/辞書アイコン1.svg");
 }
+
+.icon-music::before {
+    background-image: url("image/icon/角丸のスピーカーアイコン.svg");
+}
