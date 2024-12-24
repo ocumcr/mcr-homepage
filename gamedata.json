@@ -1,5 +1,13 @@
 [
     {
+        "title": "まいんどすいーぱー",
+        "author": "いぽた、うめぼし",
+        "year": "2024",
+        "imagePath": "image/games/mind-sweeper.png",
+        "gamePath": "https://ipotazero.github.io/mind-sweeper/",
+        "description": "<p>ひねくれ者が嫌なことを忘れるのを手伝うゲーム</p>"
+    },
+    {
         "title": "Vector Space",
         "author": "いぽた、うめぼし",
         "year": "2024",
