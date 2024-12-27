@@ -1,5 +1,13 @@
 [
     {
+        "title": "スマホの機能を試してみよう",
+        "author": "いぽた",
+        "year": "2024",
+        "imagePath": "image/games/smartphone.png",
+        "gamePath": "https://ipotazero.github.io/phone-actions/",
+        "description": "<p>そのまま</p>"
+    },
+    {
         "title": "まいんどすいーぱー",
         "author": "いぽた、うめぼし",
         "year": "2024",
