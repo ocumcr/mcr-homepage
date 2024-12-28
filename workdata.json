@@ -6,7 +6,7 @@
             "year": "2024",
             "imagePath": "image/games/vrchat.jpg",
             "description": "<p>Doll Follow Systemは、お好みのサブアバターや小物を乗せたり持ったり、アニメーションさせたりするアバターギミックです！</p><p>体験版無料です、以下のリンクからどうぞ！<br /><a href='https://hitone-gimmik.booth.pm/items/6417719'>https://hitone-gimmik.booth.pm/items/6417719</a></p>",
-            "option": ["square"]
+            "option": ["square", "big"]
         }
     ],
     "games": [

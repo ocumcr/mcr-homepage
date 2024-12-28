@@ -71,9 +71,10 @@ const setModal = async () => {
     for (const type in workData) {
         workData[type].forEach((data, index) => {
             document.getElementById(type).innerHTML += `
-            <button class="image-frame" onclick="openWorkModal(${type}, ${index})" style="${
-                data.option?.includes("square") ? "aspect-ratio: 1" : ""
-            }">
+            <button class="image-frame 
+                ${data.option?.includes("big") ? "big" : ""}
+                ${data.option?.includes("square") ? "square" : ""} 
+            " onclick="openWorkModal(${type}, ${index})">
                 <img src="${data.imagePath}" alt="thumbnail">
             </button>
           `
