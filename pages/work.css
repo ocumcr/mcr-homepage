@@ -1,42 +1,48 @@
-.imageFrame {
-    width: 31%;
-    aspect-ratio: 16/9;
-    overflow: hidden;
+/* モーダルウィンドウの背景（非表示時はdisplay: noneで隠す） */
+#modal {
+    display: none; /* 初期状態は非表示 */
+    position: fixed; /* 画面上に固定 */
+    z-index: 1000; /* 一番目に表示 */
+    left: 0;
+    top: 0;
+
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5); /* 背景を半透明に */
+}
+
+/* モーダルコンテンツのスタイル */
+#modal-content {
     position: relative;
-    background-color: #eee;
-    padding: 5px;
-    display: inline-block;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 20px;
+
+    width: 80%;
+    height: 500px;
+
+    border-radius: 8px;
+    background-color: #fff;
 }
 
-.imageFrame img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-button.imageFrame {
-    border: 0;
-}
-
-.imageFrame2 {
-    width: 600px;
-    aspect-ratio: 16 / 9;
-
-    background-color: #eee;
-
-    padding: 5px;
-
+.modal-image-frame {
     display: inline-block;
 
+    height: 400px;
+    aspect-ratio: 1;
     border-radius: 5px;
+
+    background-color: #eee;
+    border: 5px #eee solid;
 }
 
-.imageFrame2 img {
+.modal-image-frame img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .game-description {
@@ -44,48 +50,22 @@ button.imageFrame {
 }
 
 .game-text {
-    margin: 20px;
-    font-size: 1.5em;
-    line-height: 1.5em;
-}
+    height: 400px;
 
-.works {
-    text-align: center;
-}
-
-/* モーダルウィンドウの背景（非表示時はdisplay: noneで隠す） */
-#modal {
-    display: none; /* 初期状態は非表示 */
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* 背景を半透明に */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* モーダルコンテンツのスタイル */
-#modal-content {
-    background-color: #fff;
     padding: 20px;
-    border-radius: 8px;
-    width: 80%;
-    height: 500px;
-    max-width: 1200px;
-    min-height: 400px;
-    position: relative;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    overflow: auto;
 }
 
-/* 閉じるボタン */
 .close {
     position: absolute;
-    top: 10px;
+    top: 20px;
     right: 10px;
-    font-size: 24px;
+
+    font-size: 48px;
     cursor: pointer;
 }
 
@@ -102,25 +82,59 @@ button.imageFrame {
     background-color: #43862f;
 }
 
-.square-img {
-    aspect-ratio: 1;
+/* モーダルここまで */
+
+.image-frame {
+    display: inline-block;
+
+    margin: 3px 0px;
+    padding: 0;
+
+    width: 32%;
+    aspect-ratio: 16/9;
+
+    position: relative;
+
+    background-color: #eee;
+    border-radius: 5px;
+
+    border: 5px #eee solid;
+
+    cursor: pointer;
 }
 
-.square-img2 {
-    height: 420px;
-    width: 420px;
-}
-
-.square-img2 img {
+.image-frame img {
+    width: 100%;
     height: 100%;
+
+    object-fit: contain;
+}
+
+.works {
+    display: block;
+
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
-    .imageFrame2 {
-        display: none;
+    .game-description {
+        flex-direction: column;
     }
 
-    .imageFrame {
+    #modal-content {
+        height: 650px;
+    }
+
+    .modal-image-frame {
+        height: 200px;
+        /* display: none; */
+    }
+
+    .game-text {
+        height: 300px;
+    }
+
+    .image-frame {
         width: 48%;
     }
 }

@@ -11,7 +11,7 @@ body {
     font-size: 10.5pt;
     letter-spacing: 0.8pt;
 
-    padding: 0 5%;
+    padding: 0;
 }
 
 h2,
@@ -41,30 +41,29 @@ h3 {
 ----------------------------*/
 #container {
     width: 950px;
+    height:fit-content;
+
+    margin: 20px auto;
+    
     background-color: #fff;
-    margin: 10px auto 10px auto;
-    /* background: #fff; */
     background-image: url("image/noise3.png");
-    /* border-bottom: #ddd 1px solid; */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 #contentsLeft {
-    width: 130px;
+    width: 150px;
+    height:100%;
     float: left;
-    padding: 20px 0px 20px 20px;
+    padding: 20px;
 
     user-select: none;
 }
 
 #contentsRight {
-    /*position relativeするとモーダルウィンドウがずれる*/
     width: 720px;
     float: right;
-    padding-left: 10px;
-    padding-right: 40px;
-    padding-top: 20px;
-    padding-bottom: 100px;
+
+    padding:20px;
 }
 
 #footer {

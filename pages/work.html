@@ -9,34 +9,15 @@
     </p>
 </div>
 
-<div id="works">
+<div id="works-container">
     <h3>VRC</h3>
-    <div id="3d" class="works">
-        <button class="imageFrame square-img" onclick="openSpecialModal('work-vrchat-model')">
-            <img src="image/games/vrchat.jpg" alt="thumbnail" />
-        </button>
-    </div>
+    <div id="vrc" class="works"></div>
 
     <h3>Games</h3>
-    <div id="games" class="works">
-        <!-- ここにゲームが入る -->
-    </div>
+    <div id="games" class="works"></div>
 
-    <!-- その他は今のところ手動追加 -->
     <h3>Other</h3>
-    <div id="other" class="works">
-        <button class="imageFrame" onclick="openSpecialModal('work-webpage')">
-            <img src="image/games/mcrwebpage.png" alt="webpage" />
-        </button>
-
-        <button class="imageFrame" onclick="openSpecialModal('work-launcher')">
-            <img src="image/games/launcher.png" alt="launcher" />
-        </button>
-
-        <button class="imageFrame" onclick="openSpecialModal('work-music-club')">
-            <img src="image/games/music-club.png" alt="thumbnail" />
-        </button>
-    </div>
+    <div id="other" class="works"></div>
 </div>
 
 <!-- モーダルウィンドウ -->
@@ -48,80 +29,3 @@
     // indexの方で読んでるはず
     setModal()
 </script>
-
-<!-- 手動追加の文をここに置いておく -->
-<!-- 割とごり押しなので何とかした方が良いかも -->
-<div id="work-webpage" style="display: none">
-    <h3>MCR Home Page</h3>
-    <div class="game-description">
-        <div class="imageFrame2">
-            <img src="image/games/mcrwebpage.png" alt="webpage" />
-        </div>
-        <div class="game-text">
-            制作者: sakana<br />
-            制作年: 2013<br />
-            <br />
-            <p>多分5年ぶりの更新</p>
-            <p>疲れたにゃー</p>
-            <p>
-                度々増築したり、イベントに合わせて特別バージョンになったりしてたみたいだにゃー<br />
-                頑張ってみるかにゃー<br />
-                いぽた
-            </p>
-        </div>
-    </div>
-</div>
-
-<div id="work-launcher" style="display: none">
-    <h3>MCR Game Launcher</h3>
-    <div class="game-description">
-        <div class="imageFrame2">
-            <img src="image/games/launcher.png" alt="launcher" />
-        </div>
-        <div class="game-text">
-            制作者: いぽた<br />
-            制作年: 2024<br />
-            <br />
-            <p>学祭で使っているゲームランチャー</p>
-            <p>いろいろ便利機能があったり</p>
-        </div>
-    </div>
-</div>
-
-<div id="work-music-club" style="display: none">
-    <h3>MCR音楽部</h3>
-    <div class="game-description">
-        <div class="imageFrame2">
-            <img src="image/games/music-club.png" alt="thumbnail" />
-        </div>
-        <div class="game-text">
-            制作者: いぽた<br />
-            制作年: 2024<br />
-            <br />
-            音楽を聴け! <br />
-            <a href="https://ocumcr.github.io/mcr-music-club/" target="_blank">押せ!</a>
-        </div>
-    </div>
-</div>
-
-<div id="work-vrchat-model" style="display: none">
-    <h3>【VRChat用アバターギミック】Doll Follow System</h3>
-    <div class="game-description">
-        <div class="imageFrame2 square-img2">
-            <img src="image/games/vrchat.jpg" alt="thumbnail" />
-        </div>
-        <div class="game-text">
-            制作者: ひとねぎ<br />
-            制作年: 2024<br />
-            <br />
-            <p>
-                Doll Follow
-                Systemは、お好みのサブアバターや小物を乗せたり持ったり、アニメーションさせたりするアバターギミックです！
-            </p>
-            <p>
-                体験版無料です、以下のリンクからどうぞ！<br />
-                <a href="https://hitone-gimmik.booth.pm/items/6417719">https://hitone-gimmik.booth.pm/items/6417719</a>
-            </p>
-        </div>
-    </div>
-</div>

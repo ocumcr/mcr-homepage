@@ -1,24 +1,42 @@
 // ゲーム専用
-const openGameModal = (i) => {
-    const gamedata = games[i]
+const openWorkModal = (type, i) => {
+    const data = workData[type.id][i]
 
-    openModal(`
-      <h3>${gamedata.title}</h3>
-      <div class="game-description">
-          <div class="imageFrame2">
-              <img src="${gamedata.imagePath}" alt="${gamedata.title}">
-          </div>
-          <div class="game-text">
-              制作者: ${gamedata.author}<br />
-              制作年: ${gamedata.year}<br />
-              <br />
-              <a href="${gamedata.gamePath}" target="_blank" class="download-button">
-              あそぶ!
-              </a><br /><br />
-              ${gamedata.description}
-          </div>
-      </div>
-      `)
+    if (type.id == "games") {
+        openModal(`
+            <h3>${data.title}</h3>
+            <div class="game-description">
+                <div class="modal-image-frame">
+                    <img src="${data.imagePath}" alt="thumbnail">
+                </div>
+                <div class="game-text">
+                    制作者: ${data.author}<br />
+                    制作年: ${data.year}<br />
+                    <br />
+                    <a href="${data.gamePath}" target="_blank" class="download-button">
+                    あそぶ!
+                    </a>
+                    <br /><br />
+                    ${data.description}
+                </div>
+            </div>
+        `)
+    } else {
+        openModal(`
+            <h3>${data.title}</h3>
+            <div class="game-description">
+                <div class="modal-image-frame">
+                    <img src="${data.imagePath}" alt="thumbnail">
+                </div>
+                <div class="game-text">
+                    制作者: ${data.author}<br />
+                    制作年: ${data.year}<br />
+                    <br />
+                    ${data.description}
+                </div>
+            </div>
+        `)
+    }
 }
 
 // モーダルウィンドウを開く
@@ -28,7 +46,7 @@ const openModal = (html) => {
 
     modalContent.innerHTML =
         `
-          <span class="close">&times;</span>
+            <span class="close">&times;</span>
         ` + html
 
     modal.style.display = "flex" // モーダルを表示
@@ -40,23 +58,27 @@ const openModal = (html) => {
     })
 }
 
-let games
+let workData
 
 // ゲームを自動追加
 const setModal = async () => {
-    const response = await fetch("gamedata.json", {
+    const response = await fetch("workdata.json", {
         cache: "no-store",
     })
 
-    games = await response.json()
+    workData = await response.json()
 
-    games.forEach((gamedata, i) => {
-        document.getElementById("games").innerHTML += `
-          <button class="imageFrame" onclick="openGameModal(${i})">
-              <img src="${gamedata.imagePath}" alt="${gamedata.title}">
-          </button>
-      `
-    })
+    for (const type in workData) {
+        workData[type].forEach((data, index) => {
+            document.getElementById(type).innerHTML += `
+            <button class="image-frame" onclick="openWorkModal(${type}, ${index})" style="${
+                data.option?.includes("square") ? "aspect-ratio: 1" : ""
+            }">
+                <img src="${data.imagePath}" alt="thumbnail">
+            </button>
+          `
+        })
+    }
 
     const modal = document.getElementById("modal")
     modal.style.display = "none"
