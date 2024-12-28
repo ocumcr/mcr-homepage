@@ -48,10 +48,13 @@
 .game-description {
     height: 85%;
     display: flex;
-    overflow: auto; /* はみ出し防止 */
+
+    word-break: break-all;
 }
 
 .game-text {
+    overflow: auto; /*はみ出し防止*/
+
     /* height: auto; */
     padding: 20px;
     font-size: 20px;
@@ -104,7 +107,7 @@
 }
 
 .image-frame.big {
-    width: 31%;
+    width: 50%;
     height: auto;
 }
 
@@ -117,10 +120,14 @@
 }
 
 @media screen and (max-width: 768px) {
+    .game-text {
+        overflow: visible;
+    }
+
     .game-description {
         flex-direction: column;
 
-        word-break: break-all;
+        overflow: auto; /*はみ出し防止*/
     }
 
     .image-frame {
