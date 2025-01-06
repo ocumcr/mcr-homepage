@@ -76,10 +76,14 @@
                 const content = document.getElementById("container")
 
                 // 白色が広がりきったらコンテンツを表示してオーバーレイを非表示
-                overlay.addEventListener("animationend", () => {
+                overlay.animationend = () => {
                     content.style.display = "block"
+
                     overlay.style.animation = "fadeOut 1s forwards"
-                })
+                    overlay.animationend = () => {
+                        overlay.style.display = "none"
+                    }
+                }
             })
         </script>
 
