@@ -11,6 +11,14 @@
     ],
     "games": [
         {
+            "title": "もこたたき::NEO!",
+            "author": "いぽた",
+            "year": "2025",
+            "imagePath": "image/games/mokotataki-neo.png",
+            "gamePath": "https://ipotazero.github.io/mokotataki-neo/",
+            "description": "<p>TypeScriptの練習で作ったにゃ。mainLoop禁止縛りもしたにゃ。型で発狂したにゃ</p>"
+        },
+        {
             "title": "スマホの機能を試してみよう",
             "author": "いぽた",
             "year": "2024",
