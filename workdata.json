@@ -248,6 +248,13 @@
             "year": "2024",
             "imagePath": "image/games/music-club.png",
             "description": " 聴け! <a href='https://ocumcr.github.io/mcr-music-club/' target='_blank'>押せ!</a>"
+        },
+        {
+            "title": "MCR夢日記部",
+            "author": "いぽた",
+            "year": "2025",
+            "imagePath": "image/games/dream-diary-club.png",
+            "description": "<p>部員の夢日記を置いていきます</p><a href='https://ocumcr.github.io/mcr-dream-diary-club/' target='_blank'>ここをクリック</a>"
         }
     ]
 }
