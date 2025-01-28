@@ -7,9 +7,8 @@ body {
     color: #000;
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic",
         sans-serif;
-    line-height: 150%;
-    font-size: 10.5pt;
-    letter-spacing: 0.8pt;
+    line-height: 1.5;
+    font-size: 15px;
 
     padding: 0;
 }
@@ -40,7 +39,7 @@ h3 {
 -------基本のレイアウト------
 ----------------------------*/
 #container {
-    width: 950px;
+    width: 1000px;
     height: fit-content;
 
     margin: 20px auto;
@@ -70,6 +69,8 @@ h3 {
         text-decoration: none;
 
         & #mcr {
+            line-height: 0.5;
+
             color: #000;
             font-size: 3em;
             padding-top: 10px;
@@ -123,10 +124,10 @@ h3 {
 }
 
 #contentsRight {
-    width: 720px;
+    width: 740px;
     float: right;
 
-    padding: 20px;
+    padding: 30px;
 }
 
 #footer {

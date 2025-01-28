@@ -1,3 +1,8 @@
+#slideshow-container {
+    width: 680px;
+    height: 360px;
+}
+
 #topics {
     margin-top: 10px;
     /*height:400px;*/
