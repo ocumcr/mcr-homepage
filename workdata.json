@@ -11,6 +11,14 @@
     ],
     "games": [
         {
+            "title": "マグカップ、またはドーナツ。若しくは私。",
+            "author": "いぽた",
+            "year": "2025",
+            "imagePath": "image/games/doughnut.png",
+            "gamePath": "https://ipotazero.github.io/doughnut/",
+            "description": "<p>ひっくり返すパズル</p>"
+        },
+        {
             "title": "もこたたき::NEO!",
             "author": "いぽた",
             "year": "2025",
