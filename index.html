@@ -15,7 +15,6 @@
         <!-- アイコン -->
         <link rel="shortcut icon" href="image/favicon.png" />
 
-        <link rel="stylesheet" href="icon-setting.css" />
         <link rel="stylesheet" href="header.css" />
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="pages/slideshow.css" />
@@ -42,6 +41,9 @@
         <!-- 数式表示用 -->
         <script src="https://fred-wang.github.io/TeXZilla/TeXZilla-min.js"></script>
         <link rel="stylesheet" href="pages/math.css" />
+
+        <!-- アイコン -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     </head>
 
     <body>
@@ -99,27 +101,45 @@
                 <!-- checkbox::checkedで強引に -->
                 <input type="checkbox" class="menu-btn" id="menu-btn" />
                 <label for="menu-btn" class="menu-icon"><span class="navicon"></span></label>
-                <menu class="menu">
-                    <li><a class="icon-top" href="#top">Top</a></li>
-                    <li><a class="icon-info" href="#info">Info</a></li>
-                    <li><a class="icon-work" href="#work">Works</a></li>
-                    <li><a class="icon-member" href="#member">Members</a></li>
-                    <li><a class="icon-computer" href="#computer"> Computers </a></li>
-                    <li><a class="icon-link" href="#link">Links</a></li>
-                    <li><a class="icon-diary" href="#diary">Diary</a></li>
+                <menu class="menu" id="subMenu">
+                    <li>
+                        <a href="#top"><i class="fa-solid fa-house"></i>Top</a>
+                    </li>
+                    <li>
+                        <a href="#info"><i class="fa-solid fa-info"></i>Info</a>
+                    </li>
+                    <li>
+                        <a href="#work"><i class="fa-solid fa-gamepad"></i>Works</a>
+                    </li>
+                    <li>
+                        <a href="#member"><i class="fa-solid fa-person"></i>Members</a>
+                    </li>
+                    <li>
+                        <a href="#computer"><i class="fa-solid fa-desktop"></i>Computers</a>
+                    </li>
+                    <li>
+                        <a href="#link"><i class="fa-solid fa-link"></i>Links</a>
+                    </li>
+                    <li>
+                        <a href="#diary"><i class="fa-solid fa-book"></i>Diary</a>
+                    </li>
                     <br />
                     <br />
                     <li>
-                        <a href="https://ocumcr.github.io/mcr-music-club/" target="_blank" class="icon-music">Music</a>
+                        <a href="https://ocumcr.github.io/mcr-music-club/" target="_blank">
+                            <i class="fa-solid fa-music"></i> Music
+                        </a>
                     </li>
                     <li>
-                        <a href="https://ocumcr.hatenablog.com/" target="_blank" class="icon-blog">Blog</a>
+                        <a href="https://ocumcr.hatenablog.com/" target="_blank">
+                            <i class="fa-solid fa-pen"></i>Blog</a
+                        >
                     </li>
                     <li>
-                        <a href="https://x.com/ocu_mcr" target="_blank" class="icon-twitter">X</a>
+                        <a href="https://x.com/ocu_mcr" target="_blank"><i class="fa-brands fa-x-twitter"></i>X</a>
                     </li>
                     <li>
-                        <a href="mailto:ocumcr2014@gmail.com" class="icon-mail">Mail</a>
+                        <a href="mailto:ocumcr2014@gmail.com"><i class="fa-solid fa-envelope"></i>Mail</a>
                     </li>
                 </menu>
             </header>
@@ -136,28 +156,42 @@
                 <!-- PC用メニュー -->
                 <div id="globalnavi">
                     <menu id="mainMenu">
-                        <li><a class="icon-info" href="#info">Info</a></li>
-                        <li><a class="icon-work" href="#work">Works</a></li>
-                        <li><a class="icon-member" href="#member">Members</a></li>
-                        <li><a class="icon-computer" href="#computer"> Computers </a></li>
-                        <li><a class="icon-link" href="#link">Links</a></li>
-                        <li><a class="icon-diary" href="#diary">Diary</a></li>
+                        <li>
+                            <a href="#info"><i class="fa-solid fa-info"></i>Info</a>
+                        </li>
+                        <li>
+                            <a href="#work"><i class="fa-solid fa-gamepad"></i>Works</a>
+                        </li>
+                        <li>
+                            <a href="#member"><i class="fa-solid fa-person"></i>Members</a>
+                        </li>
+                        <li>
+                            <a href="#computer"><i class="fa-solid fa-desktop"></i>Computers</a>
+                        </li>
+                        <li>
+                            <a href="#link"><i class="fa-solid fa-link"></i>Links</a>
+                        </li>
+                        <li>
+                            <a href="#diary"><i class="fa-solid fa-book"></i>Diary</a>
+                        </li>
                     </menu>
 
                     <menu id="subMenu">
                         <li>
-                            <a href="https://ocumcr.github.io/mcr-music-club/" target="_blank" class="icon-music">
-                                Music
+                            <a href="https://ocumcr.github.io/mcr-music-club/" target="_blank">
+                                <i class="fa-solid fa-music"></i> Music
                             </a>
                         </li>
                         <li>
-                            <a href="https://ocumcr.hatenablog.com/" target="_blank" class="icon-blog">Blog</a>
+                            <a href="https://ocumcr.hatenablog.com/" target="_blank">
+                                <i class="fa-solid fa-pen"></i>Blog</a
+                            >
                         </li>
                         <li>
-                            <a href="https://x.com/ocu_mcr" target="_blank" class="icon-twitter">X</a>
+                            <a href="https://x.com/ocu_mcr" target="_blank"><i class="fa-brands fa-x-twitter"></i>X</a>
                         </li>
                         <li>
-                            <a href="mailto:ocumcr2014@gmail.com" class="icon-mail">Mail</a>
+                            <a href="mailto:ocumcr2014@gmail.com"><i class="fa-solid fa-envelope"></i>Mail</a>
                         </li>
                     </menu>
                 </div>
