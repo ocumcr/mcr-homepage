@@ -27,6 +27,14 @@
     ],
     "games": [
         {
+            "title": "Pentamond2",
+            "author": "うめぼし",
+            "year": "2025",
+            "imagePath": "image/games/pentamond2.png",
+            "gamePath": "https://kishunankoubai.github.io/Pentamond2/",
+            "description": "<p>ブロックが三角形の落ち物ゲームです。<br>難しめですがパズルが好きな人はハマれると思います。</p>"
+        },
+        {
             "title": "マグカップ、またはドーナツ。若しくは私。",
             "author": "いぽた",
             "year": "2025",
