@@ -1,6 +1,14 @@
 {
     "vrc": [
         {
+            "title": "奇妙立ちギミック",
+            "author": "ひとねぎ",
+            "year": "2025",
+            "imagePath": "image/games/奇妙立ちギミック.jpg",
+            "description": "<p>手の位置とジェスチャーに応じて自動でジョジョ立ちができるアバターギミックです。 三点トラッキングでも咄嗟に綺麗なジョジョ立ちがしたくて作りました。<br /><a href='https://hitone-gimmik.booth.pm/items/6779930' target=\"_blank\">https://hitone-gimmik.booth.pm/items/6779930</a></p>",
+            "option": []
+        },
+        {
             "title": "【VRChat用アバターギミック】Doll Follow System",
             "author": "ひとねぎ",
             "year": "2024",

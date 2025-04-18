@@ -93,7 +93,7 @@ const writeAllMemberData = async () => {
     </table>
   `
 
-    for (let i = 0; i < getFiscalYear() - 2024; i++) {
+    for (let i = 0; i < getFiscalYear() - 2023; i++) {
         console.log(getFiscalYear() - 2024 - i)
         await writeOb(getFiscalYear() - 2024 - i)
     }
