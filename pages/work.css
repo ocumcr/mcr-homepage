@@ -32,7 +32,6 @@
     display: inline-block;
 
     height: 400px;
-    aspect-ratio: 1;
     border-radius: 5px;
 
     background-color: #eee;
@@ -40,7 +39,6 @@
 }
 
 .modal-image-frame img {
-    width: 100%;
     height: 100%;
     object-fit: contain;
 }
@@ -146,7 +144,12 @@
     }
 
     .modal-image-frame {
-        height: 200px;
+        width: 90%;
+        height: fit-content;
         /* display: none; */
+
+        & img {
+            width: 100%;
+        }
     }
 }

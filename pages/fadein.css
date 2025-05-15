@@ -46,11 +46,6 @@
     }
 }
 
-/* メインコンテンツの初期状態を隠す */
-#container {
-    display: none;
-}
-
 @media screen and (max-width: 768px) {
     #animation-overlay {
         background-color: #0c1923;
