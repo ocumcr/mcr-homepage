@@ -1,19 +1,19 @@
 // 各学年のデータを書き込む
 const writeMemberData = async (grade) => {
     document.getElementById("members").innerHTML += `
-      <table summary="サークルのメンバーの紹介" class="intro-table">
-          <caption>
-          ${grade}回生
-          </caption>
-          <tbody id="student-${grade}">
-          </tbody>
-      </table>
+        <table summary="サークルのメンバーの紹介" class="intro-table">
+            <caption>
+            ${grade}回生
+            </caption>
+            <tbody id="student-${grade}">
+            </tbody>
+        </table>
     `
 
     const student = document.getElementById(`student-${grade}`)
 
     // 現在の1年生が何期生か?
-    const currentGrade1 = getFiscalYear() - 2021
+    const currentGrade1 = getFiscalYear()
 
     const members = await safeLoadCsvAsObjects(`memberdata/student-${currentGrade1 - grade + 1}.csv`)
 
@@ -50,24 +50,24 @@ const writeOb = async (term) => {
     })
 }
 
-const writeMoreBefore = async () => {
-    const student = document.getElementById(`student-ob-og`)
+// const writeMoreBefore = async () => {
+//     const student = document.getElementById(`student-ob-og`)
 
-    const members = await safeLoadCsvAsObjects(`memberdata/student-それ以前.csv`)
+//     const members = await safeLoadCsvAsObjects(`memberdata/student-それ以前.csv`)
 
-    members.forEach((member) => {
-        student.innerHTML += `
-            <tr>
-                <th class="name">${member.name}</th>
-                <td class="course">${member.course}</td>
-                <td class="detail">
-                    趣味: ${member.hobby}<br>
-                    一言: ${member.comment}
-                </td>
-            </tr>
-        `
-    })
-}
+//     members.forEach((member) => {
+//         student.innerHTML += `
+//             <tr>
+//                 <th class="name">${member.name}</th>
+//                 <td class="course">${member.course}</td>
+//                 <td class="detail">
+//                     趣味: ${member.hobby}<br>
+//                     一言: ${member.comment}
+//                 </td>
+//             </tr>
+//         `
+//     })
+// }
 
 const getFiscalYear = () => {
     const today = new Date()
@@ -84,19 +84,19 @@ const writeAllMemberData = async () => {
     }
 
     document.getElementById("members").innerHTML += `
-    <table summary="サークルのメンバーの紹介" class="intro-table">
-        <caption>
-        OB-OG
-        </caption>
-        <tbody id="student-ob-og">
-        </tbody>
-    </table>
-  `
+        <table summary="サークルのメンバーの紹介" class="intro-table">
+            <caption>
+            OB-OG
+            </caption>
+            <tbody id="student-ob-og">
+            </tbody>
+        </table>
+    `
 
-    for (let i = 0; i < getFiscalYear() - 2023; i++) {
-        console.log(getFiscalYear() - 2024 - i)
-        await writeOb(getFiscalYear() - 2024 - i)
+    for (let i = getFiscalYear() - 4; i >= 2013; i--) {
+        console.log(i)
+        await writeOb(i)
     }
 
-    await writeMoreBefore()
+    // await writeMoreBefore()
 }
