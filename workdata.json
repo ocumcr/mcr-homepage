@@ -4,7 +4,7 @@
             "title": "奇妙立ちギミック",
             "author": "ひとねぎ",
             "year": "2025",
-            "imagePath": "image/games/奇妙立ちギミック.jpg",
+            "imagePath": "image/works/3d/奇妙立ちギミック.jpg",
             "description": "<p>手の位置とジェスチャーに応じて自動でジョジョ立ちができるアバターギミックです。 三点トラッキングでも咄嗟に綺麗なジョジョ立ちがしたくて作りました。<br /><a href='https://hitone-gimmik.booth.pm/items/6779930' target=\"_blank\">https://hitone-gimmik.booth.pm/items/6779930</a></p>",
             "option": []
         },
@@ -12,7 +12,7 @@
             "title": "【VRChat用アバターギミック】Doll Follow System",
             "author": "ひとねぎ",
             "year": "2024",
-            "imagePath": "image/games/vrchat.jpg",
+            "imagePath": "image/works/3d/vrchat.jpg",
             "description": "<p>Doll Follow Systemは、お好みのサブアバターや小物を乗せたり持ったり、アニメーションさせたりするアバターギミックです！</p><p>体験版無料です、以下のリンクからどうぞ！<br /><a href='https://hitone-gimmik.booth.pm/items/6417719'>https://hitone-gimmik.booth.pm/items/6417719</a></p>",
             "option": []
         },
@@ -20,7 +20,7 @@
             "title": "【Doll Follow System追加コンテンツ】ばたばたモーション",
             "author": "ひとねぎ",
             "year": "2025",
-            "imagePath": "image/games/ばたばたモーション.jpg",
+            "imagePath": "image/works/3d/ばたばたモーション.jpg",
             "description": "<a href=\"https://booth.pm/ja/items/6673877\" target=\"_blank\">https://booth.pm/ja/items/6673877</a><br>咥えられてばたばたするかわいいアニメーション4種類セットです！Doll Follow Systemで使うことを想定していますが、一応普通のアニメーションとしてもお使いいただけます。",
             "option": []
         },
@@ -28,7 +28,7 @@
             "title": "Ria - オリジナル3Dアバター",
             "author": "Shin",
             "year": "2022",
-            "imagePath": "image/games/Ria - オリジナル3Dアバター.jpg",
+            "imagePath": "image/works/3d/Ria - オリジナル3Dアバター.jpg",
             "description": "VRChatなどで使用できるオリジナル3Dアバター「Ria」です！<br>3300円で販売しております。<br><a href=\"https://shin-3dcg.booth.pm/items/4366173\" target=\"_blank\">https://shin-3dcg.booth.pm/items/4366173</a>",
             "option": []
         }
@@ -38,7 +38,7 @@
             "title": "Pentamond2",
             "author": "うめぼし",
             "year": "2025",
-            "imagePath": "image/games/pentamond2.png",
+            "imagePath": "image/works/game/pentamond2.png",
             "gamePath": "https://kishunankoubai.github.io/Pentamond2/",
             "description": "<p>あのPentamondが進化した！<br>複数人対戦、強化された演出、新たなBGM……<br>三角を並べて、最強のPentamondプレイヤーになろう！</p>"
         },
@@ -46,7 +46,7 @@
             "title": "マグカップ、またはドーナツ。若しくは私。",
             "author": "いぽた",
             "year": "2025",
-            "imagePath": "image/games/doughnut.png",
+            "imagePath": "image/works/game/doughnut.png",
             "gamePath": "https://ipotazero.github.io/doughnut/",
             "description": "<p>ひっくり返すパズル</p>"
         },
@@ -54,7 +54,7 @@
             "title": "もこたたき::NEO!",
             "author": "いぽた",
             "year": "2025",
-            "imagePath": "image/games/mokotataki-neo.png",
+            "imagePath": "image/works/game/mokotataki-neo.png",
             "gamePath": "https://ipotazero.github.io/mokotataki-neo/",
             "description": "<p>TypeScriptの練習で作ったにゃ。mainLoop禁止縛りもしたにゃ。型で発狂したにゃ</p>"
         },
@@ -62,7 +62,7 @@
             "title": "スマホの機能を試してみよう",
             "author": "いぽた",
             "year": "2024",
-            "imagePath": "image/games/smartphone.png",
+            "imagePath": "image/works/game/smartphone.png",
             "gamePath": "https://ipotazero.github.io/phone-actions/",
             "description": "<p>そのまま</p>"
         },
@@ -70,7 +70,7 @@
             "title": "まいんどすいーぱー",
             "author": "いぽた、うめぼし",
             "year": "2024",
-            "imagePath": "image/games/mind-sweeper.png",
+            "imagePath": "image/works/game/mind-sweeper.png",
             "gamePath": "https://ipotazero.github.io/mind-sweeper/",
             "description": "<p>ひねくれ者が嫌なことを忘れるのを手伝うゲーム</p><p>スマホでも遊べます</p>"
         },
@@ -78,7 +78,7 @@
             "title": "Vector Space",
             "author": "いぽた、うめぼし",
             "year": "2024",
-            "imagePath": "image/games/vec2.png",
+            "imagePath": "image/works/game/vec2.png",
             "gamePath": "https://ipotazero.github.io/vector-space/",
             "description": "<p>2D慣性アクションゲーム<br>にゃーにゃにゃーにゃーなにゃー</p>"
         },
@@ -86,7 +86,7 @@
             "title": "Pentamond",
             "author": "うめぼし",
             "year": "2024",
-            "imagePath": "image/games/pentamond.png",
+            "imagePath": "image/works/game/pentamond.png",
             "gamePath": "https://kishunankoubai.github.io/pentamond/",
             "description": "<p>ブロックが三角形の落ち物ゲームです。<br>難しめですがパズルが好きな人はハマれると思います。</p>"
         },
@@ -94,7 +94,7 @@
             "title": "20歳になる前に",
             "author": "いぽた",
             "year": "2024",
-            "imagePath": "image/games/hatachi.png",
+            "imagePath": "image/works/game/hatachi.png",
             "gamePath": "https://ipotazero.github.io/hatachi/",
             "description": "<p>1日で作ったノベルゲーム</p><p>お子様向けじゃないよ</p>"
         },
@@ -102,7 +102,7 @@
             "title": "Avoid",
             "author": "しゅーと",
             "year": "2017",
-            "imagePath": "image/games/avoid.png",
+            "imagePath": "image/works/game/avoid.png",
             "gamePath": "https://drive.google.com/drive/folders/0B3bkMiN1is2VcDBuNEFiN0hMNTA?resourcekey=0-qdPNq813P83h35YrZ6ebEA&usp=sharing",
             "description": "横もちろん俺らは抵抗するで...かわして！<br>障害物を避けるだけのゲームです<br>ハイスコアを目指しましょう！！<br>ブログ記事は<a href=\"http://ocumcr.blog66.fc2.com/blog-entry-158.html\" target=\"_blank\">こちら</a>。"
         },
@@ -110,7 +110,7 @@
             "title": "I wanna be the TMT",
             "author": "zank",
             "year": "2017",
-            "imagePath": "image/games/TMT.png",
+            "imagePath": "image/works/game/TMT.png",
             "gamePath": "https://drive.google.com/drive/folders/0B3bkMiN1is2VcDBuNEFiN0hMNTA?resourcekey=0-qdPNq813P83h35YrZ6ebEA&usp=sharing",
             "description": "このゲームは死にゲーと呼ばれるゲームです。<br>一応チュートリアルは用意してますが全体的に難しいです。<br>ブログ記事は<a href=\"http://ocumcr.blog66.fc2.com/blog-entry-157.html\" target=\"_blank\">こちら</a>。"
         },
@@ -118,7 +118,7 @@
             "title": "北海道はでっかいどう",
             "author": "こにし",
             "year": "2017",
-            "imagePath": "image/games/hokkaido.png",
+            "imagePath": "image/works/game/hokkaido.png",
             "gamePath": "https://drive.google.com/drive/folders/0B3bkMiN1is2VcDBuNEFiN0hMNTA?resourcekey=0-qdPNq813P83h35YrZ6ebEA&usp=sharing",
             "description": "北海道の上に都道府県を高く積み上げよう！</p><p>記録が400kmを超えると裏モードが…<br>ブログ記事は<a href=\"http://ocumcr.blog66.fc2.com/blog-entry-159.html\" target=\"_blank\">こちら</a>。"
         },
@@ -126,7 +126,7 @@
             "title": "ブロック崩し",
             "author": "unKnown",
             "year": "2017",
-            "imagePath": "image/games/blockkuzusi.png",
+            "imagePath": "image/works/game/blockkuzusi.png",
             "gamePath": "https://drive.google.com/drive/folders/0B3bkMiN1is2VcDBuNEFiN0hMNTA?resourcekey=0-qdPNq813P83h35YrZ6ebEA&usp=sharing",
             "description": "ブロック崩しゲームです。<br>ボールがある回数跳ね返るごとにブロックが迫ってきます。<br>ブロックを崩すとボールのライフが回復します。<br>ブログ記事は<a href=\"http://ocumcr.blog66.fc2.com/blog-entry-160.html\" target=\"_blank\">こちら</a>。"
         },
@@ -134,7 +134,7 @@
             "title": "ボンバークラッシュ！！",
             "author": "つりがね",
             "year": "2017",
-            "imagePath": "image/games/bonber.jpg",
+            "imagePath": "image/works/game/bonber.jpg",
             "gamePath": "https://drive.google.com/drive/folders/0B3bkMiN1is2VcDBuNEFiN0hMNTA?resourcekey=0-qdPNq813P83h35YrZ6ebEA&usp=sharing",
             "description": "<p>落ち物パズルです。</p><p>同じ色を４つ並べると消えます。</p><p>爆弾は消えるときに周囲を巻き込みます。</p>"
         },
@@ -142,7 +142,7 @@
             "title": "the breaker",
             "author": "つりがね",
             "year": "2016",
-            "imagePath": "image/games/breaker.bmp",
+            "imagePath": "image/works/game/breaker.bmp",
             "gamePath": "https://drive.google.com/drive/folders/0B3bkMiN1is2VcDBuNEFiN0hMNTA?resourcekey=0-qdPNq813P83h35YrZ6ebEA&usp=sharing",
             "description": "<p>横スクロールアクションです。</p><p>敵やブロックを破壊しながら、ゴールを目指そう！<br>ブログ記事は<a href=\"http://ocumcr.blog66.fc2.com/blog-entry-153.html\" target=\"_blank\">こちら</a>。</p>"
         },
@@ -150,7 +150,7 @@
             "title": "音ゲー",
             "author": "zank",
             "year": "2016",
-            "imagePath": "image/games/otoge-.png",
+            "imagePath": "image/works/game/otoge-.png",
             "gamePath": "https://drive.google.com/drive/folders/0B3bkMiN1is2VcDBuNEFiN0hMNTA?resourcekey=0-qdPNq813P83h35YrZ6ebEA&usp=sharing",
             "description": "<p>曲に合わせて降ってくるものを消していくリズムゲームです。</p><p>曲の数は少ないです。<br>ブログ記事は<a href=\"http://ocumcr.blog66.fc2.com/blog-entry-153.html#more\" target=\"_blank\">こちら</a>。</p>"
         },
@@ -158,7 +158,7 @@
             "title": "リバーシ",
             "author": "Hs",
             "year": "2016",
-            "imagePath": "image/games/reversi.png",
+            "imagePath": "image/works/game/reversi.png",
             "gamePath": "http://ocumcr.html.xdomain.jp/work/reversi/index.html",
             "description": "<p>よくあるリバーシです。</p><p>ひとりでも遊べますしふたりでの対戦では、普通のマス目の数（8×8）に加えて四倍のマス目(16×16)でもプレイできます。</p>"
         },
@@ -166,7 +166,7 @@
             "title": "数〇しませんか",
             "author": "箱根",
             "year": "2015",
-            "imagePath": "image/games/sudoku.png",
+            "imagePath": "image/works/game/sudoku.png",
             "gamePath": "https://drive.google.com/drive/folders/0B3bkMiN1is2VcDBuNEFiN0hMNTA?resourcekey=0-qdPNq813P83h35YrZ6ebEA&usp=sharing",
             "description": "<p>たて・よこ・９つの四角にそれぞれ１～９をひとつずつ入れるパズルです。</p><p>自信があればいきなり上を狙ってもいいかも…?<br />ブログ記事は<a href=\"http://ocumcr.blog66.fc2.com/blog-entry-147.html\" target=\"_blank\">こちら</a>。</p>"
         },
@@ -174,7 +174,7 @@
             "title": "元素クリッカー",
             "author": "MUR",
             "year": "2015",
-            "imagePath": "image/games/genso.png",
+            "imagePath": "image/works/game/genso.png",
             "gamePath": "https://drive.google.com/drive/folders/0B3bkMiN1is2VcDBuNEFiN0hMNTA?resourcekey=0-qdPNq813P83h35YrZ6ebEA&usp=sharing",
             "description": "<p>10秒間でクリックした回数に対応した原子番号の元素を表示します。</p><p>118回以上で新記録を出すと・・・?</p>"
         },
@@ -182,7 +182,7 @@
             "title": "Simplified",
             "author": "murphilion",
             "year": "2015",
-            "imagePath": "image/games/simplified.jpg",
+            "imagePath": "image/works/game/simplified.jpg",
             "gamePath": "https://drive.google.com/drive/folders/0B3bkMiN1is2VcDBuNEFiN0hMNTA?resourcekey=0-qdPNq813P83h35YrZ6ebEA&usp=sharing",
             "description": "<p>ブロック崩しのゲームを作ってみました。</p><p>全6面のシンプルな構成でブロックを崩すだけ。<br />ブログ記事は<a href=\"http://ocumcr.blog66.fc2.com/blog-entry-146.html\" target=\"_blank\">こちら</a>。</p>"
         },
@@ -190,7 +190,7 @@
             "title": "spacefitghters",
             "author": "つりがね",
             "year": "2015",
-            "imagePath": "image/games/spacefighters.png",
+            "imagePath": "image/works/game/spacefighters.png",
             "gamePath": "https://drive.google.com/drive/folders/0B3bkMiN1is2VcDBuNEFiN0hMNTA?resourcekey=0-qdPNq813P83h35YrZ6ebEA&usp=sharing",
             "description": "<p>シューティングゲームです。３種類の攻撃で敵を破壊してください。</p><p>ボスを倒せばステージクリア。全３ステージです。</p><p>ハイスコアを出すと名前が記録されます<br />ブログ記事は<a href=\"http://ocumcr.blog66.fc2.com/blog-entry-145.html\" target=\"_blank\">こちら</a>。</p>"
         },
@@ -198,7 +198,7 @@
             "title": "もこたたき",
             "author": "銅銭 　　　　姉帯さんのお婿",
             "year": "2014",
-            "imagePath": "image/games/mokotataki.png",
+            "imagePath": "image/works/game/mokotataki.png",
             "gamePath": "https://drive.google.com/drive/folders/0B3bkMiN1is2VcDBuNEFiN0hMNTA?resourcekey=0-qdPNq813P83h35YrZ6ebEA&usp=sharing",
             "description": "<p>もぐらたたき風タイピングゲームです。</p><p>次々と出てくるアルファベットを正確に早くタイピングしましょう。</p><p>「もこた」というMCRのマスコットキャラがボイスありで登場します。「もこた」は瞬間移動します。</p>"
         },
@@ -206,7 +206,7 @@
             "title": "マインスイーパー",
             "author": "白雪",
             "year": "2014",
-            "imagePath": "image/games/minesweeper.png",
+            "imagePath": "image/works/game/minesweeper.png",
             "gamePath": "https://drive.google.com/drive/folders/0B3bkMiN1is2VcDBuNEFiN0hMNTA?resourcekey=0-qdPNq813P83h35YrZ6ebEA&usp=sharing",
             "description": "<p>よくあるマインスイーパーです。</p><p>爆弾以外のボタンをすべてクリックで消しましょう。ctrlキーを押しながらクリックで旗を立てれます。</p>"
         },
@@ -214,7 +214,7 @@
             "title": "はじっこまで行け",
             "author": "N.T.",
             "year": "2014",
-            "imagePath": "image/games/hazikko.png",
+            "imagePath": "image/works/game/hazikko.png",
             "gamePath": "https://drive.google.com/drive/folders/0B3bkMiN1is2VcDBuNEFiN0hMNTA?resourcekey=0-qdPNq813P83h35YrZ6ebEA&usp=sharing",
             "description": "<p>通称「hazikko」は横スクロールアクションゲームです。主人公を操作して「hazikko」まで移動させたらクリアです。</p><p>主人公は精神的に弱いところがあるので、敵の攻撃を受けると家まで帰ってしまいます。</p><p>皆さんの力で彼を外に出しましょう。</p>"
         },
@@ -222,7 +222,7 @@
             "title": "Lycoris Flight",
             "author": "sakana",
             "year": "2015",
-            "imagePath": "image/games/typing2.png",
+            "imagePath": "image/works/game/typing2.png",
             "gamePath": "http://ocumcr.html.xdomain.jp/work/typing/typing.html",
             "description": "<p>ちょっと変わったタイピングゲーム。画面に表示される単語をタイプすると、ほうきに乗った魔女が空を飛びます。落ちないように素早く打ちましょう。</p><p>Win98時代にNECのPCに入っていたタイピングソフト「Magic Flight」を意識して制作しました。</p>"
         },
@@ -230,7 +230,7 @@
             "title": "STEP TO THE SKY",
             "author": "T.S.",
             "year": "2013",
-            "imagePath": "image/games/steptothesky2.png",
+            "imagePath": "image/works/game/steptothesky2.png",
             "gamePath": "https://drive.google.com/drive/folders/0B3bkMiN1is2VcDBuNEFiN0hMNTA?resourcekey=0-qdPNq813P83h35YrZ6ebEA&usp=sharing",
             "description": "<p>誘導パズルゲーム。落ちてくるブロックで足場をつくり、星形のキャラをゴールへ導いてください。</p><p>10のステージがあり、後のステージほど柔軟な思考力が必要になります。キャラの動きやブロックの特性をうまく利用しましょう。</p><small>一部の環境においてゲームの動作が重くなる現象が確認されています。原因が分からないため修正できておりません。あらかじめご了承ください。</small>"
         },
@@ -238,7 +238,7 @@
             "title": "ブロック崩し",
             "author": "T.O.",
             "year": "2013",
-            "imagePath": "image/games/blockbreak2.png",
+            "imagePath": "image/works/game/blockbreak2.png",
             "gamePath": "https://drive.google.com/drive/folders/0B3bkMiN1is2VcDBuNEFiN0hMNTA?resourcekey=0-qdPNq813P83h35YrZ6ebEA&usp=sharing",
             "description": "<p>下にあるバーを左右に動かして球を打ち返し、ブロックを壊していくゲームです。全てのブロックが壊れたらステージクリア。</p><p>ブロックを壊すと時々アイテムが落ちてきたり、バーのちょうど真ん中に球が当たると球の威力が強くなったります。</p>"
         },
@@ -246,7 +246,7 @@
             "title": "イライラ棒",
             "author": "T.N.",
             "year": "2013",
-            "imagePath": "image/games/iraira2.png",
+            "imagePath": "image/works/game/iraira2.png",
             "gamePath": "https://drive.google.com/drive/folders/0B3bkMiN1is2VcDBuNEFiN0hMNTA?resourcekey=0-qdPNq813P83h35YrZ6ebEA&usp=sharing",
             "description": "<p>マウスカーソルを壁に当たらないように気を付けながらゴールまで運ぶゲームです。</p><p>はじめにステージを選べます。stage1が一番簡単ですが、それでも最後の細い道は難関。stage2と3では動く壁にイライラ…。</p>"
         },
@@ -254,7 +254,7 @@
             "title": "シューティング",
             "author": "R.K.",
             "year": "2015",
-            "imagePath": "image/games/shooting2.png",
+            "imagePath": "image/works/game/shooting2.png",
             "gamePath": "https://drive.google.com/drive/folders/0B3bkMiN1is2VcDBuNEFiN0hMNTA?resourcekey=0-qdPNq813P83h35YrZ6ebEA&usp=sharing",
             "description": "<p>弾丸を飛ばして敵機を撃ち落とすゲーム。敵の攻撃を受けるとＨＰが減り、ＨＰが全てなくなるとゲームオーバーです。</p><p>2015年銀杏祭に合わせてバージョンアップ、新たな敵も登場。<br />ブログ記事は<a href=\"http://ocumcr.blog66.fc2.com/blog-entry-125.html\" target=\"_blank\">こちら</a>。</p>"
         },
@@ -262,7 +262,7 @@
             "title": "テトリス",
             "author": "K.K. & M.S.",
             "year": "2013",
-            "imagePath": "image/games/tetris2.png",
+            "imagePath": "image/works/game/tetris2.png",
             "gamePath": "https://drive.google.com/drive/folders/0B3bkMiN1is2VcDBuNEFiN0hMNTA?resourcekey=0-qdPNq813P83h35YrZ6ebEA&usp=sharing",
             "description": "<p>上から落ちてくるブロックをうまく積んで、一列揃えて消すゲーム。ブロックの回転はスペースキー、ホールドはシフトキー、ポーズはエスケープキーで行えます。</p>"
         }
@@ -272,28 +272,28 @@
             "title": "MCR Homepage",
             "author": "sakana",
             "year": "2013",
-            "imagePath": "image/games/mcrwebpage.png",
+            "imagePath": "image/works/other/mcrwebpage.png",
             "description": " <p>多分5年ぶりの更新</p><p>疲れたにゃー</p><p>度々増築したり、イベントに合わせて特別バージョンになったりしてたみたいだにゃー<br />頑張ってみるかにゃー<br />更新: いぽた</p>"
         },
         {
             "title": "MCR Game Launcher",
             "author": "いぽた",
             "year": "2024",
-            "imagePath": "image/games/launcher.png",
+            "imagePath": "image/works/other/launcher.png",
             "description": " <p>学祭で使っているゲームランチャー</p><p>いろいろ便利機能があったり</p>"
         },
         {
             "title": "MCR音楽部",
             "author": "いぽた",
             "year": "2024",
-            "imagePath": "image/games/music-club.png",
+            "imagePath": "image/works/other/music-club.png",
             "description": " 聴け! <a href='https://ocumcr.github.io/mcr-music-club/' target='_blank'>押せ!</a>"
         },
         {
             "title": "MCR夢日記部",
             "author": "いぽた",
             "year": "2025",
-            "imagePath": "image/games/dream-diary-club.png",
+            "imagePath": "image/works/other/dream-diary-club.png",
             "description": "<p>部員の夢日記を置いていきます</p><a href='https://ocumcr.github.io/mcr-dream-diary-club/' target='_blank'>ここをクリック</a>"
         }
     ]
