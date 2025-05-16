@@ -2,4 +2,4 @@
 fetch("...",{ cache: "no-store" })で回避できるっぽいにゃー
 
 アイコン
-https://icooon-mono.com/
+https://fontawesome.com/

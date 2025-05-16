@@ -1,0 +1,62 @@
+/*---------------------------
+-------基本のレイアウト------
+----------------------------*/
+#container {
+    width: 1000px;
+    height: fit-content;
+
+    margin: 20px auto;
+
+    background-color: #fff;
+    background-image: url("../image/noise3.png");
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#contentsRight {
+    width: 740px;
+    float: right;
+
+    padding: 30px;
+}
+
+#footer {
+    color: #000;
+    width: 950;
+    padding: 20px;
+    height: 100px;
+    background: #666;
+    clear: both;
+    text-align: center;
+    background-image: url("../image/noise.png");
+
+    & address {
+        font-style: normal;
+    }
+
+    & .counter {
+        margin-left: 15px;
+    }
+}
+
+/* スマホ用 */
+#subMenu {
+    margin-top: 3em;
+}
+
+@media screen and (max-width: 768px) {
+    #container {
+        width: 100%;
+        margin: 0;
+    }
+
+    #contentsLeft {
+        display: none;
+    }
+
+    #contentsRight {
+        width: 80%;
+        padding: 10%;
+        margin: 0;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,49 @@
+/*--一般--*/
+body {
+    background-image: url("../image/bg13.png");
+    background-repeat: repeat;
+    background-color: #94c286;
+
+    color: #000;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic",
+        sans-serif;
+    line-height: 1.5;
+    font-size: 15px;
+
+    padding: 0;
+}
+
+h2,
+h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 160%;
+}
+
+h3 {
+    border-bottom: 1px solid #000;
+    padding-bottom: 0.5em;
+    font-size: 150%;
+    line-height: 150%;
+}
+
+i {
+    margin-right: 10px;
+}
+
+::selection {
+    background: #6bc8a9;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    html,
+    body {
+        padding: 0;
+        margin: 0;
+        background-color: #0c1923;
+    }
+}

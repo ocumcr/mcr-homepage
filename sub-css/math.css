@@ -5,7 +5,7 @@
 
 /* p要素を使うとずれる */
 .note {
-    background-color: #fcfcff;
+    background-color: #fffeef;
     background-image: linear-gradient(to bottom, transparent 98%, #00004080 100%);
     background-size: 100% 1.5em; /* 行間の高さに合わせて調整 */
 

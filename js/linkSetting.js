@@ -1,18 +1,19 @@
 // urlの変更が発生した時に、#topとかを見て正しいページを表示させる
 const loadPage = (pageId) => {
-    loadContent(
-        "pages/" +
-            {
-                "#top": "top.html",
-                "#diary": "diary.html",
-                "#info": "info.html",
-                "#work": "work.html",
-                "#member": "member.html",
-                "#computer": "computer.html",
-                "#link": "link.html",
-                "#help": "help.html",
-            }[pageId],
-    )
+    const pageMap = {
+        "#top": "top",
+        "#diary": "diary",
+        "#info": "info",
+        "#work": "work",
+        "#member": "member",
+        "#computer": "computer",
+        "#link": "link",
+        "#help": "help",
+    }
+
+    const folderName = pageMap[pageId]
+
+    loadContent(`pages/${folderName}/index.html`)
 
     // スマホ用のメニューを閉じる(無理やり)
     document.getElementById("menu-btn").checked = false
