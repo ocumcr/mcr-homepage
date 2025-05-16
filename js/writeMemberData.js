@@ -1,21 +1,23 @@
 // 各学年のデータを書き込む
 const writeMemberData = async (grade) => {
+    // 現在の1年生が何期生か?
+    const currentGrade1 = getFiscalYear()
+
     document.getElementById("members").innerHTML += `
         <table summary="サークルのメンバーの紹介" class="intro-table">
             <caption>
-            ${grade}回生
+                ${grade}回生
             </caption>
             <tbody id="student-${grade}">
             </tbody>
         </table>
     `
 
-    const student = document.getElementById(`student-${grade}`)
-
-    // 現在の1年生が何期生か?
-    const currentGrade1 = getFiscalYear()
-
     const members = await safeLoadCsvAsObjects(`memberdata/student-${currentGrade1 - grade + 1}.csv`)
+
+    if (!members) return
+
+    const student = document.getElementById(`student-${grade}`)
 
     members.forEach((member) => {
         student.innerHTML += `
@@ -94,7 +96,7 @@ const writeAllMemberData = async () => {
     `
 
     for (let i = getFiscalYear() - 4; i >= 2013; i--) {
-        console.log(i)
+        // console.log(i)
         await writeOb(i)
     }
 

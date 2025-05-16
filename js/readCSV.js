@@ -1,45 +1,39 @@
-// urlを受け取ってcsvファイルをobjectにする
+// urlを受け取ってcsvファイルをobjectにする（関数型っぽく）
 const loadCsvAsObjects = async (url) => {
-    const response = await fetch(url, {
-        cache: "no-store",
-    })
-
+    const response = await fetch(url, { cache: "no-store" })
     const csvText = await response.text()
 
-    const lines = csvText.split("\n")
-    const headers = lines[0].split(",") // 1行目をラベルとして取得
-    const objects = []
-
-    for (let i = 1; i < lines.length; i++) {
-        const data = lines[i].split(",")
-        if (data.length === headers.length) {
-            // 空行を無視
-            const obj = {}
-            headers.forEach((header, index) => {
-                obj[header.trim()] = data[index].trim() // キーと値を設定
-            })
-            objects.push(obj)
-        }
+    // CSV形式の簡易チェック: 最低1行のヘッダーと1つ以上のカンマが必要
+    if (!csvText.includes("\n") || !csvText.includes(",")) {
+        throw new Error("CSV形式ではありません")
     }
 
-    return objects
+    const [headerLine, ...dataLines] = csvText.split("\n").filter((line) => line.trim() !== "")
+    const headers = headerLine.split(",").map((h) => h.trim())
+
+    return dataLines
+        .map((line) => line.split(",").map((cell) => cell.trim()))
+        .filter((data) => data.length === headers.length)
+        .map((data) => headers.reduce((obj, header, idx) => ({ ...obj, [header]: data[idx] }), {}))
 }
 
 // 注意を払う
 const safeLoadCsvAsObjects = async (url) => {
     if (typeof url !== "string") {
         console.error("url must be stringにゃ!")
-        return
+        return null
     }
 
     if (url == "") {
         console.error("urlを入力するにゃ!")
-        return
+        return null
     }
 
     try {
-        return loadCsvAsObjects(url)
+        const csv = await loadCsvAsObjects(url)
+        return csv
     } catch (error) {
         console.error(error)
+        return null
     }
 }
