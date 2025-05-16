@@ -1,0 +1,85 @@
+{
+    "オンラインソフト": [
+        {
+            "title": "縮小専用。",
+            "url": "http://i-section.net/software/shukusen/",
+            "description": "画像サイズを縮小するソフト。大量の画像をドラッグ＆ドロップで一気に縮小できます。"
+        },
+        {
+            "title": "WinShot",
+            "url": "http://www.gigafree.net/tool/capture/winshot.html",
+            "description": "連続画面キャプチャソフト。拡大した画面で2クリックでキャプチャ範囲を指定できる。GIFアニメーションを作るのに良いのでは。"
+        },
+        {
+            "title": "FileRenamer2000",
+            "url": "http://www.d1.dion.ne.jp/~obiyan/freesoft/freesoft.html",
+            "description": "ファイル名を連番で一括変更できるソフト。少し古いけれど問題の無い実用性。"
+        },
+        {
+            "title": "Namery",
+            "url": "http://www.vector.co.jp/soft/winnt/util/se217399.html",
+            "description": "ファイル名編集ソフト。連番、文字列の前方・後方追加・挿入、削除、拡張子一括変換など割と高機能。Win7で動作確認済みです。"
+        },
+        {
+            "title": "ED",
+            "url": "http://type74.org/ed.php",
+            "description": "ファイル暗号化ソフトの定番。暗号化レベルは最大で国家機密級。"
+        },
+        {
+            "title": "SimiPix",
+            "url": "http://www.vector.co.jp/soft/winnt/art/se363819.html",
+            "description": "指定したディレクトリ内で似た画像を検出してくれるソフト。同じ画像がダブって容量を圧迫しているときの整理用に。"
+        },
+        {
+            "title": "bsch3v",
+            "url": "http://www.suigyodo.com/online/schsoft.htm",
+            "description": "回路素子の配置と配線のみのシンプルな回路図エディタ。図記号の自作に対応。回路図はモノクロBMPで出力可能。"
+        },
+        {
+            "title": "HideWindow",
+            "url": "http://www.gigafree.net/security/boss/hidewindow.html",
+            "description": "アクティブウインドウを、ワンキーで隠せるようにするソフト。現在アクティブになっているウィンドウとそのタスクボタンをPauseキーで一時的に隠せます。"
+        },
+        {
+            "title": "TCP Monitor Plus",
+            "url": "http://hp.vector.co.jp/authors/VA032928/",
+            "description": "ネット回線のトラフィックモニター。選択したネットワークアダプターがどれほどの通信速度で送受信を行っているかをリアルタイムでグラフィカルに表示します。軽快。"
+        },
+        {
+            "title": "SpeedFan",
+            "url": "http://www.almico.com/speedfan.php",
+            "description": "CPU・GPU・HDDの温度を表示したり、内臓ファン回転数を制御したりできるソフト。表示する温度はハードウェアに組み込まれたセンサーから読み込まれるので、センサーの状態や精度によっては正しく表示されない場合もあります。"
+        }
+    ],
+
+    "ウェブサービス": [
+        {
+            "title": "Screenleap",
+            "url": "http://www.screenleap.com/",
+            "description": "画面共有サービス。画面越しにコンピューターの操作を教えたいときに便利。ブラウザで動くので、新しくソフトをインストールする必要がありません。"
+        },
+        {
+            "title": "Internet Archive",
+            "url": "http://www.archive.org/",
+            "description": "googleのキャッシュを強力にしたようなサイト。中央のテキストボックスに任意のサイトアドレスを入力して「take me back」をクリックすると過去のサイトを閲覧できます。"
+        }
+    ],
+
+    "お役立ちサイト": [
+        {
+            "title": "Vector",
+            "url": "http://www.vector.co.jp/",
+            "description": "超有名なオンラインソフトのダウンロードサイト。大抵のフリーソフトはここで見つかるはず。"
+        },
+        {
+            "title": "窓の杜",
+            "url": "http://www.forest.impress.co.jp/",
+            "description": "同上。"
+        },
+        {
+            "title": "e-Words",
+            "url": "http://e-words.jp/",
+            "description": "コンピュータに関連する用語を幅広く収録したインターネット上の用語辞典。わからない用語があったときにどうぞ。"
+        }
+    ]
+}
