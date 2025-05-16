@@ -16,7 +16,8 @@ const loadPage = (pageId) => {
     loadContent(`pages/${folderName}/index.html`)
 
     // スマホ用のメニューを閉じる(無理やり)
-    document.getElementById("menu-btn").checked = false
+    const hamburger = document.getElementById("menu-btn")
+    hamburger && (hamburger.checked = false)
 }
 
 window.addEventListener("popstate", (event) => {
@@ -35,4 +36,6 @@ window.addEventListener("load", (event) => {
     loadPage(location.hash.split("/")[0])
 })
 
-if (location.hash == "") location.href += "#top"
+document.addEventListener("DOMContentLoaded", () => {
+    if (location.hash == "") location.href += "#top"
+})

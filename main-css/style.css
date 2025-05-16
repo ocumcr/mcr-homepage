@@ -12,7 +12,7 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-#contentsRight {
+#content-right {
     width: 740px;
     float: right;
 
@@ -39,7 +39,7 @@
 }
 
 /* スマホ用 */
-#subMenu {
+#sub-menu {
     margin-top: 3em;
 }
 
@@ -49,11 +49,11 @@
         margin: 0;
     }
 
-    #contentsLeft {
+    #content-left {
         display: none;
     }
 
-    #contentsRight {
+    #content-right {
         width: 80%;
         padding: 10%;
         margin: 0;

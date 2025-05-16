@@ -1,39 +1,52 @@
 /**
- * 画像スライドショーを表示するためのもの
+ * 画像スライドショーを表示するためのもの（関数型っぽく）
  */
 
-let slideIndex = 1
+const getSlides = () => Array.from(document.getElementsByClassName("slide"))
+const getDots = () => Array.from(document.getElementsByClassName("dot"))
 
-function changeSlide(n) {
-    showSlides((slideIndex += n))
+const clampIndex = (n, length) => {
+    if (n > length) return 1
+    if (n < 1) return length
+    return n
 }
 
-function currentSlide(n) {
-    showSlides((slideIndex = n))
+const renderSlides = (slides, dots, activeIndex) => {
+    slides.forEach((slide, i) => {
+        slide.style.display = i === activeIndex - 1 ? "block" : "none"
+    })
+    dots.forEach((dot, i) => {
+        dot.classList.toggle("active", i === activeIndex - 1)
+    })
 }
 
-function showSlides(n) {
-    if (location.hash !== "#top") return
+const showSlides = (n, prevTimeoutId) => {
+    if (location.hash !== "#top") return { slideIndex: n, timeoutId: prevTimeoutId }
 
-    const slides = document.getElementsByClassName("slide")
-    const dots = document.getElementsByClassName("dot")
+    const slides = getSlides()
+    const dots = getDots()
+    const slideIndex = clampIndex(n, slides.length)
 
-    if (n > slides.length) {
-        slideIndex = 1
-    }
-    if (n < 1) {
-        slideIndex = slides.length
-    }
+    renderSlides(slides, dots, slideIndex)
 
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none"
-        dots[i].className = dots[i].className.replace(" active", "")
-    }
+    if (prevTimeoutId) clearTimeout(prevTimeoutId)
+    const timeoutId = setTimeout(() => {
+        showSlides(slideIndex + 1, timeoutId)
+    }, 6000)
 
-    slides[slideIndex - 1].style.display = "block"
-    dots[slideIndex - 1].className += " active"
+    return { slideIndex, timeoutId }
 }
 
-let id = setInterval(() => {
-    changeSlide(1)
-}, 6000)
+// イベントハンドラ
+let state = { slideIndex: 1, timeoutId: null }
+
+const changeSlide = (n) => {
+    state = showSlides(state.slideIndex + n, state.timeoutId)
+}
+
+const currentSlide = (n) => {
+    state = showSlides(n, state.timeoutId)
+}
+
+// 初期表示
+state = showSlides(state.slideIndex, state.timeoutId)

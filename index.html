@@ -21,9 +21,9 @@
         <link rel="stylesheet" href="main-css/style.css" />
 
         <link rel="stylesheet" href="sub-css/fadein.css" />
-        <link rel="stylesheet" href="sub-css/slideshow.css" />
 
         <link rel="stylesheet" href="pages/top/top.css" />
+        <link rel="stylesheet" href="pages/top/slideshow.css" />
         <link rel="stylesheet" href="pages/info/info.css" />
         <link rel="stylesheet" href="pages/work/work.css" />
         <link rel="stylesheet" href="pages/member/member.css" />
@@ -31,11 +31,14 @@
         <link rel="stylesheet" href="pages/link/link.css" />
         <link rel="stylesheet" href="pages/help/help.css" />
 
+        <script src="js/set-html.js"></script>
         <script src="js/loadContent.js"></script>
         <script src="js/readCSV.js"></script>
         <script src="js/writeMemberData.js"></script>
         <script src="js/slideshow.js"></script>
         <script src="js/setWorkPage.js"></script>
+        <!-- メニューのリンクを設定 -->
+        <script src="js/linkSetting.js"></script>
 
         <!-- google fontのRaleway -->
         <link
@@ -75,15 +78,42 @@
             <span class="line"></span>
         </div>
 
+        <div id="container">
+            <header>
+                <!-- ここにスマホ用メニューが入る -->
+            </header>
+
+            <menu id="content-left">
+                <!-- ここにメニューが入る -->
+            </menu>
+
+            <main id="content-right">
+                <!-- ここに要素が入る -->
+                にゃーん(えらー)
+            </main>
+
+            <footer id="footer"><small>Copyright &copy; 2025 MCR. All rights reserved.</small> <br /></footer>
+        </div>
+
         <script>
+            setHTML("smartphone-menu.html", "header")
+            setHTML("menu.html", "#content-left")
+
+            const t = new Date(document.lastModified)
+            const y = t.getFullYear() // 年
+            const m = t.getMonth() + 1 // 月
+            const d = t.getDate() // 日
+
+            document.getElementById("footer").innerHTML += "Last Update : " + y + "/" + m + "/" + d
+
             // アニメーション終了後に白色が広がり、コンテンツを表示する
             document.addEventListener("DOMContentLoaded", () => {
                 const overlay = document.getElementById("animation-overlay")
-                const content = document.getElementById("container")
+                const container = document.getElementById("container")
 
                 // 白色が広がりきったらコンテンツを表示してオーバーレイを非表示
                 overlay.onanimationend = () => {
-                    content.style.display = ""
+                    container.style.display = ""
 
                     overlay.style.animation = "fadeOut 1s forwards"
 
@@ -93,142 +123,5 @@
                 }
             })
         </script>
-
-        <div id="container">
-            <!-- スマホ用メニュー -->
-            <header class="header">
-                <div class="navtext-container">
-                    <div class="navtext">
-                        <!-- タイトル入れようかと思ったけどやめた -->
-                    </div>
-                </div>
-                <!-- checkbox::checkedで強引に -->
-                <input type="checkbox" class="menu-btn" id="menu-btn" />
-                <label for="menu-btn" class="menu-icon"><span class="navicon"></span></label>
-                <menu class="menu" id="subMenu">
-                    <li>
-                        <a href="#top"><i class="fa-solid fa-house"></i>Top</a>
-                    </li>
-                    <li>
-                        <a href="#info"><i class="fa-solid fa-info"></i>Info</a>
-                    </li>
-                    <li>
-                        <a href="#work"><i class="fa-solid fa-gamepad"></i>Works</a>
-                    </li>
-                    <li>
-                        <a href="#member"><i class="fa-solid fa-person"></i>Members</a>
-                    </li>
-                    <li>
-                        <a href="#computer"><i class="fa-solid fa-desktop"></i>Computers</a>
-                    </li>
-                    <li>
-                        <a href="#link"><i class="fa-solid fa-link"></i>Links</a>
-                    </li>
-                    <li>
-                        <a href="#diary"><i class="fa-solid fa-book"></i>Diary</a>
-                    </li>
-                    <br />
-                    <br />
-                    <li>
-                        <a href="https://ocumcr.github.io/mcr-music-club/" target="_blank">
-                            <i class="fa-solid fa-music"></i> Music
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://ocumcr.hatenablog.com/" target="_blank">
-                            <i class="fa-solid fa-pen"></i>Blog</a
-                        >
-                    </li>
-                    <li>
-                        <a href="https://x.com/ocu_mcr" target="_blank"><i class="fa-brands fa-x-twitter"></i>X</a>
-                    </li>
-                    <li>
-                        <a href="mailto:ocumcr2014@gmail.com"><i class="fa-solid fa-envelope"></i>Mail</a>
-                    </li>
-                </menu>
-            </header>
-
-            <!-- 左側ここから -->
-            <div id="contentsLeft">
-                <a class="" id="title" href="#top">
-                    <div id="mcr">MCR</div>
-                    <br />
-                    大阪公立大学<br />
-                    マイコン研究会
-                </a>
-                <!--メニューここから-->
-                <!-- PC用メニュー -->
-                <div id="globalnavi">
-                    <menu id="mainMenu">
-                        <li>
-                            <a href="#info"><i class="fa-solid fa-info"></i>Info</a>
-                        </li>
-                        <li>
-                            <a href="#work"><i class="fa-solid fa-gamepad"></i>Works</a>
-                        </li>
-                        <li>
-                            <a href="#member"><i class="fa-solid fa-person"></i>Members</a>
-                        </li>
-                        <li>
-                            <a href="#computer"><i class="fa-solid fa-desktop"></i>Computers</a>
-                        </li>
-                        <li>
-                            <a href="#link"><i class="fa-solid fa-link"></i>Links</a>
-                        </li>
-                        <li>
-                            <a href="#diary"><i class="fa-solid fa-book"></i>Diary</a>
-                        </li>
-                    </menu>
-
-                    <menu id="subMenu">
-                        <li>
-                            <a href="https://ocumcr.github.io/mcr-music-club/" target="_blank">
-                                <i class="fa-solid fa-music"></i> Music
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://ocumcr.hatenablog.com/" target="_blank">
-                                <i class="fa-solid fa-pen"></i>Blog</a
-                            >
-                        </li>
-                        <li>
-                            <a href="https://x.com/ocu_mcr" target="_blank"><i class="fa-brands fa-x-twitter"></i>X</a>
-                        </li>
-                        <li>
-                            <a href="mailto:ocumcr2014@gmail.com"><i class="fa-solid fa-envelope"></i>Mail</a>
-                        </li>
-                    </menu>
-                </div>
-
-                <!--メニューここまで-->
-            </div>
-            <!-- 左側ここまで -->
-
-            <!-- 右側ここから -->
-            <main id="contentsRight">
-                <!-- ここに要素が入る -->
-                にゃーん(えらー)
-            </main>
-            <!-- 右側ここまで -->
-
-            <!-- 下側ここから -->
-            <footer id="footer">
-                <address>Copyright &copy; 2025 MCR. All rights reserved.</address>
-                <div class="update">
-                    <script>
-                        const t = new Date(document.lastModified)
-                        const y = t.getFullYear() // 年
-                        const m = t.getMonth() + 1 // 月
-                        const d = t.getDate() // 日
-
-                        document.getElementById("footer").innerHTML += "Last Update : " + y + "/" + m + "/" + d
-                    </script>
-                </div>
-            </footer>
-            <!-- 下側ここまで -->
-        </div>
-
-        <!-- メニューのリンクを設定 -->
-        <script src="js/linkSetting.js"></script>
     </body>
 </html>

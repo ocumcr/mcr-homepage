@@ -14,7 +14,7 @@ const loadContent = (page) => {
 
 const insertHTML = (html) => {
     // コンテンツを挿入する要素を取得
-    const contentContainer = document.getElementById("contentsRight")
+    const contentContainer = document.getElementById("content-right")
     contentContainer.innerHTML = html
 
     // `<script>` タグの実行を処理
