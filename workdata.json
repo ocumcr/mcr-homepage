@@ -40,7 +40,7 @@
             "year": "2025",
             "imagePath": "image/works/game/takepanda.png",
             "gamePath": "https://kuma2225.github.io/takepanda/",
-            "description": "パンダの木こりのゲーム"
+            "description": "パンダの木こりのゲーム<br>スペースで木こる、矢印キーで移動"
         },
         {
             "title": "Pentamond2",
