@@ -35,6 +35,14 @@
     ],
     "games": [
         {
+            "title": "竹パンダ",
+            "author": "くま",
+            "year": "2025",
+            "imagePath": "image/works/game/takepanda.png",
+            "gamePath": "https://kuma2225.github.io/takepanda/",
+            "description": "パンダの木こりのゲーム"
+        },
+        {
             "title": "Pentamond2",
             "author": "うめぼし",
             "year": "2025",
