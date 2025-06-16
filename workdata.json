@@ -1,6 +1,14 @@
 {
     "vrc": [
         {
+            "title": "頭に手を当てるとジェスチャー変わるやつ",
+            "author": "ひとねぎ",
+            "year": "2025",
+            "imagePath": "image/works/3d/頭に手を当てるとジェスチャー変わるやつ.jpg",
+            "description": "<p>手を頭に近づけるとジェスチャーが変化するギミックです。<br><br>ピース→魔貫光○砲みたいなジェスチャー<br>オープン→指をそろえた敬礼に変化します。</p><br><a href=\"https://hitone-gimmik.booth.pm/items/7004834\" target=\"_blank\">https://hitone-gimmik.booth.pm/items/7004834</a>",
+            "option": []
+        },
+        {
             "title": "奇妙立ちギミック",
             "author": "ひとねぎ",
             "year": "2025",
