@@ -43,6 +43,14 @@
     ],
     "games": [
         {
+            "title": "light-out-generator",
+            "author": "いぽた",
+            "year": "2025",
+            "imagePath": "image/works/game/lights-out.png",
+            "gamePath": "https://ipotazero.github.io/lights-out-generator/",
+            "description": "研究用ライツアウト<br>線形代数力によってすべての解を得ることに成功したにゃ！"
+        },
+        {
             "title": "竹パンダ",
             "author": "くま",
             "year": "2025",
