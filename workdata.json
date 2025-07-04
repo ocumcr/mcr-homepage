@@ -59,6 +59,14 @@
     ],
     "games": [
         {
+            "title": "Illuminate Beat",
+            "author": "うめぼし",
+            "year": "2025",
+            "imagePath": "image/works/game/illuminate-beat.png",
+            "gamePath": "https://kishunankoubai.github.io/IlluminateBeat/",
+            "description": "机ドラムをイメージしたリズムゲームです<br>両手を使ってひたすらにリズムを刻み続けよう<br>スマホ・タブレットも対応しました"
+        },
+        {
             "title": "light-out-generator",
             "author": "いぽた",
             "year": "2025",
