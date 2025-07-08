@@ -2,16 +2,13 @@
  * 画像スライドショーを表示するためのもの（関数型っぽく）
  */
 
-const getSlides = () => Array.from(document.getElementsByClassName("slide"))
-const getDots = () => Array.from(document.getElementsByClassName("dot"))
+const getSlides = (): HTMLElement[] => Array.from(document.getElementsByClassName("slide")) as HTMLElement[]
 
-const clampIndex = (n, length) => {
-    if (n > length) return 1
-    if (n < 1) return length
-    return n
-}
+const getDots = (): HTMLElement[] => Array.from(document.getElementsByClassName("dot")) as HTMLElement[]
 
-const renderSlides = (slides, dots, activeIndex) => {
+const clampIndex = (n: number, length: number): number => (n > length ? 1 : n < 1 ? length : n)
+
+const renderSlides = (slides: HTMLElement[], dots: HTMLElement[], activeIndex: number): void => {
     slides.forEach((slide, i) => {
         slide.style.display = i === activeIndex - 1 ? "block" : "none"
     })
@@ -20,7 +17,12 @@ const renderSlides = (slides, dots, activeIndex) => {
     })
 }
 
-const showSlides = (n, prevTimeoutId) => {
+type SlideState = {
+    slideIndex: number
+    timeoutId: number | null
+}
+
+const showSlides = (n: number, prevTimeoutId: number | null): SlideState => {
     if (location.hash !== "#top") return { slideIndex: n, timeoutId: prevTimeoutId }
 
     const slides = getSlides()
@@ -30,21 +32,21 @@ const showSlides = (n, prevTimeoutId) => {
     renderSlides(slides, dots, slideIndex)
 
     if (prevTimeoutId) clearTimeout(prevTimeoutId)
-    const timeoutId = setTimeout(() => {
-        showSlides(slideIndex + 1, timeoutId)
+    const timeoutId = window.setTimeout(() => {
+        state = showSlides(slideIndex + 1, timeoutId)
     }, 6000)
 
     return { slideIndex, timeoutId }
 }
 
 // イベントハンドラ
-let state = { slideIndex: 1, timeoutId: null }
+let state: SlideState = { slideIndex: 1, timeoutId: null }
 
-const changeSlide = (n) => {
+const changeSlide = (n: number): void => {
     state = showSlides(state.slideIndex + n, state.timeoutId)
 }
 
-const currentSlide = (n) => {
+const currentSlide = (n: number): void => {
     state = showSlides(n, state.timeoutId)
 }
 

@@ -1,10 +1,10 @@
 // ページごとのコンテンツを読み込み
 // ページに応じて 'content1.html' や 'content2.html' に変更
 
-const loadContent = (page) => {
-    if (page == null) return
+const loadContent = (pagePath: string) => {
+    if (!pagePath) return
 
-    fetch(page, { cache: "no-store" })
+    fetch(pagePath, { cache: "no-store" })
         .then((response) => response.text())
         .then((data) => {
             insertHTML(data)
@@ -12,9 +12,9 @@ const loadContent = (page) => {
         .catch((error) => console.error("Error loading content:", error))
 }
 
-const insertHTML = (html) => {
+const insertHTML = (html: string) => {
     // コンテンツを挿入する要素を取得
-    const contentContainer = document.getElementById("content-right")
+    const contentContainer = document.getElementById("content-right")!
     contentContainer.innerHTML = html
 
     // `<script>` タグの実行を処理

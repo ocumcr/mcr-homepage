@@ -38,11 +38,6 @@
     }
 }
 
-/* スマホ用 */
-#sub-menu {
-    margin-top: 3em;
-}
-
 @media screen and (max-width: 768px) {
     #container {
         width: 100%;

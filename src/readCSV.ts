@@ -1,5 +1,5 @@
 // urlを受け取ってcsvファイルをobjectにする（関数型っぽく）
-const loadCsvAsObjects = async (url) => {
+const loadCsvAsObjects = async (url: string): Promise<MemberData[]> => {
     const response = await fetch(url, { cache: "no-store" })
     const csvText = await response.text()
 
@@ -14,11 +14,18 @@ const loadCsvAsObjects = async (url) => {
     return dataLines
         .map((line) => line.split(",").map((cell) => cell.trim()))
         .filter((data) => data.length === headers.length)
-        .map((data) => headers.reduce((obj, header, idx) => ({ ...obj, [header]: data[idx] }), {}))
+        .map((data) => headers.reduce((obj, header, idx) => ({ ...obj, [header]: data[idx] }), {})) as any
+}
+
+type MemberData = {
+    name: string
+    course: string
+    hobby: string
+    comment: string
 }
 
 // 注意を払う
-const safeLoadCsvAsObjects = async (url) => {
+const safeLoadCsvAsObjects = async (url: string): Promise<MemberData[] | null> => {
     if (typeof url !== "string") {
         console.error("url must be stringにゃ!")
         return null

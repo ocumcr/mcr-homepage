@@ -31,14 +31,14 @@
         <link rel="stylesheet" href="pages/link/link.css" />
         <link rel="stylesheet" href="pages/help/help.css" />
 
-        <script src="js/set-html.js"></script>
-        <script src="js/loadContent.js"></script>
-        <script src="js/readCSV.js"></script>
-        <script src="js/writeMemberData.js"></script>
-        <script src="js/slideshow.js"></script>
-        <script src="js/setWorkPage.js"></script>
+        <script src="dist/set-html.js"></script>
+        <script src="dist/load-content.js"></script>
+        <script src="dist/readCSV.js"></script>
+        <script src="dist/write-member-data.js"></script>
+        <script src="dist/slideshow.js"></script>
+        <script src="dist/set-work-page.js"></script>
         <!-- メニューのリンクを設定 -->
-        <script src="js/linkSetting.js"></script>
+        <script src="dist/link-setting.js"></script>
 
         <!-- google fontのRaleway -->
         <link
@@ -96,8 +96,8 @@
         </div>
 
         <script>
-            setHTML("smartphone-menu.html", "header")
-            setHTML("menu.html", "#content-left")
+            setHTML("./html-component/smartphone-menu.html", "header")
+            setHTML("./html-component/menu.html", "#content-left")
 
             const t = new Date(document.lastModified)
             const y = t.getFullYear() // 年
