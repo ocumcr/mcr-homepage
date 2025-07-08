@@ -6,7 +6,7 @@
             "year": "2025",
             "imagePath": "image/works/3d/柱の男ごっこギミック.jpg",
             "description": "<p>ジョジョに出てくる柱の男のポーズを再生をするギミックです。 １人でも導入すれば3人で遊ぶことができます。写真撮影にどうぞ…？ Questにも対応しています（ただし、ドドンの文字が再生されません）</p><br><a href=\"https://hitone-gimmik.booth.pm/items/7020351\" target=\"_blank\">https://hitone-gimmik.booth.pm/items/7020351</a>",
-            "option": []
+            "option": ["square", "big"]
         },
         {
             "title": "ゆびわっかギミック",
@@ -14,7 +14,7 @@
             "year": "2025",
             "imagePath": "image/works/3d/ゆびわっかギミック.jpg",
             "description": "<p>トリガー3回タップで、ロックンロールのジェスチャーが指輪っかに変わります。無料です。</p><br><a href=\"https://hitone-gimmik.booth.pm/items/7029552\" target=\"_blank\">https://hitone-gimmik.booth.pm/items/7029552</a>",
-            "option": []
+            "option": ["square", "big"]
         },
         {
             "title": "頭に手を当てるとジェスチャー変わるやつ",
@@ -22,7 +22,7 @@
             "year": "2025",
             "imagePath": "image/works/3d/頭に手を当てるとジェスチャー変わるやつ.jpg",
             "description": "<p>手を頭に近づけるとジェスチャーが変化するギミックです。<br><br>ピース→魔貫光○砲みたいなジェスチャー<br>オープン→指をそろえた敬礼に変化します。</p><br><a href=\"https://hitone-gimmik.booth.pm/items/7004834\" target=\"_blank\">https://hitone-gimmik.booth.pm/items/7004834</a>",
-            "option": []
+            "option": ["square", "big"]
         },
         {
             "title": "奇妙立ちギミック",
@@ -30,7 +30,7 @@
             "year": "2025",
             "imagePath": "image/works/3d/奇妙立ちギミック.jpg",
             "description": "<p>手の位置とジェスチャーに応じて自動でジョジョ立ちができるアバターギミックです。 三点トラッキングでも咄嗟に綺麗なジョジョ立ちがしたくて作りました。<br /><a href='https://hitone-gimmik.booth.pm/items/6779930' target=\"_blank\">https://hitone-gimmik.booth.pm/items/6779930</a></p>",
-            "option": []
+            "option": ["square", "big"]
         },
         {
             "title": "【VRChat用アバターギミック】Doll Follow System",
@@ -38,7 +38,7 @@
             "year": "2024",
             "imagePath": "image/works/3d/vrchat.jpg",
             "description": "<p>Doll Follow Systemは、お好みのサブアバターや小物を乗せたり持ったり、アニメーションさせたりするアバターギミックです！</p><p>体験版無料です、以下のリンクからどうぞ！<br /><a href='https://hitone-gimmik.booth.pm/items/6417719'>https://hitone-gimmik.booth.pm/items/6417719</a></p>",
-            "option": []
+            "option": ["square", "big"]
         },
         {
             "title": "【Doll Follow System追加コンテンツ】ばたばたモーション",
@@ -46,7 +46,7 @@
             "year": "2025",
             "imagePath": "image/works/3d/くわえられモーション.jpg",
             "description": "<a href=\"https://booth.pm/ja/items/6673877\" target=\"_blank\">https://booth.pm/ja/items/6673877</a><br>咥えられてばたばたするかわいいアニメーション4種類セットです！Doll Follow Systemで使うことを想定していますが、一応普通のアニメーションとしてもお使いいただけます。",
-            "option": []
+            "option": ["square", "big"]
         },
         {
             "title": "Ria - オリジナル3Dアバター",
