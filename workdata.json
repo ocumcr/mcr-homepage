@@ -59,6 +59,14 @@
     ],
     "games": [
         {
+            "title": "風呂無し、屋根無し、地獄行き。",
+            "author": "いぽた、うめぼし",
+            "year": "2025",
+            "imagePath": "image/works/game/with-yignwi.png",
+            "gamePath": "https://ipotazero.github.io/With-Yignwi/",
+            "description": "ひっくり返すパズル第二弾。<br>スマホでも遊べます。"
+        },
+        {
             "title": "Illuminate Beat",
             "author": "うめぼし",
             "year": "2025",
