@@ -1,21 +1,24 @@
 .intro-table {
     width: 100%;
-    margin-bottom: 30px;
     border: none;
+
+    th,
+    td {
+        border: none;
+        text-align: left;
+    }
+
+    tr {
+        margin-bottom: 1em;
+
+        border-bottom: black 1px dashed;
+    }
 }
 
 .intro-table caption {
     text-align: left;
-    line-height: 120%;
-    border-bottom: 1px solid #000;
-    margin-bottom: 10px;
-}
-
-.intro-table th,
-.intro-table td {
-    border: none;
-    text-align: left;
-    padding: 5px;
+    border-bottom: 1px solid black;
+    margin-bottom: 0.5em;
 }
 
 .name {

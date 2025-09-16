@@ -11,32 +11,37 @@ const createModalHtml = (type, data) => {
                 制作者: ${data.author}<br />
                 制作年: ${data.year}<br />
                 <br />
-                ${type === "games" && "gamePath" in data
-        ? `
-                    <a href="${data.gamePath}" target="_blank" class="download-button">
-                        あそぶ!
-                    </a>
-                    <br /><br />
-                `
-        : ""}
+                ${(() => {
+        if (type === "games" || type === "browser-games") {
+            return `
+                            <a href="${data.gamePath}" target="_blank" class="download-button">
+                                あそぶ!
+                            </a>
+                            <br /><br />
+                        `;
+        }
+        else {
+            return "";
+        }
+    })()}
                 ${data.description}
             </div>
         </div>
     `;
     return baseHtml;
 };
-const openModal = (html) => {
+const setupModalElement = (html) => {
     const modal = document.getElementById("modal");
+    modal.style.display = "flex";
     const modalContent = document.getElementById("modal-content");
     modalContent.innerHTML = `<span class="close">&times;</span>` + html;
-    modal.style.display = "flex";
     document.querySelector(".close").addEventListener("click", () => {
         modal.style.display = "none";
     });
 };
 const openWorkModal = (type, i) => {
     const data = workData[type][i];
-    openModal(createModalHtml(type, data));
+    setupModalElement(createModalHtml(type, data));
 };
 const createButton = (type, data, index) => {
     const className = `${data.option?.includes("big") ? "big" : ""} ${data.option?.includes("square") ? "square" : ""}`;
@@ -58,8 +63,7 @@ const appendButtons = (type, dataList) => {
     });
 };
 const setModal = async () => {
-    const response = await fetch("workdata.json", { cache: "no-store" });
-    workData = await response.json();
+    workData = await (await fetch("workdata.json", { cache: "no-store" })).json();
     Object.entries(workData).forEach(([type, dataList]) => {
         appendButtons(type, dataList);
     });

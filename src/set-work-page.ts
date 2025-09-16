@@ -1,4 +1,4 @@
-type VRCData = {
+type WorkData = {
     title: string
     author: string
     year: string
@@ -7,21 +7,24 @@ type VRCData = {
     option?: string[]
 }
 
-type GameData = VRCData & {
+type VRCData = WorkData
+type OtherData = WorkData
+type GameData = WorkData & {
     gamePath: string
 }
 
-type OtherData = VRCData
-
-type WorkData = {
-    vrc: VRCData[]
-    games: GameData[]
-    other: OtherData[]
+type WorkDataMap = {
+    "vrc": VRCData[]
+    "browser-games": GameData[]
+    "games": GameData[]
+    "other": OtherData[]
 }
 
-let workData: WorkData
+type WorkDataType = keyof WorkDataMap
 
-const createModalHtml = (type: string, data: VRCData | GameData | OtherData): string => {
+let workData: WorkDataMap
+
+const createModalHtml = (type: WorkDataType, data: WorkData): string => {
     const baseHtml = `
         <h3>${data.title}</h3>
         <div class="game-description">
@@ -32,16 +35,18 @@ const createModalHtml = (type: string, data: VRCData | GameData | OtherData): st
                 制作者: ${data.author}<br />
                 制作年: ${data.year}<br />
                 <br />
-                ${
-                    type === "games" && "gamePath" in data
-                        ? `
-                    <a href="${(data as GameData).gamePath}" target="_blank" class="download-button">
-                        あそぶ!
-                    </a>
-                    <br /><br />
-                `
-                        : ""
-                }
+                ${(() => {
+                    if (type === "games" || type === "browser-games") {
+                        return `
+                            <a href="${(data as GameData).gamePath}" target="_blank" class="download-button">
+                                あそぶ!
+                            </a>
+                            <br /><br />
+                        `
+                    } else {
+                        return ""
+                    }
+                })()}
                 ${data.description}
             </div>
         </div>
@@ -49,47 +54,52 @@ const createModalHtml = (type: string, data: VRCData | GameData | OtherData): st
     return baseHtml
 }
 
-const openModal = (html: string): void => {
+const setupModalElement = (html: string): void => {
     const modal = document.getElementById("modal")!
+    modal.style.display = "flex"
+
     const modalContent = document.getElementById("modal-content")!
     modalContent.innerHTML = `<span class="close">&times;</span>` + html
-    modal.style.display = "flex"
+
     document.querySelector(".close")!.addEventListener("click", () => {
         modal.style.display = "none"
     })
 }
 
-const openWorkModal = (type: string, i: number): void => {
-    const data = (workData as any)[type][i]
-    openModal(createModalHtml(type, data))
+const openWorkModal = (type: WorkDataType, i: number): void => {
+    const data = workData[type][i]
+    setupModalElement(createModalHtml(type, data))
 }
 
-const createButton = (type: string, data: VRCData | GameData | OtherData, index: number): HTMLButtonElement => {
+const createButton = (type: WorkDataType, data: WorkData, index: number): HTMLButtonElement => {
     const className = `${data.option?.includes("big") ? "big" : ""} ${data.option?.includes("square") ? "square" : ""}`
+
     const button = document.createElement("button")
     button.className = `image-frame ${className}`
     button.onclick = () => openWorkModal(type, index)
+
     const img = document.createElement("img")
     img.src = data.imagePath
     img.alt = "thumbnail"
     button.appendChild(img)
+
     return button
 }
 
-const appendButtons = (type: string, dataList: (VRCData | GameData | OtherData)[]): void => {
+const appendButtons = (type: WorkDataType, dataList: WorkData[]): void => {
     const elm = document.getElementById(type)
     if (!elm) throw new Error("そんなエレメントは無い!")
+
     dataList.forEach((data, index) => {
         elm.appendChild(createButton(type, data, index))
     })
 }
 
 const setModal = async (): Promise<void> => {
-    const response = await fetch("workdata.json", { cache: "no-store" })
-    workData = await response.json()
+    workData = await (await fetch("workdata.json", { cache: "no-store" })).json()
 
     Object.entries(workData).forEach(([type, dataList]) => {
-        appendButtons(type, dataList as (VRCData | GameData | OtherData)[])
+        appendButtons(type as WorkDataType, dataList)
     })
 
     const modal = document.getElementById("modal")!
