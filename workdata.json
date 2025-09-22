@@ -59,6 +59,22 @@
     ],
     "browser-games": [
         {
+            "title": "けんこうになりたい!",
+            "author": "いぽた、まいまい",
+            "year": "2025",
+            "imagePath": "image/works/game/wanna.png",
+            "gamePath": "https://ipotazero.github.io/wanna-be-healthy/",
+            "description": "少女の朝を幸せにするために繰り返すゲーム。"
+        },
+        {
+            "title": "Strange-Blocks",
+            "author": "うめぼし",
+            "year": "2025",
+            "imagePath": "image/works/game/strange-blocks.png",
+            "gamePath": "https://kishunankoubai.github.io/StrangeBlocks/",
+            "description": "例の落ち物ゲームの変種を雑に作って集めました<br>長く続けるとどんどん難しくなっていきます"
+        },
+        {
             "title": "風呂無し、屋根無し、地獄行き。",
             "author": "いぽた、うめぼし",
             "year": "2025",
