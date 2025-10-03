@@ -59,6 +59,14 @@
     ],
     "browser-games": [
         {
+            "title": "ひとやしきの魔女",
+            "author": "いぽた、うめぼし",
+            "year": "2025",
+            "imagePath": "image/works/game/hitoyashiki.png",
+            "gamePath": "https://ipotazero.github.io/witch-of-the-monocular/",
+            "description": "魔法のかかった屋敷に閉じ込められた主人公がパズルを解いて脱出を試みるゲーム。"
+        },
+        {
             "title": "けんこうになりたい!",
             "author": "いぽた、まいまい",
             "year": "2025",
