@@ -59,6 +59,14 @@
     ],
     "browser-games": [
         {
+            "title": "MazeMemoirs",
+            "author": "うめぼし",
+            "year": "2025",
+            "imagePath": "image/works/game/maze.png",
+            "gamePath": "https://kishunankoubai.github.io/MazeMemoirs/",
+            "description": "迷路をさまよいながら記憶を取り戻すゲームです。"
+        },
+        {
             "title": "ひとやしきの魔女",
             "author": "いぽた、うめぼし",
             "year": "2025",
