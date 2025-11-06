@@ -177,6 +177,14 @@
             "imagePath": "image/works/game/hatachi.png",
             "gamePath": "https://ipotazero.github.io/hatachi/",
             "description": "<p>1日で作ったノベルゲーム</p><p>お子様向けじゃないよ</p>"
+        },
+        {
+            "title": "angel",
+            "author": "いぽた",
+            "year": "2023",
+            "imagePath": "image/works/game/angel.png",
+            "gamePath": "https://ipotazero.github.io/angel/",
+            "description": "散歩ゲー"
         }
     ],
     "games": [
@@ -376,7 +384,7 @@
             "author": "いぽた",
             "year": "2025",
             "imagePath": "image/works/other/dream-diary-club.png",
-            "description": "<p>部員の夢日記を置いていきます</p><a href='https://ocumcr.github.io/mcr-dream-diary-club/' target='_blank'>ここをクリック</a>"
+            "description": "<p>会員の夢日記を置いていきます</p><a href='https://ocumcr.github.io/mcr-dream-diary-club/' target='_blank'>ここをクリック</a>"
         }
     ]
 }

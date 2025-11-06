@@ -18,6 +18,7 @@ const loadCsvAsObjects = async (url: string): Promise<MemberData[]> => {
 }
 
 type MemberData = {
+    job?: string
     name: string
     course: string
     hobby: string

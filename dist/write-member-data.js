@@ -19,7 +19,8 @@ const writeMemberData = async (grade) => {
     members.forEach((member) => {
         student.innerHTML += `
             <tr>
-                <th class="name">${member.name}</th>
+                <td class="job">${member.job ?? ""}</td>
+                <td class="name">${member.name}</td>
                 <td class="course">${member.course}</td>
                 <td class="detail">
                     趣味: ${member.hobby}<br>
@@ -37,7 +38,8 @@ const writeOb = async (term) => {
     members.forEach((member) => {
         student.innerHTML += `
             <tr>
-                <th class="name">${member.name}</th>
+                <td class="job">${member.job ?? ""}</td>
+                <td class="name">${member.name}</td>
                 <td class="course">${member.course}</td>
                 <td class="detail">
                     趣味: ${member.hobby}<br>
@@ -83,7 +85,7 @@ const writeAllMemberData = async () => {
             </tbody>
         </table>
     `;
-    for (let i = getFiscalYear() - 4; i >= 2013; i--) {
+    for (let i = getFiscalYear() - 4; i >= 2011; i--) {
         // console.log(i)
         await writeOb(i);
     }
