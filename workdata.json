@@ -59,6 +59,14 @@
     ],
     "browser-games": [
         {
+            "title": "世界が滅ばない理由。",
+            "author": "うめぼし",
+            "year": "2026",
+            "imagePath": "image/works/game/world.png",
+            "gamePath": "https://kishunankoubai.github.io/WhyTheWorldWillNotEnd/",
+            "description": "世界が滅ばない理由を探すポエティックな論理パズル。<br>(一応)スマホでも遊べます。"
+        },
+        {
             "title": "MazeMemoirs",
             "author": "うめぼし",
             "year": "2025",
