@@ -57,7 +57,15 @@
             "option": []
         }
     ],
-    "browser-games": [
+    "smartphone-games": [
+        {
+            "title": "The Noisy Days!",
+            "author": "<a href=\"https://x.com/ososikirackets\">いぽた(お躁式ラケッツ!)</a>",
+            "year": "2026",
+            "imagePath": "image/works/game/tnd.png",
+            "gamePath": "https://ipotazero.github.io/The-Noisy-Days/",
+            "description": "ストーリー付き弾幕ゲーム。連載中。<br>スマホでも遊べます。"
+        },
         {
             "title": "世界が滅ばない理由。",
             "author": "うめぼし",
@@ -67,36 +75,12 @@
             "description": "世界が滅ばない理由を探すポエティックな論理パズル。<br>(一応)スマホでも遊べます。"
         },
         {
-            "title": "MazeMemoirs",
-            "author": "うめぼし",
-            "year": "2025",
-            "imagePath": "image/works/game/maze.png",
-            "gamePath": "https://kishunankoubai.github.io/MazeMemoirs/",
-            "description": "迷路をさまよいながら記憶を取り戻すゲームです。"
-        },
-        {
             "title": "ひとやしきの魔女",
             "author": "いぽた、うめぼし",
             "year": "2025",
             "imagePath": "image/works/game/hitoyashiki.png",
             "gamePath": "https://ipotazero.github.io/witch-of-the-monocular/",
             "description": "魔法のかかった屋敷に閉じ込められた主人公がパズルを解いて脱出を試みるゲーム。スマホ/タブレット対応"
-        },
-        {
-            "title": "けんこうになりたい!",
-            "author": "いぽた、まいまい",
-            "year": "2025",
-            "imagePath": "image/works/game/wanna.png",
-            "gamePath": "https://ipotazero.github.io/wanna-be-healthy/",
-            "description": "少女の朝を幸せにするために繰り返すゲーム。"
-        },
-        {
-            "title": "Strange-Blocks",
-            "author": "うめぼし、ガッキー",
-            "year": "2025",
-            "imagePath": "image/works/game/strange-blocks.png",
-            "gamePath": "https://kishunankoubai.github.io/StrangeBlocks/",
-            "description": "例の落ち物ゲームの変種を雑に作って集めました<br>長く続けるとどんどん難しくなっていきます"
         },
         {
             "title": "風呂無し、屋根無し、地獄行き。",
@@ -122,6 +106,43 @@
             "gamePath": "https://ipotazero.github.io/lights-out-generator/",
             "description": "研究用ライツアウト<br>線形代数力によってすべての解を得ることに成功したにゃ！"
         },
+
+        {
+            "title": "もこたたき::NEO!",
+            "author": "いぽた",
+            "year": "2025",
+            "imagePath": "image/works/game/mokotataki-neo.png",
+            "gamePath": "https://ipotazero.github.io/mokotataki-neo/",
+            "description": "<p>TypeScriptの練習で作ったにゃ。mainLoop禁止縛りもしたにゃ。型で発狂したにゃ</p>"
+        }
+    ],
+    "browser-games": [
+        {
+            "title": "MazeMemoirs",
+            "author": "うめぼし",
+            "year": "2025",
+            "imagePath": "image/works/game/maze.png",
+            "gamePath": "https://kishunankoubai.github.io/MazeMemoirs/",
+            "description": "迷路をさまよいながら記憶を取り戻すゲームです。"
+        },
+
+        {
+            "title": "けんこうになりたい!",
+            "author": "いぽた、まいまい",
+            "year": "2025",
+            "imagePath": "image/works/game/wanna.png",
+            "gamePath": "https://ipotazero.github.io/wanna-be-healthy/",
+            "description": "少女の朝を幸せにするために繰り返すゲーム。"
+        },
+        {
+            "title": "Strange-Blocks",
+            "author": "うめぼし、ガッキー",
+            "year": "2025",
+            "imagePath": "image/works/game/strange-blocks.png",
+            "gamePath": "https://kishunankoubai.github.io/StrangeBlocks/",
+            "description": "例の落ち物ゲームの変種を雑に作って集めました<br>長く続けるとどんどん難しくなっていきます"
+        },
+
         {
             "title": "竹パンダ",
             "author": "くま",
@@ -145,14 +166,6 @@
             "imagePath": "image/works/game/doughnut.png",
             "gamePath": "https://ipotazero.github.io/doughnut/",
             "description": "<p>ひっくり返すパズル</p>"
-        },
-        {
-            "title": "もこたたき::NEO!",
-            "author": "いぽた",
-            "year": "2025",
-            "imagePath": "image/works/game/mokotataki-neo.png",
-            "gamePath": "https://ipotazero.github.io/mokotataki-neo/",
-            "description": "<p>TypeScriptの練習で作ったにゃ。mainLoop禁止縛りもしたにゃ。型で発狂したにゃ</p>"
         },
         {
             "title": "まいんどすいーぱー",

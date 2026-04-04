@@ -12,7 +12,7 @@ const createModalHtml = (type, data) => {
                 制作年: ${data.year}<br />
                 <br />
                 ${(() => {
-        if (type === "games" || type === "browser-games") {
+        if (["games", "browser-games", "smartphone-games"].includes(type)) {
             return `
                             <a href="${data.gamePath}" target="_blank" class="download-button">
                                 あそぶ!

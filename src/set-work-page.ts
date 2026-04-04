@@ -15,6 +15,7 @@ type GameData = WorkData & {
 
 type WorkDataMap = {
     "vrc": VRCData[]
+    "smartphone-games": GameData[]
     "browser-games": GameData[]
     "games": GameData[]
     "other": OtherData[]
@@ -36,7 +37,7 @@ const createModalHtml = (type: WorkDataType, data: WorkData): string => {
                 制作年: ${data.year}<br />
                 <br />
                 ${(() => {
-                    if (type === "games" || type === "browser-games") {
+                    if (["games", "browser-games", "smartphone-games"].includes(type)) {
                         return `
                             <a href="${(data as GameData).gamePath}" target="_blank" class="download-button">
                                 あそぶ!
