@@ -1,55 +1,79 @@
-.intro-table {
-    width: 100%;
-    border: none;
+#members {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 
-    th,
-    td {
-        border: none;
-        text-align: left;
-    }
-
-    tr {
-        margin-bottom: 1em;
-
-        border-bottom: black 1px dashed;
+    h3 {
+        margin-bottom: 0.5em;
     }
 }
 
-.intro-table caption {
-    text-align: left;
-    border-bottom: 1px solid black;
-    margin-bottom: 0.5em;
-}
+.students {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
 
-.job {
-    width: 10%;
-}
+    .row {
+        display: flex;
+        width: 100%;
+        gap: 1em;
 
-.name {
-    width: 15%;
-    font-weight: bold;
-}
+        padding: 0.5em;
+        border-bottom: black dashed 1px;
+    }
 
-.course {
-    width: 20%;
-}
+    .row-head {
+        display: flex;
+        width: 35%;
+        gap: 1em;
 
-.detail {
-    width: 55%;
-}
+        span {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 
-@media screen and (max-width: 768px) {
-    .name {
-        width: auto;
+    .row-content {
+        width: 100%;
+        display: flex;
+
+        gap: 1em;
+    }
+
+    .course {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
     }
 
     .detail {
-        width: auto;
-        border-bottom: #000 1px solid;
+        width: 100%;
     }
+}
 
-    .intro-table th,
-    .intro-table td {
-        text-align: left;
+@media screen and (max-width: 768px) {
+    .students {
+        .row {
+            flex-direction: column;
+        }
+
+        .row-head {
+            width: 100%;
+            justify-content: center;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .row-content {
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .course {
+            width: 100%;
+        }
     }
 }

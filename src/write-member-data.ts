@@ -4,13 +4,13 @@ const writeMemberData = async (grade: number) => {
     const currentGrade1 = getFiscalYear()
 
     document.getElementById("members")!.innerHTML += `
-        <table summary="サークルのメンバーの紹介" class="intro-table">
-            <caption>
+        <section class="intro-table">
+            <h3>
                 ${grade}回生
-            </caption>
-            <tbody id="student-${grade}">
-            </tbody>
-        </table>
+            </h3>
+            <div class="students" id="student-${grade}">
+            </div>
+        </section>
     `
 
     const members = await safeLoadCsvAsObjects(`memberdata/student-${currentGrade1 - grade + 1}.csv`)
@@ -21,15 +21,19 @@ const writeMemberData = async (grade: number) => {
 
     members.forEach((member) => {
         student.innerHTML += `
-            <tr>
-                <td class="job">${member.job ?? ""}</td>
-                <td class="name">${member.name}</td>
-                <td class="course">${member.course}</td>
-                <td class="detail">
-                    趣味: ${member.hobby}<br>
-                    一言: ${member.comment}
-                </td>
-            </tr>
+            <div class="row">
+                <div class="row-head">
+                    <span class="name">${member.name}</span>
+                    <span class="job">${member.job ?? ""}</span>
+                </div>
+                <div class="row-content">
+                    <span class="course">${member.course}</span>
+                    <span class="detail">
+                        趣味: ${member.hobby}<br>
+                        一言: ${member.comment}
+                    </span>
+                </div>
+            </div>
         `
     })
 }
@@ -43,15 +47,19 @@ const writeOb = async (term: number) => {
 
     members.forEach((member) => {
         student.innerHTML += `
-            <tr>
-                <td class="job">${member.job ?? ""}</td>
-                <td class="name">${member.name}</td>
-                <td class="course">${member.course}</td>
-                <td class="detail">
-                    趣味: ${member.hobby}<br>
-                    一言: ${member.comment}
-                </td>
-            </tr>
+            <div class="row">
+                <div class="row-head">
+                    <span class="name">${member.name}</span>
+                    <span class="job">${member.job ?? ""}</span>
+                </div>
+                <div class="row-content">
+                    <span class="course">${member.course}</span>
+                    <span class="detail">
+                        趣味: ${member.hobby}<br>
+                        一言: ${member.comment}
+                    </span>
+                </div>
+            </div>
         `
     })
 }
@@ -90,13 +98,11 @@ const writeAllMemberData = async () => {
     }
 
     document.getElementById("members")!.innerHTML += `
-        <table summary="サークルのメンバーの紹介" class="intro-table">
-            <caption>
-            OB-OG
-            </caption>
-            <tbody id="student-ob-og">
-            </tbody>
-        </table>
+        <section class="intro-table">
+            <h3>OB-OG</h3>
+            <div class="students" id="student-ob-og">
+            </div>
+        </section>
     `
 
     for (let i = getFiscalYear() - 4; i >= 2011; i--) {

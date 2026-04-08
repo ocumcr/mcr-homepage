@@ -137,8 +137,9 @@
 .works {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 0.5em;
     justify-content: space-evenly;
+    padding: 1em;
 }
 
 @media screen and (max-width: 768px) {

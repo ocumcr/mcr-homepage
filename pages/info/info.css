@@ -1,34 +1,36 @@
-table {
-    margin-bottom: 40px;
-    margin-top: 10px;
+.info-table,
+.annual-table {
+    table {
+        margin-bottom: 40px;
+        margin-top: 10px;
 
-    width: 100%;
+        width: 100%;
 
-    /* 下線をつなげる */
-    border-collapse: collapse;
+        /* 下線をつなげる */
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        border-bottom: #000 solid 1px;
+        padding: 0.5em;
+    }
+
+    th {
+        padding: 1em 0.5em;
+
+        text-align: center;
+    }
 }
-
-th,
-td {
-    border-bottom: #000 solid 1px;
-}
-
-th {
-    padding: 16px 10px;
-
-    text-align: center;
-}
-
 /* Q & Aとか */
 .title {
-    padding: 10px;
-    font-size: 25px;
+    padding: 0.5em;
     text-align: center;
 }
 
 /* Q & A */
 .info-table th {
-    width: 250px;
+    width: 30%;
 }
 
 .info-table td {
@@ -37,7 +39,7 @@ th {
 
 /* annual */
 .annual-table th {
-    width: 150px;
+    width: 20%;
 }
 
 .annual-table td {
@@ -46,8 +48,8 @@ th {
 
 /* 月だけ */
 .annual-table td:nth-child(even) {
+    width: 20%;
     text-align: center;
-    width: 120px;
 }
 
 .google-map {
@@ -57,15 +59,30 @@ th {
 
 /*スマホ版*/
 @media screen and (max-width: 768px) {
-    th,
-    td {
-        padding: 5px;
-        margin: auto;
-        display: block;
+    tbody {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
     }
 
-    th {
-        border: none;
+    .info-table,
+    .annual-table {
+        th,
+        td {
+            width: 100% !important;
+            padding: 0.5em;
+            margin: 0;
+            display: block;
+        }
+
+        th {
+            width: 100%;
+            margin: 0;
+        }
+
+        td {
+            border: none;
+        }
     }
 
     /* 月だけ */

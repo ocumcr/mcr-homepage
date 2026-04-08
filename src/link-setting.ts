@@ -1,8 +1,4 @@
-const pages = ["#top", "#diary", "#info", "#work", "#member", "#computer", "#link", "#help"] as const
-
-type Page = (typeof pages)[number]
-
-const pageMap: Record<Page, string> = {
+const pageMap = {
     "#top": "top",
     "#diary": "diary",
     "#info": "info",
@@ -11,18 +7,25 @@ const pageMap: Record<Page, string> = {
     "#computer": "computer",
     "#link": "link",
     "#help": "help",
-}
+    "#archive": "archive",
+    "#futaba-2026": "festival/futaba-2026",
+} as const
 
-function getValidPageId(hash: string): Page | null {
+type Page = keyof typeof pageMap
+
+function getValidPageId(hash: string): Page | undefined {
     const pageId = hash.split("/")[0] as Page
-    return pages.includes(pageId) && !pageId.includes("/") ? pageId : null
+    return pageId in pageMap ? pageId : undefined
 }
 
 function loadPage(pageId: Page) {
     const folderName = pageMap[pageId]
     loadContent(`./pages/${folderName}/index.html`)
+    closeSmartphoneMenu()
+}
 
-    // スマホ用のメニューを閉じる(無理やり)
+// スマホ用のメニューを閉じる(無理やり)
+function closeSmartphoneMenu() {
     const hamburger = document.getElementById("menu-btn") as HTMLInputElement | null
     if (hamburger) hamburger.checked = false
 }

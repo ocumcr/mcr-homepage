@@ -1,3 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 16px;
+}
+
 /*--一般--*/
 body {
     background-image: url("../image/page/bg13.png");
@@ -5,10 +15,9 @@ body {
     background-color: #94c286;
 
     color: #000;
-    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic",
-        sans-serif;
+    font-family:
+        "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
     line-height: 1.5;
-    font-size: 15px;
 
     padding: 0;
 }
@@ -26,9 +35,12 @@ h2 {
 
 h3 {
     border-bottom: 1px solid #000;
-    padding-bottom: 0.5em;
     font-size: 1.5em;
     line-height: 1.5;
+}
+
+p {
+    padding: 0.5em;
 }
 
 ::selection {

@@ -1,5 +1,4 @@
 "use strict";
-const pages = ["#top", "#diary", "#info", "#work", "#member", "#computer", "#link", "#help"];
 const pageMap = {
     "#top": "top",
     "#diary": "diary",
@@ -9,15 +8,20 @@ const pageMap = {
     "#computer": "computer",
     "#link": "link",
     "#help": "help",
+    "#archive": "archive",
+    "#futaba-2026": "festival/futaba-2026",
 };
 function getValidPageId(hash) {
     const pageId = hash.split("/")[0];
-    return pages.includes(pageId) && !pageId.includes("/") ? pageId : null;
+    return pageId in pageMap ? pageId : undefined;
 }
 function loadPage(pageId) {
     const folderName = pageMap[pageId];
     loadContent(`./pages/${folderName}/index.html`);
-    // スマホ用のメニューを閉じる(無理やり)
+    closeSmartphoneMenu();
+}
+// スマホ用のメニューを閉じる(無理やり)
+function closeSmartphoneMenu() {
     const hamburger = document.getElementById("menu-btn");
     if (hamburger)
         hamburger.checked = false;
