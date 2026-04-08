@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="pages/festival/futaba-2026/futaba-2026.css" />
+
 <h2><i class="fa-solid fa-dumpster"></i> 2026年度ふたば祭</h2>
 
 <section>
@@ -12,5 +14,31 @@
 
 <section>
     <h3>待ち時間におすすめのスマホゲーム（ダウンロード無し）</h3>
-    <div id="games"></div>
+    <div id="games">ろ～でぃんぐ</div>
 </section>
+
+<script type="module">
+    var games = document.getElementById("games")
+
+    var a = [
+        "ひとやしきの魔女",
+        "もこたたき::NEO!",
+        "The Noisy Days!",
+        "世界が滅ばない理由。",
+        "風呂無し、屋根無し、地獄行き。",
+        "Illuminate Beat",
+    ]
+
+    loadData().then(() => {
+        games.innerHTML = ""
+
+        const works = Object.values(workData).flat(1)
+
+        a.forEach((title) => {
+            const game = works.find((work) => work.title === title)
+
+            const button = createButton(game)
+            games.appendChild(button)
+        })
+    })
+</script>

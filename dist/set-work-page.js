@@ -1,6 +1,19 @@
 "use strict";
 let workData;
-const createModalHtml = (type, data) => {
+const createModalHtml = (data) => {
+    const button = (() => {
+        if ("gamePath" in data) {
+            return `
+                <a href="${data.gamePath}" target="_blank" class="download-button">
+                    あそぶ!
+                </a>
+                <br /><br />
+            `;
+        }
+        else {
+            return "";
+        }
+    })();
     const baseHtml = `
         <h3>${data.title}</h3>
         <div class="game-description">
@@ -11,43 +24,36 @@ const createModalHtml = (type, data) => {
                 制作者: ${data.author}<br />
                 制作年: ${data.year}<br />
                 <br />
-                ${(() => {
-        if (["games", "browser-games", "smartphone-games"].includes(type)) {
-            return `
-                            <a href="${data.gamePath}" target="_blank" class="download-button">
-                                あそぶ!
-                            </a>
-                            <br /><br />
-                        `;
-        }
-        else {
-            return "";
-        }
-    })()}
+                ${button}
                 ${data.description}
             </div>
         </div>
     `;
     return baseHtml;
 };
-const setupModalElement = (html) => {
-    const modal = document.getElementById("modal");
-    modal.style.display = "flex";
-    const modalContent = document.getElementById("modal-content");
-    modalContent.innerHTML = `<span class="close">&times;</span>` + html;
-    document.querySelector(".close").addEventListener("click", () => {
-        modal.style.display = "none";
+const createModalElement = (html) => {
+    const modal = document.createElement("div");
+    modal.id = "modal";
+    modal.innerHTML = `
+        <div id="modal-content">
+            <span class="close">&times;</span>
+            ${html}
+        </div>
+    `;
+    modal.querySelector(".close").addEventListener("click", () => {
+        modal.remove();
     });
+    return modal;
 };
-const openWorkModal = (type, i) => {
-    const data = workData[type][i];
-    setupModalElement(createModalHtml(type, data));
+const openWorkModal = (data) => {
+    const modal = createModalElement(createModalHtml(data));
+    document.body.appendChild(modal);
 };
-const createButton = (type, data, index) => {
+const createButton = (data) => {
     const className = `${data.option?.includes("big") ? "big" : ""} ${data.option?.includes("square") ? "square" : ""}`;
     const button = document.createElement("button");
     button.className = `image-frame ${className}`;
-    button.onclick = () => openWorkModal(type, index);
+    button.onclick = () => openWorkModal(data);
     const img = document.createElement("img");
     img.src = data.imagePath;
     img.alt = "thumbnail";
@@ -59,19 +65,15 @@ const appendButtons = (type, dataList) => {
     if (!elm)
         throw new Error("そんなエレメントは無い!");
     dataList.forEach((data, index) => {
-        elm.appendChild(createButton(type, data, index));
+        elm.appendChild(createButton(data));
     });
 };
-const setModal = async () => {
+const loadData = async () => {
     workData = await (await fetch("workdata.json", { cache: "no-store" })).json();
+};
+const setModal = async () => {
+    await loadData();
     Object.entries(workData).forEach(([type, dataList]) => {
         appendButtons(type, dataList);
-    });
-    const modal = document.getElementById("modal");
-    modal.style.display = "none";
-    window.addEventListener("click", (event) => {
-        if (event.target === modal) {
-            modal.style.display = "none";
-        }
     });
 };

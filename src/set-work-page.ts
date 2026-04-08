@@ -25,7 +25,20 @@ type WorkDataType = keyof WorkDataMap
 
 let workData: WorkDataMap
 
-const createModalHtml = (type: WorkDataType, data: WorkData): string => {
+const createModalHtml = (data: WorkData): string => {
+    const button = (() => {
+        if ("gamePath" in data) {
+            return `
+                <a href="${data.gamePath}" target="_blank" class="download-button">
+                    あそぶ!
+                </a>
+                <br /><br />
+            `
+        } else {
+            return ""
+        }
+    })()
+
     const baseHtml = `
         <h3>${data.title}</h3>
         <div class="game-description">
@@ -36,18 +49,7 @@ const createModalHtml = (type: WorkDataType, data: WorkData): string => {
                 制作者: ${data.author}<br />
                 制作年: ${data.year}<br />
                 <br />
-                ${(() => {
-                    if (["games", "browser-games", "smartphone-games"].includes(type)) {
-                        return `
-                            <a href="${(data as GameData).gamePath}" target="_blank" class="download-button">
-                                あそぶ!
-                            </a>
-                            <br /><br />
-                        `
-                    } else {
-                        return ""
-                    }
-                })()}
+                ${button}
                 ${data.description}
             </div>
         </div>
@@ -55,29 +57,35 @@ const createModalHtml = (type: WorkDataType, data: WorkData): string => {
     return baseHtml
 }
 
-const setupModalElement = (html: string): void => {
-    const modal = document.getElementById("modal")!
-    modal.style.display = "flex"
+const createModalElement = (html: string) => {
+    const modal = document.createElement("div")
+    modal.id = "modal"
 
-    const modalContent = document.getElementById("modal-content")!
-    modalContent.innerHTML = `<span class="close">&times;</span>` + html
+    modal.innerHTML = `
+        <div id="modal-content">
+            <span class="close">&times;</span>
+            ${html}
+        </div>
+    `
 
-    document.querySelector(".close")!.addEventListener("click", () => {
-        modal.style.display = "none"
+    modal.querySelector(".close")!.addEventListener("click", () => {
+        modal.remove()
     })
+
+    return modal
 }
 
-const openWorkModal = (type: WorkDataType, i: number): void => {
-    const data = workData[type][i]
-    setupModalElement(createModalHtml(type, data))
+const openWorkModal = (data: WorkData): void => {
+    const modal = createModalElement(createModalHtml(data))
+    document.body.appendChild(modal)
 }
 
-const createButton = (type: WorkDataType, data: WorkData, index: number): HTMLButtonElement => {
+const createButton = (data: WorkData): HTMLButtonElement => {
     const className = `${data.option?.includes("big") ? "big" : ""} ${data.option?.includes("square") ? "square" : ""}`
 
     const button = document.createElement("button")
     button.className = `image-frame ${className}`
-    button.onclick = () => openWorkModal(type, index)
+    button.onclick = () => openWorkModal(data)
 
     const img = document.createElement("img")
     img.src = data.imagePath
@@ -92,23 +100,18 @@ const appendButtons = (type: WorkDataType, dataList: WorkData[]): void => {
     if (!elm) throw new Error("そんなエレメントは無い!")
 
     dataList.forEach((data, index) => {
-        elm.appendChild(createButton(type, data, index))
+        elm.appendChild(createButton(data))
     })
 }
 
-const setModal = async (): Promise<void> => {
+const loadData = async () => {
     workData = await (await fetch("workdata.json", { cache: "no-store" })).json()
+}
+
+const setModal = async (): Promise<void> => {
+    await loadData()
 
     Object.entries(workData).forEach(([type, dataList]) => {
         appendButtons(type as WorkDataType, dataList)
-    })
-
-    const modal = document.getElementById("modal")!
-    modal.style.display = "none"
-
-    window.addEventListener("click", (event) => {
-        if (event.target === modal) {
-            modal.style.display = "none"
-        }
     })
 }
