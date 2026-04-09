@@ -1,12 +1,7 @@
 #topics {
-    margin-top: 10px;
-    /*height:400px;*/
-    width: 365px;
-    float: left;
-    margin-right: 15px;
-    padding-left: 0px;
-    padding-top: 5px;
-    padding-right: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 }
 
 #twitter-box {
