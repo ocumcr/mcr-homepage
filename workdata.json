@@ -67,6 +67,14 @@
             "description": "ストーリー付き弾幕ゲーム。連載中。<br>スマホでも遊べます。"
         },
         {
+            "title": "ムスビガミ",
+            "author": "いぽた、うめぼし",
+            "year": "2026",
+            "imagePath": "image/works/game/musubigami.png",
+            "gamePath": "https://ipotazero.github.io/musubigami/",
+            "description": "一筆書きのゲーム。<br>スマホでも遊べます。"
+        },
+        {
             "title": "世界が滅ばない理由。",
             "author": "うめぼし",
             "year": "2026",
