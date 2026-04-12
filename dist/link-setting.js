@@ -10,7 +10,7 @@ const pageMap = {
     "#help": "help",
     "#archive": "archive",
     "#futaba-2026": "festival/futaba-2026",
-    "#programming-vscode": "programming/vscode",
+    "#programming-js": "programming/js",
 };
 function getValidPageId(hash) {
     const pageId = hash.split("/")[0];
