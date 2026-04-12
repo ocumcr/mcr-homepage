@@ -8,7 +8,10 @@ const pageMap = {
     "#link": "link",
     "#help": "help",
     "#archive": "archive",
+
     "#futaba-2026": "festival/futaba-2026",
+
+    "#programming-js": "programming/js",
 } as const
 
 type Page = keyof typeof pageMap

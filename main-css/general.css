@@ -43,6 +43,12 @@ p {
     padding: 0.5em;
 }
 
+li {
+    padding: 0.5em;
+
+    margin-left: 1.5em;
+}
+
 ::selection {
     background: #6bc8a9;
     color: #fff;
