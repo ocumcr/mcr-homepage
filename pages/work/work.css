@@ -22,30 +22,29 @@
 
 /* モーダルコンテンツのスタイル */
 #modal-content {
+    display: flex;
+    flex-direction: column;
     position: relative;
-    padding: 16px;
+    padding: 1em;
 
     width: 80%;
-    height: 500px;
+    height: 80dvh;
 
     border-radius: 8px;
     background-color: #fff;
 }
 
-img {
-    display: inline-block;
-
+.modal-image {
     height: 400px;
-    border-radius: 4px;
+    border-radius: 0.25em;
 
     background-color: #eee;
-    border: 4px #eee solid;
 }
 
 .game-description {
-    padding-top: 16px;
-
     display: flex;
+    padding-top: 1em;
+    flex: 1;
 
     word-break: break-all;
 }
@@ -54,6 +53,8 @@ img {
     display: flex;
     flex-direction: column;
     overflow: auto; /*はみ出し防止*/
+
+    height: 100%;
 
     padding: 1em;
     font-size: 1.5em;
