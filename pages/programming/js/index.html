@@ -50,9 +50,16 @@
             （&lt;body&gt;みたいな奴をタグというよ。<br />
             タグはかっこみたいなもので、普通は開きと閉じがあるよ。 閉じは頭に<code>/</code>が付いているよ。）
         </p>
+        <li>html lang="en" を html lang="ja"に変えておこう。</li>
         <li>bodyタグの中にscriptタグを作ろう。JavaScriptはこのscriptタグの中に書いていくよ。</li>
-        <li>作ったindex.htmlをブラウザ（Chromeとか）で開こう。真っ白な画面が表示されるはず。</li>
-        <li>F12を押して、コンソール画面を開こう。</li>
+
+        <img src="pages/programming/js/kansei.png" alt="vscode" />
+
+        <li>
+            ChromeやEdgeなどのブラウザを開いて、index.htmlをドラッグアンドドロップしよう。真っ白な画面が表示されるはず。
+        </li>
+        <li>F12、またはFn+F12を押して、コンソール画面を開こう。</li>
+        <img src="pages/programming/js/console.png" alt="browser" />
     </ol>
 </section>
 
@@ -68,7 +75,7 @@
         </p>
         <pre>
 <code class="language-javascript">
-console.log("Hello World!")
+console.log("Hello World!");
 </code>
         </pre>
         <p>
@@ -185,12 +192,28 @@ let array = ["a", "b", "c"];
 
 // プログラミングでは0から数え始めるんだ。注意しよう！
 // 後ろに[0]と付ける事で0番目の要素を取り出している。
-console.log(array[0])
-console.log(array[1])
-console.log(array[2])
+console.log(array[0]);
+console.log(array[1]);
+console.log(array[2]);
 
 // このように書くと長さを取得できる
-console.log(array.length)
+console.log(array.length);
+</code>
+</pre>
+    </section>
+
+    <section>
+        <h4>オブジェクト</h4>
+        <p>オブジェクトというのは、いくつかの文字列と値の組だよ。<span class="save"></span></p>
+        <pre>
+<code class="language-javascript">
+let object = { name: "user", age: 100 };
+
+// オブジェクトには値の取り出し方が2つあるよ。どっちを使ってもok
+// 後ろに["name"]と付ける事で"name"に紐づけられた要素を取り出している。
+// 後ろに.ageと付ける事で"age"に紐づけられた要素を取り出している。
+console.log(object["name"]);
+console.log(object.age);
 </code>
 </pre>
     </section>
@@ -324,6 +347,10 @@ for (let i = 0; i < 100; i++) {
         display: flex;
         flex-direction: column;
         gap: 2em;
+    }
+
+    img {
+        width: 100%;
     }
 </style>
 
