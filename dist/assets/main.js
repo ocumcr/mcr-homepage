@@ -1,0 +1,22 @@
+const p=()=>{const e=new Date;return e.getMonth()+1>=4?e.getFullYear():e.getFullYear()-1},i=(e,t)=>{const n=document.querySelector(e);if(!n)throw new Error(`そんなエレメントは無い！${e}`);n.innerHTML=t,n.querySelectorAll("script").forEach(r=>{const a=document.createElement("script");r.src?a.src=r.src:a.textContent=r.textContent,document.body.appendChild(a),document.body.removeChild(a)})},l=async e=>await(await fetch(e,{cache:"no-store"})).text();async function h(e){try{const n=await(await fetch(e,{cache:"no-store"})).text();if(!n.includes(",")||n.trim()==="")return null;const[o,...r]=n.split(`
+`).filter(s=>s.trim()!==""),a=o.split(",").map(s=>s.trim());return r.map(s=>{const v=s.split(",").map(c=>c.trim());return a.reduce((c,w,y)=>({...c,[w]:v[y]}),{})})}catch(t){return console.error("CSV Load Error:",t),null}}const d={top:"top",diary:"diary",info:"info",work:"work",member:"member",computer:"computer",link:"link",help:"help",archive:"archive","futaba-2026":"festival/futaba-2026","programming-js":"programming/js"},E={"#top":"top","#diary":"diary","#info":"info","#work":"work","#member":"member","#computer":"computer","#link":"link","#help":"help","#archive":"archive"},m={};function f(e,t){m[e]=t}function g(){const e=new URLSearchParams(location.search).get("page");if(e&&e in d)return e;const t=location.hash.split("/")[0];return E[t]??"top"}async function u(e){const t=`./pages/${d[e]}/index.html`,n=await l(t);i("#content-right",n),L(),m[e]&&m[e]()}function $(e){history.pushState({page:e},"",`?page=${e}`),u(e)}function L(){const e=document.getElementById("menu-btn");e&&(e.checked=!1)}async function k(){const t=await(await fetch("workdata.json",{cache:"no-store"})).json();Object.entries(t).forEach(([n,o])=>{const r=document.getElementById(n);r&&o.forEach(a=>{const s=M(a);r.appendChild(s)})})}function M(e){const t=document.createElement("button"),n=["image-frame",...e.option??[]];t.className=n.join(" "),t.onclick=()=>C(e);const o=document.createElement("img");return o.src=e.imagePath,o.alt=e.title,t.appendChild(o),t}function C(e){const t=document.createElement("div");t.id="modal",t.innerHTML=`
+        <div id="modal-content">
+            <span class="close">&times;</span>
+            <h3>${e.title}</h3>
+            <div class="game-description">
+                <img src="${e.imagePath}">
+                <div class="game-text">
+                    制作者: ${e.author}<br>制作年: ${e.year}<br><br>
+                    ${e.gamePath?`<a href="${e.gamePath}" target="_blank" class="download-button">あそぶ!</a>`:""}
+                    ${e.description}
+                </div>
+            </div>
+        </div>
+    `,t.querySelector(".close")?.addEventListener("click",()=>t.remove()),document.body.appendChild(t)}async function P(){const e=document.getElementById("members");if(!e)return;e.innerHTML="";for(let o=1;o<=4;o++)await S(o,e);const t=document.createElement("section");t.className="intro-table",t.innerHTML='<h3>OB-OG</h3><div class="students" id="student-ob-og"></div>',e.appendChild(t);const n=document.getElementById("student-ob-og");for(let o=p()-4;o>=2011;o--)await j(o,n)}async function S(e,t){const o=p()-e+1,r=await h(`memberdata/student-${o}.csv`),a=document.createElement("section");a.className="intro-table",a.innerHTML=`<h3>${e}回生</h3><div class="students">${b(r)}</div>`,t.appendChild(a)}async function j(e,t){const n=await h(`memberdata/student-${e}.csv`);n&&(t.innerHTML+=b(n))}function b(e){return e?e.map(t=>`
+        <div class="row">
+            <div class="row-head"><span class="name">${t.name}</span><span class="job">${t.job??""}</span></div>
+            <div class="row-content"><span class="course">${t.course}</span>
+            <span class="detail">趣味: ${t.hobby}<br>一言: ${t.comment}</span></div>
+        </div>
+    `).join(""):""}f("work",k);f("member",P);window.addEventListener("popstate",()=>{u(g())});window.addEventListener("load",()=>{const e=g();history.replaceState(null,"",`?page=${e}`),u(e)});document.addEventListener("click",e=>{const t=e.target.closest("a");if(!t)return;const n=t.getAttribute("href");if(!n||!n.startsWith("?page="))return;const r=new URLSearchParams(n.slice(1)).get("page");r&&r in d&&(e.preventDefault(),$(r))});document.addEventListener("DOMContentLoaded",async()=>{console.log("iiiiii"),i("header",await l("../html-component/smartphone-menu.html")),i("#content-left",await l("../html-component/menu.html"))});
+//# sourceMappingURL=main.js.map

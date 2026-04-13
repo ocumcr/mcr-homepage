@@ -18,15 +18,6 @@
 
         <link rel="stylesheet" href="css/index.css" />
 
-        <script src="dist/set-html.js"></script>
-        <script src="dist/load-content.js"></script>
-        <script src="dist/readCSV.js"></script>
-        <script src="dist/write-member-data.js"></script>
-        <script src="dist/slideshow.js"></script>
-        <script src="dist/set-work-page.js"></script>
-        <!-- メニューのリンクを設定 -->
-        <script src="dist/link-setting.js"></script>
-
         <!-- google fontのRaleway -->
         <link
             href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
@@ -86,9 +77,6 @@
         </div>
 
         <script>
-            setHTML("./html-component/smartphone-menu.html", "header")
-            setHTML("./html-component/menu.html", "#content-left")
-
             const t = new Date(document.lastModified)
             const y = t.getFullYear() // 年
             const m = t.getMonth() + 1 // 月
@@ -113,5 +101,7 @@
                 }
             })
         </script>
+
+        <script type="module" src="./dist/assets/main.js"></script>
     </body>
 </html>
