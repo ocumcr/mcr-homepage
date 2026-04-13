@@ -1,20 +1,22 @@
 <h2>JavaScriptを書けるようになろう！</h2>
 <div>
     <p>制作: いぽた</p>
+    <p style="opacity: 0">網羅的であることは初心者にとっては無価値であると愚考するのにゃ。</p>
 </div>
 
 <section>
     <h3>目次</h3>
     <ol>
-        <li>VSCodeのインストール、及び日本語化</li>
-        <li>Prettierの導入、及び保存時にフォーマットされる設定</li>
-        <li>準備</li>
-        <li>JavaScriptの基本的な構文</li>
-        <li>ブロック崩しを作ってみよう！</li>
+        <li><a href="#vscode">VSCodeのインストール、及び日本語化</a></li>
+        <li><a href="#prettier">Prettierの導入、及び保存時にフォーマットされる設定</a></li>
+        <li><a href="#prepare">準備</a></li>
+        <li><a href="#elementary">JavaScriptの基本的な構文</a></li>
+        <li><a href="#fizzbuzz">FizzBuzzを作ってみよう！</a></li>
+        <li><a href="#block">ブロック崩しを作ってみよう！</a></li>
     </ol>
 </section>
 
-<section>
+<section id="vscode">
     <h3>VSCodeのインストール、及び日本語化</h3>
     <p>
         Visual Studio Code 略してVSCodeはプログラムを書くためのテキストエディタだよ。<br />
@@ -28,7 +30,7 @@
     </p>
 </section>
 
-<section>
+<section id="prettier">
     <h3>Prettierの導入、及び保存時にフォーマットされる設定</h3>
     <p>プログラムを奇麗に書くための拡張機能を入れよう。</p>
     <p>下のURLにアクセスして、「on save」の所までやってみよう！<br />2.だけやればok</p>
@@ -39,7 +41,7 @@
     </p>
 </section>
 
-<section>
+<section id="prepare">
     <h3>準備</h3>
     <ol>
         <li>適当なところに「programming」という名前のフォルダを作ろう。</li>
@@ -63,7 +65,7 @@
     </ol>
 </section>
 
-<section>
+<section id="elementary">
     <h3>JavaScriptの基本的な構文</h3>
     <p>簡単なプログラムを書けるようになろう。最初は全部呪文だと思ってコピペしていれば大丈夫だよ。</p>
 
@@ -219,6 +221,26 @@ console.log(object.age);
     </section>
 
     <section>
+        <h4>代入</h4>
+        <p>配列やオブジェクトの要素も、変数と同じように書き換えられるよ。<span class="save"></span></p>
+        <pre>
+<code class="language-javascript">
+let array = ["a", "b", "c"];
+
+console.log(array[0]);
+array[0] = "d"
+console.log(array[0]);
+
+let object = { name: "user", age: 100 };
+
+console.log(object.name);
+object.name = "hoge";
+console.log(object.name);
+</code>
+</pre>
+    </section>
+
+    <section>
         <h4>関数</h4>
         <p>関数を使えばいくつかのプログラムをひとかたまりにして後で使えるようにできるよ。<span class="save"></span></p>
         <pre>
@@ -301,14 +323,14 @@ for (let i = 0; i &lt; array.length; i++) {
     </section>
 </section>
 
-<section>
+<section id="fizzbuzz">
     <h3>FizzBuzzを作ってみよう！</h3>
     <p>FizzBuzzはプログラミングの定番練習問題だよ。</p>
     <p>0から99までの数字を順番に表示するんだけど、</p>
     <ul>
         <li>3の倍数のときは数字の代わりに「Fizz」と表示する</li>
         <li>5の倍数のときは数字の代わりに「Buzz」と表示する</li>
-        <li>3と5両方の倍数のときは「FizzBuzz」と表示する</li>
+        <li>3と5両方の倍数のときは数字の代わりに「FizzBuzz」と表示する</li>
     </ul>
     <p>というルールがあるよ。</p>
     <p>ヒント：3の倍数かどうかは「3で割ったあまりが0かどうか」で判定できるよ。あまりは%で計算できるんだったね。</p>
@@ -334,7 +356,7 @@ for (let i = 0; i < 100; i++) {
     </details>
 </section>
 
-<section>
+<section id="block">
     <h3>ブロック崩しを作ってみよう！</h3>
     <p>このサイトを参考に進めていくよ。</p>
     <a target="_blank" href="https://developer.mozilla.org/ja/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript">
