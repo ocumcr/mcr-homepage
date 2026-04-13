@@ -37,6 +37,8 @@ h3 {
     border-bottom: 1px solid #000;
     font-size: 1.5em;
     line-height: 1.5;
+
+    margin-bottom: 0.25em;
 }
 
 p {
@@ -47,6 +49,10 @@ li {
     padding: 0.5em;
 
     margin-left: 1.5em;
+}
+
+pre {
+    padding-left: 0.5em;
 }
 
 ::selection {

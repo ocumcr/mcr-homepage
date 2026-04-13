@@ -21,7 +21,7 @@
 #content-right {
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 4em;
 
     width: 100%;
 
