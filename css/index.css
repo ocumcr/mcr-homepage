@@ -11,8 +11,8 @@
    ============================================================ */
 
 @import url("./general.css");
-@import url("./style.css");
 @import url("./menu.css");
 @import url("./header.css");
+@import url("./style.css");
 @import url("./fadein.css");
 @import url("./math.css");

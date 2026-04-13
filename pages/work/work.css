@@ -32,7 +32,7 @@
     background-color: #fff;
 }
 
-.modal-image-frame {
+img {
     display: inline-block;
 
     height: 400px;
@@ -40,11 +40,6 @@
 
     background-color: #eee;
     border: 4px #eee solid;
-
-    & img {
-        height: 100%;
-        object-fit: contain;
-    }
 }
 
 .game-description {
@@ -56,12 +51,12 @@
 }
 
 .game-text {
+    display: flex;
+    flex-direction: column;
     overflow: auto; /*はみ出し防止*/
 
-    /* height: auto; */
-    padding: 16px;
-    font-size: 20px;
-    line-height: 32px;
+    padding: 1em;
+    font-size: 1.5em;
 }
 
 .close {
@@ -89,8 +84,11 @@
 
     color: #eee;
 
-    padding: 10px 20px;
+    padding: 0.25em 0.5em;
     background-color: #61a84c;
+
+    border-radius: 0.25em;
+    text-align: center;
 
     &:hover {
         background-color: #43862f;
@@ -168,13 +166,9 @@
         height: 90%;
     }
 
-    .modal-image-frame {
-        width: 90%;
+    .modal-image {
+        width: 100%;
         height: fit-content;
         /* display: none; */
-
-        & img {
-            width: 100%;
-        }
     }
 }

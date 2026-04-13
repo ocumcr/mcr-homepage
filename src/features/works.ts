@@ -43,10 +43,10 @@ function openModal(data: WorkData) {
             <span class="close">&times;</span>
             <h3>${data.title}</h3>
             <div class="game-description">
-                <img src="${data.imagePath}">
+                <img src="${data.imagePath}" class="modal-image">
                 <div class="game-text">
                     制作者: ${data.author}<br>制作年: ${data.year}<br><br>
-                    ${data.gamePath ? `<a href="${data.gamePath}" target="_blank" class="download-button">あそぶ!</a>` : ""}
+                    ${data.gamePath ? `<a href="${data.gamePath}" target="_blank" class="download-button">あそぶ!</a><br>` : ""}
                     ${data.description}
                 </div>
             </div>

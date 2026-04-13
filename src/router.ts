@@ -50,9 +50,7 @@ export async function showPage(page: Page) {
     closeSmartphoneMenu()
 
     // 登録された初期化処理があれば実行
-    if (pageInitializers[page]) {
-        pageInitializers[page]!()
-    }
+    pageInitializers[page]?.()
 }
 
 export function navigate(page: Page) {

@@ -1,3 +1,7 @@
+#thumbnail {
+    width: 100%;
+}
+
 #topics {
     display: flex;
     flex-direction: column;
