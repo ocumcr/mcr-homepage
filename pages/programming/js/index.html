@@ -1,6 +1,5 @@
 <h2>JavaScriptを書けるようになろう！</h2>
 <div>
-    <p>Under Construction...</p>
     <p>制作: いぽた</p>
 </div>
 
@@ -64,18 +63,25 @@
     <section>
         <h4>Hello World!</h4>
         <p>
-            以下のコードを書いて、F5を押してページをリロードしよう。コンソールに「Hello World!」と表示されるはずだよ。
+            下のコードを書いて、Ctrl+Sを押して保存して、ブラウザに戻ってF5を押してリロードしよう。コンソールに「Hello
+            World!」と表示されるはずだよ。
         </p>
-        <p><code>console.log("Hello World!")</code></p>
+        <pre>
+<code class="language-javascript">
+console.log("Hello World!")
+</code>
+        </pre>
         <p>
             「"」で囲まれた部分を文字列といって、文字を表示したいときはこれを使うんだ。
-            console.logでは文字列以外にもなんでも表示できるよ。 以下のコードを書いて、F5を押してページをリロードしよう。
+            console.logでは文字列以外にもなんでも表示できるよ。 <span class="save"></span>
         </p>
-        <p>
-            <code>console.log(123);</code><br />
-            <code>console.log(true);</code><br />
-            <code>console.log(false);</code>
-        </p>
+        <pre>
+<code class="language-javascript">
+console.log(123);
+console.log(true);
+console.log(false);
+</code>    
+        </pre>
         <p>123は数値だよ。trueとfalseは真理値といって、正しいか正しくないかを表すよ。</p>
         <p>プログラムは上から下へ実行されるよ。</p>
     </section>
@@ -84,19 +90,19 @@
         <h4>変数宣言</h4>
         <p>変数とは数値や文字列などの値が入った箱のようなものだよ。</p>
         <p><code>let</code>の後に変数名、イコール、値の順番で書くことで変数を宣言できるよ。</p>
-        <p>宣言した変数は後で使うことができるよ。以下のコードを書いて、F5を押してページをリロードしよう。</p>
+        <p>宣言した変数は後で使うことができるよ。<span class="save"></span></p>
         <pre>
-<code>
+<code class="language-javascript">
 let name = "ipota"; 
 console.log(name);
 </code>
         </pre>
         <p>
             変数は中身を書き換えることもできるよ。書き換える時は<code>let</code>は要らないよ。 <br />
-            以下のコードを書いて、F5を押してページをリロードしよう。
+            <span class="save"></span>
         </p>
         <pre>
-<code>
+<code class="language-javascript">
 let name = "ipota";
 console.log(name);
 name = "umeboshi";
@@ -108,38 +114,43 @@ console.log(name);
     <section>
         <h4>コメント</h4>
         <p>
-            <code>//</code
-            >を付ける事で一行だけ無視されるんだ。無視されている部分をコメントと呼ぶよ。以下のコードを書いて、F5を押してページをリロードしよう。
+            <code>//</code>を付ける事で一行だけ無視されるんだ。無視されている部分をコメントと呼ぶよ。<span
+                class="save"></span>
         </p>
-        <p>
-            <code>console.log(1);</code><br />
-            <code>// console.log(2);</code><br />
-            <code>console.log(3);</code>
-        </p>
+        <pre>
+<code class="language-javascript">
+console.log(1);
+// console.log(2);
+console.log(3);
+</code>    
+        </pre>
     </section>
 
     <section>
         <h4>演算子</h4>
-        <p>JavaScriptにはいくつかの演算子があるよ。以下のコードを書いて、F5を押してページをリロードしよう。</p>
-        <p>
-            <code>console.log(16 + 5); // 足し算</code><br />
-            <code>console.log(16 - 5); // 引き算</code><br />
-            <code>console.log(16 * 5); // 掛け算</code><br />
-            <code>console.log(16 / 5); // 割り算</code><br />
-            <code>console.log(16 % 5); // あまり</code><br />
-            <br />
-            <code>console.log(16 &lt; 5); // 小なり</code><br />
-            <code>console.log(16 &gt; 5); // 大なり</code><br />
-            <code>console.log(16 &lt;= 5); // 小なりイコール</code><br />
-            <code>console.log(16 &gt;= 5); // 大なりイコール</code><br />
-            <code>console.log(16 == 5); // イコール</code><br />
-            <br />
-            <code>console.log(true && false); // かつ</code><br />
-            <code>console.log(true || false); // または</code><br />
-            <code>console.log(!true); // 否定</code><br />
-        </p>
+        <p>JavaScriptにはいくつかの演算子があるよ。<span class="save"></span></p>
         <pre>
-<code>
+<code class="language-javascript">
+console.log(16 + 5); // 足し算
+console.log(16 - 5); // 引き算
+console.log(16 * 5); // 掛け算
+console.log(16 / 5); // 割り算
+console.log(16 % 5); // あまり
+
+console.log(16 &lt; 5); // 小なり
+console.log(16 &gt; 5); // 大なり
+console.log(16 &lt;= 5); // 小なりイコール
+console.log(16 &gt;= 5); // 大なりイコール
+console.log(16 == 5); // イコール
+
+console.log(true && false); // かつ
+console.log(true || false); // または
+console.log(!true); // 否定
+</code>
+        </pre>
+        <p>JavaScriptにはいくつかの略記があるよ。</p>
+        <pre>
+<code class="language-javascript">
 let i = 0;
 
 i += 1; // i = i + 1; の略記
@@ -167,11 +178,12 @@ console.log(j);
 
     <section>
         <h4>配列</h4>
-        <p>配列というのは、いくつかの値の列の事だよ。以下のコードを書いて、F5を押してページをリロードしよう。</p>
+        <p>配列というのは、いくつかの値の列の事だよ。<span class="save"></span></p>
         <pre>
-<code>
+<code class="language-javascript">
 let array = ["a", "b", "c"];
 
+// プログラミングでは0から数え始めるんだ。注意しよう！
 // 後ろに[0]と付ける事で0番目の要素を取り出している。
 console.log(array[0])
 console.log(array[1])
@@ -185,11 +197,9 @@ console.log(array.length)
 
     <section>
         <h4>関数</h4>
-        <p>
-            関数を使えばいくつかのプログラムをひとかたまりにして後で使えるようにできるよ。以下のコードを書いて、F5を押してページをリロードしよう。
-        </p>
+        <p>関数を使えばいくつかのプログラムをひとかたまりにして後で使えるようにできるよ。<span class="save"></span></p>
         <pre>
-<code>
+<code class="language-javascript">
 // 関数の宣言
 // helloの部分は関数の名前
 function hello() {
@@ -208,11 +218,9 @@ hello();
     <section>
         <h4>条件分岐</h4>
         <p>ここからは本当に呪文になってくるから、コピペして使えればそれでokだよ。</p>
-        <p>
-            JavaScriptではある条件を満たしたときだけ実行するプログラムが作れるよ。以下のコードを書いて、F5を押してページをリロードしよう。
-        </p>
+        <p>JavaScriptではある条件を満たしたときだけ実行するプログラムが作れるよ。<span class="save"></span></p>
         <pre>
-<code>
+<code class="language-javascript">
 if (true) {
     console.log("true");    
 }
@@ -251,9 +259,9 @@ if (y &lt; 3) {
 
     <section>
         <h4>繰り返し</h4>
-        <p>繰り返し。以下のコードを書いて、F5を押してページをリロードしよう。</p>
+        <p>繰り返し。<span class="save"></span></p>
         <pre>
-<code>
+<code class="language-javascript">
 // 呪文だと思って覚えるかコピペする。
 // 10回繰り返す。
 for (let i = 0; i &lt; 10; i++) {
@@ -271,6 +279,39 @@ for (let i = 0; i &lt; array.length; i++) {
 </section>
 
 <section>
+    <h3>FizzBuzzを作ってみよう！</h3>
+    <p>FizzBuzzはプログラミングの定番練習問題だよ。</p>
+    <p>0から99までの数字を順番に表示するんだけど、</p>
+    <ul>
+        <li>3の倍数のときは数字の代わりに「Fizz」と表示する</li>
+        <li>5の倍数のときは数字の代わりに「Buzz」と表示する</li>
+        <li>3と5両方の倍数のときは「FizzBuzz」と表示する</li>
+    </ul>
+    <p>というルールがあるよ。</p>
+    <p>ヒント：3の倍数かどうかは「3で割ったあまりが0かどうか」で判定できるよ。あまりは%で計算できるんだったね。</p>
+    <p>まずは自分で考えてみよう！</p>
+    <p>どうしても分からなかったら答えを見てね。</p>
+
+    <details>
+        <summary>答えを見る</summary>
+        <pre><code class="language-javascript">
+for (let i = 0; i < 100; i++) {
+    if (i % 3 == 0 && i % 5 == 0) { // i % 15 == 0でもいいよ
+        console.log("FizzBuzz");
+    } else if (i % 3 == 0) {
+        console.log("Fizz");
+    } else if (i % 5 == 0) {
+        console.log("Buzz");
+    } else {
+        console.log(i);
+    }
+}
+        </code></pre>
+        <p>3と5の倍数の判定（FizzBuzz）を先に書かないといけないのがポイントだよ。なぜか考えてみよう。</p>
+    </details>
+</section>
+
+<section>
     <h3>ブロック崩しを作ってみよう！</h3>
     <p>このサイトを参考に進めていくよ。</p>
     <a target="_blank" href="https://developer.mozilla.org/ja/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript">
@@ -285,3 +326,11 @@ for (let i = 0; i &lt; array.length; i++) {
         gap: 2em;
     }
 </style>
+
+<script>
+    hljs.highlightAll()
+
+    document.querySelectorAll(".save").forEach((save) => {
+        save.textContent = `前のコードを消して、下のコードを書いて、Ctrl+Sを押して保存して、ブラウザに戻ってF5を押してリロードしよう。`
+    })
+</script>
