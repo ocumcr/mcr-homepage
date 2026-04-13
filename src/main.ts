@@ -37,6 +37,6 @@ document.addEventListener("click", (e) => {
 
 document.addEventListener("DOMContentLoaded", async () => {
     console.log("iiiiii")
-    insertHTML("header", await fetchHTML("../html-component/smartphone-menu.html"))
-    insertHTML("#content-left", await fetchHTML("../html-component/menu.html"))
+    insertHTML("header", await fetchHTML("../../html-component/smartphone-menu.html"))
+    insertHTML("#content-left", await fetchHTML("../../html-component/menu.html"))
 })
