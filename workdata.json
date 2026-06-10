@@ -126,6 +126,14 @@
     ],
     "browser-games": [
         {
+            "title": "V*ector Space",
+            "author": "うめぼし",
+            "year": "2026",
+            "imagePath": "image/works/game/vec2.png",
+            "gamePath": "https://kishunankoubai.github.io/V-ectorSpace/",
+            "description": "ベクトル空間を彷徨うシンプルな<br>アクションゲーム。時には視点を変え、ゴールを目指そう。"
+        },
+        {
             "title": "MazeMemoirs",
             "author": "うめぼし",
             "year": "2025",
