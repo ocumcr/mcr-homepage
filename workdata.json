@@ -1,6 +1,14 @@
 {
     "vrc": [
         {
+            "title": "3Dアクセサリー　サスペンダー",
+            "author": "ひとねぎ",
+            "year": "2026",
+            "imagePath": "image/works/3d/サスペンダー.jpg",
+            "description": "<p>3Dモデルに着用させることを想定したサスペンダーです</p>",
+            "option": ["square", "big"]
+        },
+        {
             "title": "【MA対応】柱の男ごっこギミック",
             "author": "ひとねぎ",
             "year": "2025",
@@ -37,7 +45,7 @@
             "author": "ひとねぎ",
             "year": "2024",
             "imagePath": "image/works/3d/vrchat.jpg",
-            "description": "<p>Doll Follow Systemは、お好みのサブアバターや小物を乗せたり持ったり、アニメーションさせたりするアバターギミックです！</p><p>体験版無料です、以下のリンクからどうぞ！<br /><a href='https://hitone-gimmik.booth.pm/items/6417719'>https://hitone-gimmik.booth.pm/items/6417719</a></p>",
+            "description": "<p>Doll Follow Systemは、お好みのサブアバターや小物を乗せたり持ったり、アニメーションさせたりするアバターギミックです！</p><p>体験版無料です、以下のリンクからどうぞ！<br /><a href='https://hitone-gimmik.booth.pm/items/6417719'>https://hitone-gimmik.booth.pm/items/6417719</a></p><p>紹介動画のリンクです→https://m.youtube.com/watch?v=_G72wIB8_oQ&pp=0gcJCTkMAYcqIYzv&ra=m</p>",
             "option": ["square", "big"]
         },
         {
