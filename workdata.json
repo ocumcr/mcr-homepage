@@ -234,6 +234,14 @@
     ],
     "games": [
         {
+            "title": "Splash Duel",
+            "author": "おたわん",
+            "year": "2026",
+            "imagePath": "image/works/game/splash-duel.jpg",
+            "gamePath": "https://drive.google.com/drive/folders/1vK7RhiwRp-xWh8p4jvJOI3kScVeBzjfL",
+            "description": "カードを組み合わせて自分だけの戦い方を作る、1対1の対戦アクション！\nCPU相手に一人で遊べるほか、インターネット対戦にも対応。ゲームパッドがあれば、同じ画面でローカル対戦も楽しめます。"
+        },
+        {
             "title": "Avoid",
             "author": "しゅーと",
             "year": "2017",
